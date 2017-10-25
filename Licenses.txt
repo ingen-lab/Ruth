@@ -1,0 +1,12 @@
+License terms for this project vary by part type.  Please do not delete any credits or license files that are included in this project.   Built with Blender 2.79 with Avastar 2 RC12.
+
+Ruth 2.0 is by Shin Ingin, who can be found at https://plus.google.com/+ShinIngen. 
+
+The mesh body is CC-BY Linden lab. The UV map is CC-BY Linden Lab.
+
+Skin templates by Chip Midnight:  http://forums-archive.secondlife.com/109/72/40762/1.html
+
+
+
+
+
