@@ -2,7 +2,7 @@ License terms for this project vary by part type.  Please do not delete any cred
 
 Ruth 2.0 is by Shin Ingen, who can be found at https://plus.google.com/+ShinIngen. 
 
-The mesh body is CC-BY Linden lab. The UV map is CC-BY Linden Lab.
+The mesh body is AGPL. The UV map is CC-BY Linden Lab.
 
 Skin templates by Chip Midnight:  http://forums-archive.secondlife.com/109/72/40762/1.html
 
