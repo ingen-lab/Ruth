@@ -54,7 +54,7 @@ default
 			{
 				llSetLinkPrimitiveParamsFast(l, [PRIM_COLOR, ALL_SIDES, Tgloncolor, 1.0]);
 				ToggleOff(i,x,l,primDesc);
-				string message = primDesc  + "," + primTexture;
+				string message = "TEXTURE," + primDesc  + "," + primTexture;
 				llSay(TextureChan,message);
 				//llSay(0,"Link number clicked: " + (string)l + " " + primName + " " + primDesc + " " + primTexture);  
 			}
