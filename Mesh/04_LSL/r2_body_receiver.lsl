@@ -32,25 +32,30 @@ default
 			{
 				
 				list msglist = llParseString2List(message, [","], []);
-				string descflag = llStringTrim(llToUpper(llList2String(msglist, 0)), STRING_TRIM);
-				string textureid = llList2String(msglist, 1);
-				integer i = llGetLinkNumber() != 0; //root prim is one of body piece
-				integer x = llGetNumberOfPrims() + i; 
-
-				for (; i < x; ++i)
+				string command = llToUpper(llList2String(msglist, 0);
+				string descflag = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
+				string textureid = llList2String(msglist, 2);
+				
+				if (command = "TEXTURE");
 				{
-					list paramlist = llGetObjectDetails(llGetLinkKey(i), [OBJECT_DESC,OBJECT_NAME]);
-					string objdesc = llToUpper(llList2String(paramlist,0));
-					string objname = llList2String(paramlist,1);
+					integer i = llGetLinkNumber() != 0; //root prim is one of body piece
+					integer x = llGetNumberOfPrims() + i; 
 
-					if (objdesc == descflag)
+					for (; i < x; ++i)
 					{
-						//llOwnerSay("I heard your message:"+descflag+" "+objdesc+" "+textureid);
-						llSetLinkPrimitiveParamsFast(i, [PRIM_TEXTURE, ALL_SIDES, textureid, <1,1,0>, <0,0,0>, 0]);
-						llOwnerSay("Changed " + objname + " texture.");
-					}
+						list paramlist = llGetObjectDetails(llGetLinkKey(i), [OBJECT_DESC,OBJECT_NAME]);
+						string objdesc = llToUpper(llList2String(paramlist,0));
+						string objname = llList2String(paramlist,1);
 
-				} 
+						if (objdesc == descflag)
+						{
+							//llOwnerSay("I heard your message:"+descflag+" "+objdesc+" "+textureid);
+							llSetLinkPrimitiveParamsFast(i, [PRIM_TEXTURE, ALL_SIDES, textureid, <1,1,0>, <0,0,0>, 0]);
+							llOwnerSay("Changed " + objname + " texture.");
+						}
+
+					}
+				}			
 			}
 		}
 	} 
