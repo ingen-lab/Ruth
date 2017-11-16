@@ -15,26 +15,27 @@
 //**   along with this program.  If not, see <https://www.gnu.org/licenses/>
 //*********************************************************************************	
 	
-integer     	TextureChan = 20171105;
-vector     	Tgloncolor = <0.000, 1.000, 0.000>;
-vector    	Tgloffcolor = <1.000, 1.000, 1.000>;
+integer     	textureChan = 20171105;
+vector     	tglOnColor = <0.000, 1.000, 0.000>;
+vector    	tglOffColor = <1.000, 1.000, 1.000>;
 
 ToggleOff(integer i,integer x,integer l,string flagDesc)
 {
     for (; i < x; ++i)
-        {
-            if (i != l)
-            {
-                list linkParamList = llGetLinkPrimitiveParams(i,[PRIM_DESC]);
-                string primDesc = llList2String(linkParamList,0);
-            
-                if (primDesc == flagDesc)
-                {
-					llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, ALL_SIDES, Tgloffcolor, 1.0]);
-                }
-            }
-        }
+	{
+		if (i != l)
+		{
+			list linkParamList = llGetLinkPrimitiveParams(i,[PRIM_DESC]);
+			string primDesc = llList2String(linkParamList,0);
+		
+			if (primDesc == flagDesc)
+			{
+				llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, ALL_SIDES, tglOffColor, 1.0]);
+			}
+		}
+	}
 }
+
 default
 {
 
@@ -52,10 +53,10 @@ default
 
 			if (l!=1)
 			{
-				llSetLinkPrimitiveParamsFast(l, [PRIM_COLOR, ALL_SIDES, Tgloncolor, 1.0]);
+				llSetLinkPrimitiveParamsFast(l, [PRIM_COLOR, ALL_SIDES, tglOnColor, 1.0]);
 				ToggleOff(i,x,l,primDesc);
 				string message = "TEXTURE," + primDesc  + "," + primTexture;
-				llSay(TextureChan,message);
+				llSay(textureChan,message);
 				//llSay(0,"Link number clicked: " + (string)l + " " + primName + " " + primDesc + " " + primTexture);  
 			}
 		}
