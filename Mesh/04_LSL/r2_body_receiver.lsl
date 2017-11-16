@@ -15,20 +15,20 @@
 //**   along with this program.  If not, see <https://www.gnu.org/licenses/>
 //*********************************************************************************	
 
-integer TextureChan = 20171105;
+integer textureChan = 20171105;
 
 default
 {
     state_entry()
     {
-		llListen(TextureChan,"","",""); 
+		llListen(textureChan,"","",""); 
     }
 
 	listen(integer channel,string name,key id,string message)
 	{
 		if (llGetOwnerKey(id) == llGetOwner()) 
 		{
-			if (channel == TextureChan)
+			if (channel == textureChan)
 			{
 				
 				list msglist = llParseString2List(message, [","], []);
