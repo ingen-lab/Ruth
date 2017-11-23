@@ -19,8 +19,7 @@ integer         	textureChan = 	20171105;
 vector         	alphaOnColor = 	<0.000, 0.000, 0.000>;
 vector        	buttonOnColor = 	<0.000, 1.000, 0.000>;
 vector         	offColor = 		<1.000, 1.000, 1.000>;
-list				buttoncommandlist =	[
-										"reset",
+list				commandButtonList =	[
 										"chest::chest::30::-1",
 										"breasts::breastleft::31::-1",
 										"breasts::breastright::32::-1",
@@ -46,7 +45,9 @@ list				buttoncommandlist =	[
 										"armsfull::armleft::33::-1",
 										"armsfull::armright::34::-1",
 										"butt::pelvisback::9::5",
-										"crotch::pervisfront::10::4::6::7",
+										"crotch::pervisfront::10::4",
+										"crotch::pervisfront::10::6",
+										"crotch::pervisfront::10::7",
 										"pelvis::pelvisback::9::-1",
 										"pelvis::pelvisfront::10::-1",
 										"legsupper::legright1::11::-1",
@@ -80,14 +81,7 @@ list				buttoncommandlist =	[
 										"legsfull::legleft5::23::-1",
 										"legsfull::legleft6::24::-1",
 										"legsfull::legleft7::25::-1",
-										"legsfull::legleft8::26::-1",
-										"savealpha",
-										"loadalpha1",
-										"loadalpha2",
-										"loadalpha3",
-										"loadalpha4",
-										"loadalpha5",
-										"loadalpha6"
+										"legsfull::legleft8::26::-1"
 									];
 resetallalpha()
 {
@@ -107,12 +101,36 @@ resetallalpha()
 	}
 	
 	llSay(0,"A reset all alpha event was raised.");
-
 }
 
 colorDoll(string commandFilter, integer alphaVal)
 {
-	llSay(0,"ColorDoll event for:" + commandFilter + ":" + alphaVal + " raised.");
+	integer i;
+	integer x = llGetListLength(commandButtonList);
+	for (; i < x; ++i)
+	{
+		string dataString = llList2String(commandButtonList,i);
+		list stringList = llParseString2List(dataString, ["::"], []);
+		string command = llList2String(stringList,0);
+		string primName = llList2String(stringList,1);
+		integer primLink = llList2Integer(stringList,2);
+		integer primFace = llList2Integer(stringList,3);
+		string message = "ALPHA," + primName + "," + primFace + "," + alphaVal;
+		if (command == commandFilter)
+		{
+			if (alphaVal == 0)
+			{
+				llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, alphaOnColor, 1.0]);
+				llSay(textureChan,message);
+			}
+			else
+			{
+				llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, offColor, 1.0]);
+				llSay(textureChan,message);
+			}
+		}
+	}
+	llSay(0,"ColorDoll event for:" + commandFilter + ":" + alphaVal + " was raised.");
 }
 									
 default
@@ -128,14 +146,12 @@ default
             {
                 rotation localRot = llList2Rot(llGetLinkPrimitiveParams(link,[PRIM_ROT_LOCAL]),0);        
                 llSetLinkPrimitiveParamsFast(link,[PRIM_ROT_LOCAL,llEuler2Rot(<0.0,0.0,PI/2>)*localRot]);
-                //llSay(0,"ODD");
             }
 
             else
             {
                 rotation localRot = llList2Rot(llGetLinkPrimitiveParams(link,[PRIM_ROT_LOCAL]),0);
                 llSetLinkPrimitiveParamsFast(link,[PRIM_ROT_LOCAL,llEuler2Rot(<0.0,0.0,-PI/2>)*localRot]);
-                //llSay(0,"EVEN");
             }
         }
 
@@ -181,7 +197,6 @@ default
 		else if(link == 4 || link == 7)
 		{
 			list buttonList = [
-								
 								"armsfull",
 								"butt",
 								"crotch",
@@ -192,6 +207,25 @@ default
 								"legsfull"
 							];
 			string commandButton = llList2String(buttonList,face);				
+			list paramList = llGetLinkPrimitiveParams(link,[PRIM_NAME,PRIM_COLOR,face]);
+			string primName = llList2String(paramList,0);
+			vector primColor = llList2Vector(paramList,1);
+			integer alphaVal;
+			
+			if (primColor == offColor)
+			{
+				alphaVal=0;
+				llSetLinkPrimitiveParamsFast(4, [PRIM_COLOR, face, buttonOnColor, 1.0]);
+				llSetLinkPrimitiveParamsFast(7, [PRIM_COLOR, face, buttonOnColor, 1.0]);
+			}
+				else
+			{
+				alphaVal=1;      
+				llSetLinkPrimitiveParamsFast(4, [PRIM_COLOR, face, offColor, 1.0]);
+				llSetLinkPrimitiveParamsFast(7, [PRIM_COLOR, face, offColor, 1.0]);
+			}
+			
+			colorDoll(commandButton,alphaVal);
 			llSay(0,"Link:" + (string)link + " Button:" + commandButton);
 		}
 		else if(link == 3 || link == 6)
