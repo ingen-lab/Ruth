@@ -32,14 +32,14 @@ default
 			{
 				
 				list msglist = llParseString2List(message, [","], []);
-				string command = llToUpper(llList2String(msglist, 0);
-				string descflag = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
-				string textureid = llList2String(msglist, 2);
+				string command = llToUpper(llList2String(msglist, 0));
 				
 				if (command = "TEXTURE");
 				{
-					integer i = llGetLinkNumber() != 0; //root prim is one of body piece
-					integer x = llGetNumberOfPrims() + i; 
+					string descflag = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
+					string textureid = llList2String(msglist, 2);
+					integer i; 
+					integer x = llGetNumberOfPrims()+1; 
 
 					for (; i < x; ++i)
 					{
@@ -55,7 +55,29 @@ default
 						}
 
 					}
-				}			
+				}
+				if (command = "ALPHA")
+				{
+					string prim2change = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
+					integer face2change = llList2Integer(msglist, 2);
+					integer alphaval = llList2Integer(msglist, 3);
+					integer i;
+					integer x = llGetNumberOfPrims()+1;
+
+					for (; i < x; ++i)
+					{
+						list paramlist = llGetObjectDetails(llGetLinkKey(i), [OBJECT_DESC,OBJECT_NAME]);
+						string objdesc = llToUpper(llList2String(paramlist,0));
+						string objname = llToUpper(llList2String(paramlist,1));
+
+						if (objname == prim2change)
+						{
+							llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, face2change, <1.0,1.0,1.0>, alphaval]);
+							llOwnerSay("Alpha for " + objname + " changed.");
+						}
+					}					
+					llSay(0,"I heard your ALPHA command.");
+				}
 			}
 		}
 	} 
