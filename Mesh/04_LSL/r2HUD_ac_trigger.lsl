@@ -86,7 +86,7 @@ list				commandButtonList =	[
 resetallalpha()
 {
 	integer i;
-	integer x = llGetNumberOfPrims();
+	integer x = llGetNumberOfPrims()+1;
 
 	for (; i < x; ++i)
 	{
@@ -95,18 +95,17 @@ resetallalpha()
 		{
 			list paramList = llGetLinkPrimitiveParams(i,[PRIM_NAME]);
 			string primName = llList2String(paramList,0);
-            string message = "ALPHA," + primName + "," + "-1" + "," + "0";
+            string message = "ALPHA," + primName + "," + "-1" + "," + "1";
             llSay(textureChan,message);
   		}
 	}
-	
-	llSay(0,"A reset all alpha event was raised.");
+	//llSay(0,"A reset all alpha event was raised.");
 }
 
 colorDoll(string commandFilter, integer alphaVal)
 {
 	integer i;
-	integer x = llGetListLength(commandButtonList);
+	integer x = llGetListLength(commandButtonList)+1;
 	for (; i < x; ++i)
 	{
 		string dataString = llList2String(commandButtonList,i);
@@ -130,7 +129,7 @@ colorDoll(string commandFilter, integer alphaVal)
 			}
 		}
 	}
-	llSay(0,"ColorDoll event for:" + commandFilter + ":" + alphaVal + " was raised.");
+	//llSay(0,"ColorDoll event for:" + commandFilter + ":" + alphaVal + " was raised.");
 }
 									
 default
@@ -191,7 +190,7 @@ default
 					llSetLinkPrimitiveParamsFast(8, [PRIM_COLOR, face, offColor, 1.0]);
 				}
 				colorDoll(commandButton,alphaVal);
-				llSay(0,"Link:" + (string)link + " Button:" + commandButton);
+				//llSay(0,"Link:" + (string)link + " Button:" + commandButton);
 			}
 		}
 		else if(link == 4 || link == 7)
@@ -226,7 +225,7 @@ default
 			}
 			
 			colorDoll(commandButton,alphaVal);
-			llSay(0,"Link:" + (string)link + " Button:" + commandButton);
+			//llSay(0,"Link:" + (string)link + " Button:" + commandButton);
 		}
 		else if(link == 3 || link == 6)
 		{
@@ -240,11 +239,11 @@ default
 								"loadalpha6"
 							];
 			string commandButton = llList2String(buttonList,face);				
-			llSay(0,"Link:" + (string)link + " Button:" + commandButton);
+			llSay(0,"Not Yet Implemented!");
 		}
 		else if(link == 2)
 		{
-			//ignore click
+			//ignore click on backboard
 		}		
         else
         {
@@ -252,6 +251,7 @@ default
             string primName = llList2String(paramList,0);
             vector primColor = llList2Vector(paramList,1);
             integer alphaVal;
+
             if (primColor == offColor)
             {
                 alphaVal=0;
@@ -265,8 +265,7 @@ default
             
             string message = "ALPHA," + primName + "," + face + "," + alphaVal;
             llSay(textureChan,message);
-            llSay(0,"Link:" + (string)link + " Bodypart:" + primName + " Face:" + (string)face + " Color:"+(string)primColor + " Alpha Value:" + (string)alphaVal);
-
+            //llSay(0,"Link:" + (string)link + " Bodypart:" + primName + " Face:" + (string)face + " Color:"+(string)primColor + " Alpha Value:" + (string)alphaVal);
         }
     }
 }
