@@ -15,20 +15,31 @@
 //**   along with this program.  If not, see <https://www.gnu.org/licenses/>
 //*********************************************************************************	
 
-integer textureChan = 20171105;
+integer r2chan;
+integer appID = 20171105;
+integer keyapp2chan() 
+{
+    return 0x80000000 | ((integer)("0x"+(string)llGetOwner()) ^ appID);
+}
 
 default
 {
     state_entry()
     {
-		llListen(textureChan,"","",""); 
+		r2chan = keyapp2chan();
+		llListen(r2chan,"","",""); 
     }
 
+    on_rez(integer param) 
+	{
+        llResetScript();
+    }	
+	
 	listen(integer channel,string name,key id,string message)
 	{
 		if (llGetOwnerKey(id) == llGetOwner()) 
 		{
-			if (channel == textureChan)
+			if (channel == r2chan)
 			{
 				
 				list msglist = llParseString2List(message, [","], []);
@@ -51,7 +62,7 @@ default
 						{
 							//llOwnerSay("I heard your message:"+descflag+" "+objdesc+" "+textureid);
 							llSetLinkPrimitiveParamsFast(i, [PRIM_TEXTURE, 0, textureid, <1,1,0>, <0,0,0>, 0]);
-							llOwnerSay("Changed " + objname + " texture.");
+							//llOwnerSay("Changed " + objname + " texture.");
 						}
 
 					}
@@ -73,10 +84,10 @@ default
 						if (objname == prim2change)
 						{
 							llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, face2change, <1.0,1.0,1.0>, alphaval]);
-							llOwnerSay("Alpha for " + objname + " changed.");
+							//llOwnerSay("Alpha for " + objname + " changed.");
 						}
 					}					
-					llSay(0,"I heard your ALPHA command.");
+					//llSay(0,"I heard your ALPHA command.");
 				}
 			}
 		}

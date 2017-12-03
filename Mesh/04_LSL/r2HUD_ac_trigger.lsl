@@ -15,7 +15,12 @@
 //**   along with this program.  If not, see <https://www.gnu.org/licenses/>
 //*********************************************************************************    
     
-integer         	textureChan = 	20171105;
+integer r2chan = keyapp2chan();
+integer appID = 20171105;
+integer keyapp2chan() 
+{
+    return 0x80000000 | ((integer)("0x"+(string)llGetOwner()) ^ appID);
+}
 vector         	alphaOnColor = 	<0.000, 0.000, 0.000>;
 vector        	buttonOnColor = 	<0.000, 1.000, 0.000>;
 vector         	offColor = 		<1.000, 1.000, 1.000>;
@@ -96,7 +101,7 @@ resetallalpha()
 			list paramList = llGetLinkPrimitiveParams(i,[PRIM_NAME]);
 			string primName = llList2String(paramList,0);
             string message = "ALPHA," + primName + "," + "-1" + "," + "1";
-            llSay(textureChan,message);
+            llSay(r2chan,message);
   		}
 	}
 	//llSay(0,"A reset all alpha event was raised.");
@@ -120,12 +125,12 @@ colorDoll(string commandFilter, integer alphaVal)
 			if (alphaVal == 0)
 			{
 				llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, alphaOnColor, 1.0]);
-				llSay(textureChan,message);
+				llSay(r2chan,message);
 			}
 			else
 			{
 				llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, offColor, 1.0]);
-				llSay(textureChan,message);
+				llSay(r2chan,message);
 			}
 		}
 	}
@@ -133,7 +138,17 @@ colorDoll(string commandFilter, integer alphaVal)
 }
 									
 default
-{    
+{
+    state_entry()
+    {
+		r2chan = keyapp2chan();
+    }
+	
+    on_rez(integer param) 
+	{
+        llResetScript();
+    }
+    
     touch_start(integer total_number)    
     {        
         integer link = llDetectedLinkNumber(0);
@@ -264,7 +279,7 @@ default
             }
             
             string message = "ALPHA," + primName + "," + face + "," + alphaVal;
-            llSay(textureChan,message);
+            llSay(r2chan,message);
             //llSay(0,"Link:" + (string)link + " Bodypart:" + primName + " Face:" + (string)face + " Color:"+(string)primColor + " Alpha Value:" + (string)alphaVal);
         }
     }
