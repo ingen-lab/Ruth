@@ -15,7 +15,7 @@
 //**   along with this program.  If not, see <https://www.gnu.org/licenses/>
 //*********************************************************************************    
     
-integer r2chan = keyapp2chan();
+integer r2chan;
 integer appID = 20171105;
 integer keyapp2chan() 
 {
@@ -120,6 +120,7 @@ colorDoll(string commandFilter, integer alphaVal)
 		integer primLink = llList2Integer(stringList,2);
 		integer primFace = llList2Integer(stringList,3);
 		string message = "ALPHA," + primName + "," + primFace + "," + alphaVal;
+
 		if (command == commandFilter)
 		{
 			if (alphaVal == 0)
@@ -161,14 +162,12 @@ default
                 rotation localRot = llList2Rot(llGetLinkPrimitiveParams(link,[PRIM_ROT_LOCAL]),0);        
                 llSetLinkPrimitiveParamsFast(link,[PRIM_ROT_LOCAL,llEuler2Rot(<0.0,0.0,PI/2>)*localRot]);
             }
-
             else
             {
                 rotation localRot = llList2Rot(llGetLinkPrimitiveParams(link,[PRIM_ROT_LOCAL]),0);
                 llSetLinkPrimitiveParamsFast(link,[PRIM_ROT_LOCAL,llEuler2Rot(<0.0,0.0,-PI/2>)*localRot]);
             }
         }
-
 		else if(link == 5 || link == 8)
 		{
 			list buttonList = [
@@ -246,12 +245,7 @@ default
 		{
 			list buttonList = [
 								"savealpha",
-								"loadalpha1",
-								"loadalpha2",
-								"loadalpha3",
-								"loadalpha4",
-								"loadalpha5",
-								"loadalpha6"
+								"loadalpha"
 							];
 			string commandButton = llList2String(buttonList,face);				
 			llSay(0,"Not Yet Implemented!");
