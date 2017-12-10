@@ -62,7 +62,7 @@ default
 						{
 							//llOwnerSay("I heard your message:"+descflag+" "+objdesc+" "+textureid);
 							llSetLinkPrimitiveParamsFast(i, [PRIM_TEXTURE, ALL_SIDES, textureid, <1,1,0>, <0,0,0>, 0]);
-							llOwnerSay("Changed " + objname + " texture.");
+							//llOwnerSay("Changed " + objname + " texture.");
 						}
 
 					}
@@ -84,10 +84,10 @@ default
 						if (objname == prim2change)
 						{
 							llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, face2change, <1.0,1.0,1.0>, alphaval]);
-							llOwnerSay("Alpha for " + objname + " changed.");
+							//llOwnerSay("Alpha for " + objname + " changed.");
 						}
 					}					
-					llSay(0,"I heard your ALPHA command.");
+					//llSay(0,"I heard your ALPHA command.");
 				}
 			}
 		}
