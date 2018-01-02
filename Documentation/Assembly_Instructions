@@ -1,0 +1,106 @@
+HOW TO ASSEMBLE RUTH 2
+
+Download Shin’s zip file from GitHub. Unzip the file. Under the “Mesh” directory you’ll find "06_Uploads" where the *.dae files are located. You’ll be uploading these in-world.
+
+You’ll want to print out the parts lists that you’ll find in the "04_LSL" directory. It is essential that when you put Ruth and the HUD’s together that the parts are named correctly and go together in the correct order – otherwise the scripts won’t run.
+
+IMPORTANT NOTE ABOUT SCRIPTS – I found a small problem with at least one of the scripts in the download file.  The script referred to an animation which is not included in the package.  Because of this, the script won’t run.  If you have a copy of the animation file, you’ll be okay (and I suspect Shin will make it available soon).  
+     Since I didn’t have the animation file, what I did was to make a copy of the scripts found in the “Test Me” model at Shin’s place: login.digiworldz.com:8002:ingen lab.  There is a difference in the way the communication channel is established between the scripts in the download package and those used by the “test me” model at Shin’s place.  So you’ll need to have a complete set of scripts.  I think this will be corrected soon, and in my description, below, I make the assumption that the scripts from download package will work.  But until the animation becomes available, you’ll need to do as I did and copy the scripts from Shin’s “Test Me” model in Digiworldz and use those instead.
+
+A CAVEAT –Ruth 2 is a work in progress.  The steps below are likely to change as modifications are made.  The following information will get you started, but you may need to do things differently depending on where the project is in its development stages.
+
+RUTH BODY PROCEDURE
+
+1. Upload the mesh body (OSRuth2_03_alphacut_body.dae). In the upload dialog box, under the “Physics” tab, choose “From File” and browse to “00_PhysicsCube.dae.” Click “Analyze” and “Simplify.” Under the “Upload Options,” check “Skin Weight.” Under “Level of Detail” (LOD), I have been setting the “Lowest” LOD at “0” but that’s up to you.  (Note that Fred Beckhusen has commented in the Ruth Google+ page that the “Analyze” button is okay for avatars but can cause problems for other types of meshes.)
+
+(NOTE: from here on out, I won’t go through the upload process in detail as I did above.  I’ll just say “upload so and so.”  Nevertheless, whenever you upload a body part, you’ll want to go through the same procedure with Skin Weight, LOD and Physics.)
+
+2. Once the body model has been uploaded, rez it.
+
+3. Re-name all prims making up the body. Here’s where you need the parts list. Make sure the name for each part is the same as on the parts list. You will also need to make an entry in “Description” to indicate whether the prim is in the upper half of the body or lower half. Thus, you'll type in “upper” or “lower” depending on where the prim is located.
+
+4. Rez a cube. Shrink it down so it fits in the neck. Create a new script. Copy the “r2_body_receiver.lsl” script from the "04_LSL" directory and paste it in and save it. Name the cube “Ruth 2 Body Mesh” (or something similar.)
+
+5. Unlink the entire model and carefully link each prim in order according to the parts list.   You’ll start with “armright.”  Then “armleft,” etc. working you way up the list.  The last to be linked will be the cube. What I did at this point is to make the cube invisible – otherwise you'll see it float around outside the body when Ruth moves. It would be better to create the cube in Blender and weight it, but I was lazy. You may want to do the later.
+
+6. Take the model into your inventory.
+
+7. Wear a full body alpha, attach the model and have a look.
+
+
+ALPHA HUD PROCEDURE
+
+1. For the HUD, you’ll need a Ruth Model that isn’t weighted.  Unless I missed something, I don’t believe it was in the download package.  I created one in Blender by using OSRuth2_03_alphacut.blend.  Using the Avastar freeze feature, I created another body and removed the rig.  I’ll include a copy of it in GitHub.  (If you try to use the weighted version of Ruth, she’ll end up getting stuck to you instead of the HUD – as I found out to my surprise.) 
+
+2. To keep things straight, I’ll call this unweighted version of Ruth the “Static” model.  Upload the static model.  (In this case - since you will not be wearing it - you would not check “include skin weight” on the upload dialog box.)   
+
+3. Upload the 4 alpha HUD textures: “R2_alphacut_Upper.png” “R2_alphacut_Lower.png”  “uv_hud_02_alphacut_backboard.png,” “uv_hud_02_alphacut_base.png.”  These are found in the Mesh/00_uv directory.
+
+4. Rez the Static Model.  Shift+select all of the upper body prims.  Then apply the alpha cut upper texture (R2_alphacut_Upper.png).  Do the same for the lower body prims and apply the alpha cut lower texture (R2_alphacut_Lower.png).
+
+5. Unlink the model.  Using the parts list, name each part (as you did with the weighted model).  Don’t link it back together yet.  (I made that mistake a couple of times.  Leave it unlinked.)  Put it aside for the time being. 
+
+6. Upload the HUD mesh: “OSRuth2_hud_01_alphacut.dae” found in the Mesh/06_uploads directory.
+
+7. Rez it and unlink it.  Shift-select the 3 prims making up the button bar.  Turn the HUD 180 degrees.  Shift-select 3 prims making up the button bar on the reverse side.  Shift-select the base.  You now have 7 prims selected: the two button bars and the base.  To this selection, apply the “uv_hud_02_alphacut_base.png” texture.
+
+8. Turn the HUD 180 degrees back to its original position. Select the backdrop of the HUD mesh and apply the “uv_hud_02_alphacut_backboard.png” texture.
+
+9. Select the top button bar. Name it “buttonbar8.”  Select the next button bar down and name it “buttonbar7.”  Select the bottom button bar and name it “buttonbar6.”
+
+10. Turn the HUD 180 degrees.  Select the top button bar and name it “buttonbar5.”  The next “buttonbar4” and the bottom one: “buttonbar3”  (You’ll see the buttonbar naming convention on the parts list.).  Turn the HUD 180 degrees back to its original position.
+
+11. Select the entire HUD mesh (but don’t link it yet).  Reduce the HUD's size so the static Ruth model will fit inside of it.
+
+12.  Select all parts of the static Ruth model and move and position it between the button bars in the HUD mesh.  Adjust size if needed.
+
+13.  Now link everything.  Again, order is very important.  Follow the parts list.  Start with “armright” on the static model and work your way up the list until the base of the HUD mesh is the last to be linked.  (If you miss a prim along the way, the script won’t work, so you want to be methodical as you link the parts.)
+
+14. Select the newly link HUD.  Create a new script.  Copy the “r2HUD_ac_trigger.lsl” from Mesh/04_LSL and paste it.
+
+15. Reduce the size of the HUD.  I found that reducing it to about knee-high was about right.  You may need to play around with the sizing.
+
+16. Take the HUD to your inventory.  Then attach it as a HUD.
+
+17.  Wear your Ruth body mesh.  Try clicking the buttons on the HUD – or parts of the static model.   If everything has been assembled correctly, you’ll see those parts disappear on the Ruth body.  Clicking the "Re-set faces" button will make all part visible.  (Note that if after you click on “re-set faces,” you may see white on parts of the Ruth body.  That means you missed applying the texture to those areas.  You can correct it by editing the HUD and using “Edit Link” and “Select Face” and re-applying the appropriate texture for the body part. This happened to me on a number of occasions as I was working through the process.)
+
+
+SKIN APPLIER HUD PROCEDURE
+
+1. Upload the Skin Applier HUD “OSRuth2_hud_01_skin_applier.dae” found in the 
+Mesh/06_uploads/ directory
+
+2. Upload skin textures.  They are found in the “Skins” directory.
+
+3. Upload skin HUD textures (“r2HUD_skin_applier_512back.jpg” and “r2HUD_skin_applier_front_512.jpg”).  They are found in Mesh/00_uv/.
+
+4. Rez the Skin HUD.  Edit it using “Edit Link” and “Select Face.”  You may need to turn the HUD mesh around but you want to find the side that has rows of squares.  This side, the side with the small squares, is the “front” side.  We’ll start with this side.
+
+5. Select the top of the front side.  You don’t want to click in any of the squares, just the blank area above the squares.  Once you click in the blank area, apply the “2HUD_skin_applier_front_512.jpg” texture.
+
+6. Now, staying on the front side, select the top left square and apply a head texture.  To the next square to the right, apply an upper body texture.  In the third square, apply a lower body texture.
+
+7. Add another row of skin textures: head, upper body, and lower body.
+
+8. When you have finished adding the skin textures, go back to the first head texture.  Give the head texture a name of your choice (i.e. “Starlight head”).  In the “description,” field type in “head.”
+
+9. Move to the next square to the right.  Give it a name (i.e. “Starlight Upper”).  In “description” type in “upper.”
+
+10.  Move to the next square to the right.  Give it a name (i.e. “Startlight Lower”.  In “description” type in “lower.”
+
+11. Do this for any additional rows of textures.
+
+12. Select the back of the Skin HUD.  Apply the “r2HUD_skin_applier_512back.jpg” texture.
+
+13. Select the entire model.  This time you won’t be using “Edit Link” any more.  Create a new script.  Copy the “r2HUD_sa_trigger.lsl” from Mesh/04_LSL/ and paste it in.  
+
+14. The head, hands and feet are still missing, but you can test the HUD on the Ruth body.  Take the HUD into your inventory and attach it as a HUD.  Click on the squares for the upper and lower body.  You should see the selected skin applied to the Ruth mesh body.
+
+
+HEAD, HANDS, FEET
+
+By now you should be getting into the swing of it and understand how things go together.  To finish off Ruth, you’ll need to upload the head, both hands and the feet.  
+
+With each of these, you’ll need to change the “description” to “head” (for the head), “upper” (for hands) or “lower” (for feet).  You’ll also need to add the receiver scripts for the head, hands and feet.  
+
+Then wear all the parts and try out the skin applier HUD.  When it all works, give yourself a pat on the back.
