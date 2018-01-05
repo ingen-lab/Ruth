@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <contributor>
+      <author>Avastar User</author>
+      <authoring_tool>Avastar 2-1-1 on Blender 2.79 (sub 0)</authoring_tool>
+    </contributor>
+    <created>2018-01-04T18:55:35</created>
+    <modified>2018-01-04T18:55:35</modified>
+    <unit meter="1" name="meter" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras />
+  <library_lights />
+  <library_effects>
+    <effect id="mat_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="mat_001-material" name="mat_001">
+      <instance_effect url="#mat_001-effect" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="rootprim-mesh" name="rootprim">
+      <mesh>
+        <source id="rootprim-mesh-positions">
+          <float_array count="24" id="rootprim-mesh-positions-array">-0.0162048 0.00886211 1.63981   -0.0162048 0.00886211 1.67222   -0.0162048 0.0412689 1.63981   -0.0162048 0.0412689 1.67222   0.0162019 0.00886211 1.63981   0.0162019 0.00886211 1.67222   0.0162019 0.0412689 1.63981   0.0162019 0.0412689 1.67222  </float_array>
+          <technique_common>
+            <accessor count="8" source="#rootprim-mesh-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rootprim-mesh-normals">
+          <float_array count="18" id="rootprim-mesh-normals-array">-1 -0 0   0 1 0   1 -0 0   0 -1 0   0 0 -1   0 -0 1  </float_array>
+          <technique_common>
+            <accessor count="6" source="#rootprim-mesh-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rootprim-mesh-map-0">
+          <float_array count="48" id="rootprim-mesh-map-0-array">0 0   1 0   1 1   0 1   0 0   1 0   1 1   0 1   0 0   1 0   1 1   0 1   0 0   1 0   1 1   0 1   0 0   1 0   1 1   0 1   0 0   1 0   1 1   0 1  </float_array>
+          <technique_common>
+            <accessor count="24" source="#rootprim-mesh-map-0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rootprim-mesh-vertices">
+          <input semantic="POSITION" source="#rootprim-mesh-positions" />
+        </vertices>
+        <polylist count="12" material="mat_001-material">
+          <input offset="0" semantic="VERTEX" source="#rootprim-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#rootprim-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#rootprim-mesh-map-0" />
+          <vcount>4 4 4 4 4 4</vcount>
+          <p>0 0 0  1 0 1  3 0 2  2 0 3     2 1 4  3 1 5  7 1 6  6 1 7     6 2 8  7 2 9  5 2 10  4 2 11     4 3 12  5 3 13  1 3 14  0 3 15     2 4 16  6 4 17  4 4 18  0 4 19     7 5 20  3 5 21  1 5 22  5 5 23    </p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Avatar_rootprim-skin" name="Avatar">
+      <skin source="#rootprim-mesh">
+        <bind_shape_matrix>0 -1 0 0 1 0 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Avatar_rootprim-skin-joints">
+          <Name_array count="8" id="Avatar_rootprim-skin-joints-array">
+          mNeck mChest mSpine4 mSpine3 mTorso mSpine2 mSpine1 mPelvis
+          </Name_array>
+          <technique_common>
+            <accessor count="8" source="#Avatar_rootprim-skin-joints-array" stride="1">
+              <param name="JOINT" type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Avatar_rootprim-skin-bind_poses">
+          <float_array count="128" id="Avatar_rootprim-skin-bind_poses-array">
+
+  1.18343  0  0  0.0293254
+  0  1.1976  0  0
+  0  0  1 -1.60707
+  0  0  0  1
+ 
+  1.0101  0  0  0.0155232
+  0  1.04167  0  0
+  0  0  1 -1.35596
+  0  0  0  1
+ 
+  1  0  0  0
+  0  1  0  0
+  0  0  1 -1.15109
+  0  0  0  1
+ 
+  1  0  0  0.015368
+  0  1  0  0
+  0  0  1 -1.35597
+  0  0  0  1
+ 
+  1  0  0  0
+  0  1  0  0
+  0  0  1 -1.15109
+  0  0  0  1
+ 
+  1  0  0  0
+  0  1  0  0
+  0  0  1 -1.06702
+  0  0  0  1
+ 
+  1  0  0  0
+  0  1  0  0
+  0  0  1 -1.15109
+  0  0  0  1
+ 
+  1  0  0  0
+  0  1  0  0
+  0  0  1 -1.06702
+  0  0  0  1
+</float_array>
+          <technique_common>
+            <accessor count="8" source="#Avatar_rootprim-skin-bind_poses-array" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Avatar_rootprim-skin-weights">
+          <float_array count="8" id="Avatar_rootprim-skin-weights-array">1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor count="8" source="#Avatar_rootprim-skin-weights-array" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Avatar_rootprim-skin-joints" />
+          <input semantic="INV_BIND_MATRIX" source="#Avatar_rootprim-skin-bind_poses" />
+        </joints>
+        <vertex_weights count="8">
+          <input offset="0" semantic="JOINT" source="#Avatar_rootprim-skin-joints" />
+          <input offset="1" semantic="WEIGHT" source="#Avatar_rootprim-skin-weights" />
+          <vcount>1 1 1 1 1 1 1 1</vcount>
+          <v>0 0    0 1    0 2    0 3    0 4    0 5    0 6    0 7   </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Avatar" name="Avatar" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="mPelvis" name="mPelvis" sid="mPelvis" type="JOINT">
+          <matrix sid="transform">
+  1  0  0  0
+  0  1  0  0
+  0  0  1  1.06702
+  0  0  0  1
+</matrix>
+          <node id="mSpine1" name="mSpine1" sid="mSpine1" type="JOINT">
+            <matrix sid="transform">
+  1  0  0  0
+  0  1  0  0
+  0  0  1  0.0840729
+  0  0  0  1
+</matrix>
+            <node id="mSpine2" name="mSpine2" sid="mSpine2" type="JOINT">
+              <matrix sid="transform">
+  1  0  0  0
+  0  1  0  0
+  0  0  1 -0.0840729
+  0  0  0  1
+</matrix>
+              <node id="mTorso" name="mTorso" sid="mTorso" type="JOINT">
+                <matrix sid="transform">
+  1  0  0  0
+  0  1  0  0
+  0  0  1  0.0840729
+  0  0  0  1
+</matrix>
+                <node id="mSpine3" name="mSpine3" sid="mSpine3" type="JOINT">
+                  <matrix sid="transform">
+  1  0  0 -0.015368
+  0  1  0  0
+  0  0  1  0.204877
+  0  0  0  1
+</matrix>
+                  <node id="mSpine4" name="mSpine4" sid="mSpine4" type="JOINT">
+                    <matrix sid="transform">
+  1  0  0  0.015368
+  0  1  0  0
+  0  0  1 -0.204877
+  0  0  0  1
+</matrix>
+                    <node id="mChest" name="mChest" sid="mChest" type="JOINT">
+                      <matrix sid="transform">
+  1  0  0 -0.015368
+  0  1  0  0
+  0  0  1  0.204877
+  0  0  0  1
+</matrix>
+                      <node id="mNeck" name="mNeck" sid="mNeck" type="JOINT">
+                        <matrix sid="transform">
+  1  0  0 -0.009507
+  0  1  0  0
+  0  0  1  0.251108
+  0  0  0  1
+</matrix>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node id="rootprim" name="rootprim" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_controller url="#Avatar_rootprim-skin">
+          <skeleton>#mPelvis</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mat_001-material" target="#mat_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="UVMap" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene" />
+  </scene>
+</COLLADA>
