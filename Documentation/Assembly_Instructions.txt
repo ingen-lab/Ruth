@@ -1,60 +1,69 @@
 HOW TO ASSEMBLE RUTH 2
 
-Download Shin’s zip file from GitHub. Unzip the file. Under the “Mesh” directory you’ll find "06_Uploads" where the *.dae files are located. You’ll be uploading these in-world.
+Download Shin’s zip file from GitHub.  Unzip the file.  Under the “Mesh” directory you’ll find "06_Uploads" where the *.dae files are located. You’ll be uploading these in-world.
 
-You’ll want to print out the parts lists that you’ll find in the "04_LSL" directory. It is essential that when you put Ruth and the HUD’s together that the parts are named correctly and go together in the correct order – otherwise the scripts won’t run.
-
-IMPORTANT NOTE ABOUT SCRIPTS – I found a small problem with at least one of the scripts in the download file.  The script referred to an animation which is not included in the package.  Because of this, the script won’t run.  If you have a copy of the animation file, you’ll be okay (and I suspect Shin will make it available soon).  
-     Since I didn’t have the animation file, what I did was to make a copy of the scripts found in the “Test Me” model at Shin’s place: login.digiworldz.com:8002:ingen lab.  There is a difference in the way the communication channel is established between the scripts in the download package and those used by the “test me” model at Shin’s place.  So you’ll need to have a complete set of scripts.  I think this will be corrected soon, and in my description, below, I make the assumption that the scripts from download package will work.  But until the animation becomes available, you’ll need to do as I did and copy the scripts from Shin’s “Test Me” model in Digiworldz and use those instead.
+You’ll want to print out the parts lists that you’ll find in the "04_LSL" directory.  It is essential that when you put Ruth and the HUD’s together that the parts are named correctly and go together in the correct order – otherwise the scripts won’t run.
 
 A CAVEAT –Ruth 2 is a work in progress.  The steps below are likely to change as modifications are made.  The following information will get you started, but you may need to do things differently depending on where the project is in its development stages.
 
+Updated for Ruth Release Candidate 1.
+
 RUTH BODY PROCEDURE
 
-1. Upload the mesh body (OSRuth2_03_alphacut_body.dae). In the upload dialog box, under the “Physics” tab, choose “From File” and browse to “00_PhysicsCube.dae.” Click “Analyze” and “Simplify.” Under the “Upload Options,” check “Skin Weight.” Under “Level of Detail” (LOD), I have been setting the “Lowest” LOD at “0” but that’s up to you.  (Note that Fred Beckhusen has commented in the Ruth Google+ page that the “Analyze” button is okay for avatars but can cause problems for other types of meshes.)
+1. Upload the mesh body (the current name is r2BODY_UpperLower_ada1.9, but the name will change depending on the version). In the upload dialog box, under the “Physics” tab, choose “From File” and browse to “00_PhysicsCube.dae.” Click “Analyze” and “Simplify.” Under the “Upload Options,” check “Skin Weight.” Under “Level of Detail” (LOD), I have been setting the “Lowest” LOD at “0” but that’s up to you.  (Note that Fred Beckhusen has commented in the Ruth Google+ page that the “Analyze” button is okay for avatars but can cause problems for other types of meshes.)
 
 (NOTE: from here on out, I won’t go through the upload process in detail as I did above.  I’ll just say “upload so and so.”  Nevertheless, whenever you upload a body part, you’ll want to go through the same procedure with Skin Weight, LOD and Physics.)
 
 2. Once the body model has been uploaded, rez it.
 
-3. Re-name all prims making up the body. Here’s where you need the parts list. Make sure the name for each part is the same as on the parts list. You will also need to make an entry in “Description” to indicate whether the prim is in the upper half of the body or lower half. Thus, you'll type in “upper” or “lower” depending on where the prim is located.
+3. Re-name all prims making up the body. Here’s where you need the parts list.  Make sure the name for each part is the same as on the parts list.  You will also need to make an entry in “Description” to indicate whether the prim is in the upper half of the body or lower half.  Thus, you'll type in “upper” or “lower” depending on where the prim is located.
 
-4. Rez a cube. Shrink it down so it fits in the neck. Create a new script. Copy the “r2_body_receiver.lsl” script from the "04_LSL" directory and paste it in and save it. Name the cube “Ruth 2 Body Mesh” (or something similar.)
+4. Upload the root prim for the body.  The root prim is a small cube which will hold the body script.  Currently it’s called “r2ROOTPRIM_rigged.dae,” but the name could change.  Create a new script.  Copy the “r2_body_receiver.lsl” script from the "04_LSL" directory and paste it in and save it.  
 
-5. Unlink the entire model and carefully link each prim in order according to the parts list.   You’ll start with “armright.”  Then “armleft,” etc. working you way up the list.  The last to be linked will be the cube. What I did at this point is to make the cube invisible – otherwise you'll see it float around outside the body when Ruth moves. It would be better to create the cube in Blender and weight it, but I was lazy. You may want to do the later.
+5. Upload the hand pose: bentohandrelaxedP1.bvh found in the Mesh/01_animation folder.  When you upload it, use “loop enabled” and “priority 1” animation.  Place the animation in the HUD along with the script.
 
-6. Take the model into your inventory.
+6. Name the cube “Ruth 2 Body Mesh” (or something similar.)
 
-7. Wear a full body alpha, attach the model and have a look.
+7. Unlink the entire model and carefully link each prim in order according to the parts list.   You’ll start with “armright.”  Then “armleft,” etc. working you way up the list.  The last to be linked will be the root prim cube. 
+
+8. Take the model into your inventory.
+
+9. Wear a full body alpha, attach the model and have a look.
 
 
 ALPHA HUD PROCEDURE
 
-1. For the HUD, you’ll need a Ruth Model that isn’t weighted.  Unless I missed something, I don’t believe it was in the download package.  I created one in Blender by using OSRuth2_03_alphacut.blend.  Using the Avastar freeze feature, I created another body and removed the rig.  I’ll include a copy of it in GitHub.  (If you try to use the weighted version of Ruth, she’ll end up getting stuck to you instead of the HUD – as I found out to my surprise.) 
+1. For the HUD, you’ll need the “doll” which is an unweighted Ruth model.  Upload the doll, currently named “r2HUD_alphastaticdoll,” but the name, of course, may change.) The following are the uploader settings:
 
-2. To keep things straight, I’ll call this unweighted version of Ruth the “Static” model.  Upload the static model.  (In this case - since you will not be wearing it - you would not check “include skin weight” on the upload dialog box.)   
+a. No skin weight. Don’t worry about checking “Include Skin Weight” (it has none.)  
 
-3. Upload the 4 alpha HUD textures: “R2_alphacut_Upper.png” “R2_alphacut_Lower.png”  “uv_hud_02_alphacut_backboard.png,” “uv_hud_02_alphacut_base.png.”  These are found in the Mesh/00_uv directory.
+b. Physics Cube.  Use the physics cube as you have in the past.  Don’t “analyze” this time around.
 
-4. Rez the Static Model.  Shift+select all of the upper body prims.  Then apply the alpha cut upper texture (R2_alphacut_Upper.png).  Do the same for the lower body prims and apply the alpha cut lower texture (R2_alphacut_Lower.png).
+c. Level of Detail (LOD).  Set “Medium” and “Low” LOD’s the same as the “High” LOD.  Leave the “Lowest” LOD at the generated amount.  (Note: I found that higher LOD’s were required so it has good resolution when it used within the HUD.  With lower LOD’s, there’s not enough resolution to see the thin colored areas on the back of the doll’s pelvis.  After doing some experimentation, the above settings were the best I could come up with.  I’m not sure, however, if they are optimal.  You may want to do some testing and find just the right sweet spot that uses the least resources.  After a couple of hours of re-building the model, I finally wore out and went with the above setting.)
 
-5. Unlink the model.  Using the parts list, name each part (as you did with the weighted model).  Don’t link it back together yet.  (I made that mistake a couple of times.  Leave it unlinked.)  Put it aside for the time being. 
+2. Upload the 4 alpha HUD textures: “R2_alphacut_Lower.png” “R2_alphacut_Upper.png”  “uv_hud_02_alphacut_backboard.png,” “uv_hud_02_alphacut_base.png.”  (Names may change.)  These are found in the Mesh/00_uv directory.
 
-6. Upload the HUD mesh: “OSRuth2_hud_01_alphacut.dae” found in the Mesh/06_uploads directory.
+3. Rez the doll.  Using the “Edit Linked” function, shift+select all of the upper body prims.  Then apply the alpha cut upper texture (R2_alphacut_Upper.prn).  Do the same for the lower body prims and apply the alpha cut lower texture (R2_alphacut_Lower.png).
 
-7. Rez it and unlink it.  Shift-select the 3 prims making up the button bar.  Turn the HUD 180 degrees.  Shift-select 3 prims making up the button bar on the reverse side.  Shift-select the base.  You now have 7 prims selected: the two button bars and the base.  To this selection, apply the “uv_hud_02_alphacut_base.png” texture.
+4. Using the “Edit Linked” function, select each individual prim of the doll and name them.  Refer to the “Parts List” and use the same names that you used with the weighted model).  Put it aside for the time being. 
 
-8. Turn the HUD 180 degrees back to its original position. Select the backdrop of the HUD mesh and apply the “uv_hud_02_alphacut_backboard.png” texture.
+5. Upload the HUD mesh: “OSRuth2_hud_01_alphacut.dae” found in the Mesh/06_uploads directory.
 
-9. Select the top button bar. Name it “buttonbar8.”  Select the next button bar down and name it “buttonbar7.”  Select the bottom button bar and name it “buttonbar6.”
+6. Rez it.  Using “Edit Linked,” shift-select the 3 prims making up the button bar.  Turn the HUD 180 degrees.  And continue shift-selecting the 3 prims making up the button bar on the reverse side.  Shift-select the base.  You now have 7 prims selected: the two button bars and the base.  To this selection, apply the “uv_hud_02_alphacut_base.png” texture.
 
-10. Turn the HUD 180 degrees.  Select the top button bar and name it “buttonbar5.”  The next “buttonbar4” and the bottom one: “buttonbar3”  (You’ll see the buttonbar naming convention on the parts list.).  Turn the HUD 180 degrees back to its original position.
+7. Turn the HUD 180 degrees back to its original position. Select the backdrop of the HUD mesh and apply the “uv_hud_02_alphacut_backboard.png” texture.
 
-11. Select the entire HUD mesh (but don’t link it yet).  Reduce the HUD's size so the static Ruth model will fit inside of it.
+8. Select the top button bar. Name it “buttonbar8.”  Select the next button bar down and name it “buttonbar7.”  Select the bottom button bar and name it “buttonbar6.”
 
-12.  Select all parts of the static Ruth model and move and position it between the button bars in the HUD mesh.  Adjust size if needed.
+9. Turn the HUD 180 degrees.  Select the top button bar and name it “buttonbar5.”  The next “buttonbar4” and the bottom one: “buttonbar3”  (You’ll see the buttonbar naming convention on the parts list.).  Turn the HUD 180 degrees back to its original position.
 
-13.  Now link everything.  Again, order is very important.  Follow the parts list.  Start with “armright” on the static model and work your way up the list until the base of the HUD mesh is the last to be linked.  (If you miss a prim along the way, the script won’t work, so you want to be methodical as you link the parts.)
+10. Select the entire HUD mesh.  Reduce the HUD's size so the doll will fit inside of it.  
+
+11.  Move the doll into the HUD, positioning it between the button bars in the HUD mesh.  Adjust size if needed.
+
+12.  Now un-link everything.  Unlink the HUD and the doll.
+
+13.  Start linking all the prims.  Again, order is very important.  Follow the parts list.  Start with “armright” on the doll and work your way up the list until the base of the HUD mesh is the last to be linked.  (If you miss a prim along the way, the script won’t work, so you want to be methodical as you link the parts.)
 
 14. Select the newly link HUD.  Create a new script.  Copy the “r2HUD_ac_trigger.lsl” from Mesh/04_LSL and paste it.
 
@@ -62,7 +71,7 @@ ALPHA HUD PROCEDURE
 
 16. Take the HUD to your inventory.  Then attach it as a HUD.
 
-17.  Wear your Ruth body mesh.  Try clicking the buttons on the HUD – or parts of the static model.   If everything has been assembled correctly, you’ll see those parts disappear on the Ruth body.  Clicking the "Re-set faces" button will make all part visible.  (Note that if after you click on “re-set faces,” you may see white on parts of the Ruth body.  That means you missed applying the texture to those areas.  You can correct it by editing the HUD and using “Edit Link” and “Select Face” and re-applying the appropriate texture for the body part. This happened to me on a number of occasions as I was working through the process.)
+17.  Wear your Ruth body mesh.  Try clicking the buttons on the HUD – or parts of the static model.   If everything has been assembled correctly, you’ll see those parts disappear on the Ruth body.  Clicking the "Re-set faces" button will make all parts visible.  (Note that if after you click on “re-set faces,” you may see white on parts of the Ruth body.  That means you missed applying the texture to those areas.  You can correct it by editing the HUD and using “Edit Link” and “Select Face” and re-applying the appropriate texture for the body part. This happened to me on a number of occasions as I was working through the process.)
 
 
 SKIN APPLIER HUD PROCEDURE
