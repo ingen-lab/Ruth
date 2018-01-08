@@ -1,0 +1,22 @@
+<Project name="Ruth HuD" guid="fbe3f058-dbf7-448b-86b5-e3a02fac180f">
+	<Object name="Object" guid="69a7e765-5e89-436a-937b-46c2df160e4c" active="true">
+		<Notecard name="alpha HUD command list.txt" guid="274a4622-1b89-43e6-a529-6984b0305f5d">
+		</Notecard>
+		<Notecard name="alpha HUD doll part list.txt" guid="82eb189d-19fa-4b9a-b833-b4096a341735">
+		</Notecard>
+		<Notecard name="alpha HUD part list.txt" guid="30bafda7-757b-4b92-a295-b40c9a942b41">
+		</Notecard>
+		<Script name="r2_body_receiver.lsl" guid="8eaaf75c-324e-4f17-9f5d-3eb90d484756">
+		</Script>
+		<Script name="r2_feet_receiver.lsl" guid="4816edac-3425-4496-855b-3defbb86d9bb">
+		</Script>
+		<Script name="r2_hand_receiver.lsl" guid="22ccc5bd-e9df-4d6c-a3cc-f9499523999c">
+		</Script>
+		<Script name="r2_head_receiver.lsl" guid="2e254655-fd51-40d9-8220-b044bb99105e">
+		</Script>
+		<Script name="r2HUD_ac_trigger.lsl" guid="d6a1c9a4-76ae-4817-b649-27d7b87170f9">
+		</Script>
+		<Script name="r2HUD_sa_trigger.lsl" guid="5e15e48e-4d02-4c85-9895-75158b1300eb">
+		</Script>
+	</Object>
+</Project>

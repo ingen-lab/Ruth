@@ -1,0 +1,3259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LSLEditor</name>
+    </assembly>
+    <members>
+        <member name="T:LSLEditor.About">
+            <summary>
+            About dialogue box form.
+            </summary>
+            <summary>
+            About dialogue box form.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.About.#ctor(LSLEditor.LSLEditorForm)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.About" /> class.
+            </summary>
+            <param name="parent">The parent form.</param>
+        </member>
+        <member name="M:LSLEditor.About.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            OK/Close button.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LSLEditor.About.linkLabel1_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            Link to SourceForge page.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LSLEditor.About.About_Load(System.Object,System.EventArgs)">
+            <summary>
+            Loads the page.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:LSLEditor.About.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.About.pictureBox1">
+            <summary>
+            Container for LSLife picture.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.About.groupBox1">
+            <summary>
+            Container to hold all the elements.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.About.button1">
+            <summary>
+            OK Button.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.About.linkLabel1">
+            <summary>
+            Link label.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.About.label1">
+            <summary>
+            Version label.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.About.label2">
+            <summary>
+            LSL Editor label.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.About.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">True if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.About.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Decompressor.BZip2Constants">
+            <summary>
+            Defines internal values for both compression and decompression
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.rNums">
+            <summary>
+            Random numbers used to randomise repetitive blocks
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.baseBlockSize">
+            <summary>
+            When multiplied by compression parameter (1-9) gives the block size for compression
+            9 gives the best compresssion but uses the most memory.
+            </summary>		
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.MAX_ALPHA_SIZE">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.MAX_CODE_LEN">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.RUNA">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.RUNB">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.N_GROUPS">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.G_SIZE">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.N_ITERS">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.MAX_SELECTORS">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Decompressor.BZip2Constants.NUM_OVERSHOOT_BYTES">
+            <summary>
+            Backend constant
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Decompressor.BZip2InputStream">
+            <summary>
+            An input stream that decompresses files in the BZip2 format 
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.#ctor(System.IO.Stream)">
+            <summary>
+            Construct instance for reading from stream
+            </summary>
+            <param name="stream">Data source</param>
+        </member>
+        <member name="P:LSLEditor.Decompressor.BZip2InputStream.IsStreamOwner">
+            <summary>
+            Get/set flag indicating ownership of underlying stream.
+            When the flag is true <see cref="M:LSLEditor.Decompressor.BZip2InputStream.Close"></see> will close the underlying stream also.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Decompressor.BZip2InputStream.CanRead">
+            <summary>
+            Gets a value indicating if the stream supports reading
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Decompressor.BZip2InputStream.CanSeek">
+            <summary>
+            Gets a value indicating whether the current stream supports seeking.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Decompressor.BZip2InputStream.CanWrite">
+            <summary>
+            Gets a value indicating whether the current stream supports writing.
+            This property always returns false
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Decompressor.BZip2InputStream.Length">
+            <summary>
+            Gets the length in bytes of the stream.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Decompressor.BZip2InputStream.Position">
+            <summary>
+            Gets or sets the streams position.
+            Setting the position is not supported and will throw a NotSupportException
+            </summary>
+            <exception cref="T:System.NotSupportedException">Any attempt to set the position</exception>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.Flush">
+            <summary>
+            Flushes the stream.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            Set the streams position.  This operation is not supported and will throw a NotSupportedException
+            </summary>
+            <exception cref="T:System.NotSupportedException">Any access</exception>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.SetLength(System.Int64)">
+            <summary>
+            Sets the length of this stream to the given value.
+            This operation is not supported and will throw a NotSupportedExceptionortedException
+            </summary>
+            <exception cref="T:System.NotSupportedException">Any access</exception>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Writes a block of bytes to this stream using data from a buffer.
+            This operation is not supported and will throw a NotSupportedException
+            </summary>
+            <exception cref="T:System.NotSupportedException">Any access</exception>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.WriteByte(System.Byte)">
+            <summary>
+            Writes a byte to the current position in the file stream.
+            This operation is not supported and will throw a NotSupportedException
+            </summary>
+            <param name="value">The value to write.</param>
+            <exception cref="T:System.NotSupportedException">Any access</exception>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Read a sequence of bytes and advances the read position by one byte.
+            </summary>
+            <param name="buffer">Array of bytes to store values in</param>
+            <param name="offset">Offset in array to begin storing data</param>
+            <param name="count">The maximum number of bytes to read</param>
+            <returns>The total number of bytes read into the buffer. This might be less
+            than the number of bytes requested if that number of bytes are not 
+            currently available or zero if the end of the stream is reached.
+            </returns>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.Close">
+            <summary>
+            Closes the stream, releasing any associated resources.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Decompressor.BZip2InputStream.ReadByte">
+            <summary>
+            Read a byte from stream advancing position
+            </summary>
+            <returns>byte read or -1 on end of stream</returns>
+        </member>
+        <member name="T:LSLEditor.Decompressor.IChecksum">
+            <summary>
+            Interface to compute a data checksum used by checked input/output streams.
+            A data checksum can be updated by one byte or with a byte array. After each
+            update the value of the current checksum can be returned by calling
+            <code>getValue</code>. The complete checksum object can also be reset
+            so it can be used again with new data.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Decompressor.IChecksum.Value">
+            <summary>
+            Returns the data checksum computed so far.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Decompressor.IChecksum.Reset">
+            <summary>
+            Resets the data checksum as if no update was ever called.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Decompressor.IChecksum.Update(System.Int32)">
+            <summary>
+            Adds one byte to the data checksum.
+            </summary>
+            <param name = "value">
+            the data value to add. The high byte of the int is ignored.
+            </param>
+        </member>
+        <member name="M:LSLEditor.Decompressor.IChecksum.Update(System.Byte[])">
+            <summary>
+            Updates the data checksum with the bytes taken from the array.
+            </summary>
+            <param name="buffer">
+            buffer an array of bytes
+            </param>
+        </member>
+        <member name="M:LSLEditor.Decompressor.IChecksum.Update(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Adds the byte array to the data checksum.
+            </summary>
+            <param name = "buffer">
+            The buffer which contains the data
+            </param>
+            <param name = "offset">
+            The offset in the buffer where the data starts
+            </param>
+            <param name = "count">
+            the number of data bytes to add.
+            </param>
+        </member>
+        <member name="T:LSLEditor.Decompressor.StrangeCRC">
+            <summary>
+            Bzip2 checksum algorithm
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Decompressor.StrangeCRC.#ctor">
+            <summary>
+            Initialise a default instance of <see cref="T:LSLEditor.Decompressor.StrangeCRC"></see>
+            </summary>	
+        </member>
+        <member name="M:LSLEditor.Decompressor.StrangeCRC.Reset">
+            <summary>
+            Reset the state of Crc.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Decompressor.StrangeCRC.Value">
+            <summary>
+            Get the current Crc value.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Decompressor.StrangeCRC.Update(System.Int32)">
+            <summary>
+            Update the Crc value.
+            </summary>
+            <param name="value">data update is based on</param>
+        </member>
+        <member name="M:LSLEditor.Decompressor.StrangeCRC.Update(System.Byte[])">
+            <summary>
+            Update Crc based on a block of data
+            </summary>		
+        </member>
+        <member name="M:LSLEditor.Decompressor.StrangeCRC.Update(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Update Crc based on a portion of a block of data
+            </summary>
+            <param name="buffer">block of data</param>
+            <param name="offset">index of first byte to use</param>
+            <param name="count">number of bytes to use</param>
+        </member>
+        <member name="P:LSLEditor.Docking.DockContentHandler.CloseButtonVisible">
+            <summary>
+            Determines whether the close button is visible on the content
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPanel.DockBackColor">
+            <summary>
+            Determines the color with which the client rectangle will be drawn.
+            If you take this property instead of the BackColor it will not have any influence on the borders to the surrounding controls (DockPane).
+            If you use BackColor the borders to the surrounding controls (DockPane) will also change there colors.
+            Alternatively you can use both of them (BackColor to draw the define the color of the borders and DockBackColor to define the color of the client rectangle). 
+            For Backgroundimages: Set your prefered Image, then set the DockBackColor and the BackColor to the same Color (Control)
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.DockPanel.DragHandlerBase">
+            <summary>
+            DragHandlerBase is the base class for drag handlers. The derived class should:
+              1. Define its public method BeginDrag. From within this public BeginDrag method,
+                 DragHandlerBase.BeginDrag should be called to initialize the mouse capture
+                 and message filtering.
+              2. Override the OnDragging and OnEndDrag methods.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.DockPanelSkin">
+            <summary>
+            The skin to use when displaying the DockPanel.
+            The skin allows custom gradient color schemes to be used when drawing the
+            DockStrips and Tabs.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPanelSkin.AutoHideStripSkin">
+            <summary>
+            The skin used to display the auto hide strips and tabs.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPanelSkin.DockPaneStripSkin">
+            <summary>
+            The skin used to display the Document and ToolWindow style DockStrips and Tabs.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.AutoHideStripSkin">
+            <summary>
+            The skin used to display the auto hide strip and tabs.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.AutoHideStripSkin.DockStripGradient">
+            <summary>
+            The gradient color skin for the DockStrips.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.AutoHideStripSkin.TabGradient">
+            <summary>
+            The gradient color skin for the Tabs.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.DockPaneStripSkin">
+            <summary>
+            The skin used to display the document and tool strips and tabs.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPaneStripSkin.DocumentGradient">
+            <summary>
+            The skin used to display the Document style DockPane strip and tab.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPaneStripSkin.ToolWindowGradient">
+            <summary>
+            The skin used to display the ToolWindow style DockPane strip and tab.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.DockPaneStripToolWindowGradient">
+            <summary>
+            The skin used to display the DockPane ToolWindow strip and tab.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPaneStripToolWindowGradient.ActiveCaptionGradient">
+            <summary>
+            The skin used to display the active ToolWindow caption.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPaneStripToolWindowGradient.InactiveCaptionGradient">
+            <summary>
+            The skin used to display the inactive ToolWindow caption.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.DockPaneStripGradient">
+            <summary>
+            The skin used to display the DockPane strip and tab.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPaneStripGradient.DockStripGradient">
+            <summary>
+            The gradient color skin for the DockStrip.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPaneStripGradient.ActiveTabGradient">
+            <summary>
+            The skin used to display the active DockPane tabs.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPaneStripGradient.InactiveTabGradient">
+            <summary>
+            The skin used to display the inactive DockPane tabs.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.TabGradient">
+            <summary>
+            The skin used to display the dock pane tab
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.TabGradient.TextColor">
+            <summary>
+            The text color.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.DockPanelGradient">
+            <summary>
+            The gradient color skin.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPanelGradient.StartColor">
+            <summary>
+            The beginning gradient color.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPanelGradient.EndColor">
+            <summary>
+            The ending gradient color.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.DockPanelGradient.LinearGradientMode">
+            <summary>
+            The gradient mode to display the colors.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.DocumentTabStripLocation">
+            <summary>
+            The location to draw the DockPaneStrip for Document style windows.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Docking.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.Category_Docking">
+            <summary>
+              Looks up a localized string similar to Docking.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.Category_DockingNotification">
+            <summary>
+              Looks up a localized string similar to Docking Notification.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.Category_PropertyChanged">
+            <summary>
+              Looks up a localized string similar to Property Changed.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockAreaEditor_FloatCheckBoxText">
+            <summary>
+              Looks up a localized string similar to (Float).
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_AllowEndUserDocking_Description">
+            <summary>
+              Looks up a localized string similar to Determines if end user drag and drop docking is allowed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_AutoHidePortion_Description">
+            <summary>
+              Looks up a localized string similar to The size to display the content in auto hide mode. Value &lt; 1 to specify the size in portion; value &gt;= 1 to specify the size in pixel..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_CloseButton_Description">
+            <summary>
+              Looks up a localized string similar to Enable/Disable the close button of the content..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_CloseButtonVisible_Description">
+            <summary>
+              Looks up a localized string similar to Shows or hides the close button of the content. This property does not function with System MDI Document Style..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_Constructor_InvalidForm">
+            <summary>
+              Looks up a localized string similar to The form must be of type IDockContent..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_DockAreas_Description">
+            <summary>
+              Looks up a localized string similar to Gets or sets a value indicating in which area of the DockPanel the content allowed to show..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_DockStateChanged_Description">
+            <summary>
+              Looks up a localized string similar to Occurs when the value of DockState property changed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_HideOnClose_Description">
+            <summary>
+              Looks up a localized string similar to Indicates the content will be hidden instead of being closed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_ShowHint_Description">
+            <summary>
+              Looks up a localized string similar to The desired docking state when first showing..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_TabPageContextMenu_Description">
+            <summary>
+              Looks up a localized string similar to Context menu displayed for the dock pane tab strip..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_TabText_Description">
+            <summary>
+              Looks up a localized string similar to The tab text displayed in the dock pane. If not set, the Text property will be used..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContent_ToolTipText_Description">
+            <summary>
+              Looks up a localized string similar to The text displayed when mouse hovers over the tab..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_AutoHidePortion_OutOfRange">
+            <summary>
+              Looks up a localized string similar to The provided value is out of range..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_DockAreas_InvalidValue">
+            <summary>
+              Looks up a localized string similar to Invalid Value: The value of DockAreas conflicts with current DockState..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_DockPane_InvalidValue">
+            <summary>
+              Looks up a localized string similar to The pane is invalid. Check the IsFloat and DockPanel properties of this dock pane..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_FloatPane_InvalidValue">
+            <summary>
+              Looks up a localized string similar to The pane is invalid. Check the IsFloat and DockPanel properties of this dock pane..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_IsFloat_InvalidValue">
+            <summary>
+              Looks up a localized string similar to Invalid value, conflicts with DockableAreas  property..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_SetDockState_InvalidState">
+            <summary>
+              Looks up a localized string similar to The dock state is invalid..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_SetDockState_NullPanel">
+            <summary>
+              Looks up a localized string similar to The dock panel is null..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_Show_InvalidBeforeContent">
+            <summary>
+              Looks up a localized string similar to Invalid beforeContent, it must be contained by the pane..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_Show_InvalidDockState">
+            <summary>
+              Looks up a localized string similar to Invalid DockState: Content can not be showed as &quot;Unknown&quot; or &quot;Hidden&quot;..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_Show_InvalidPrevPane">
+            <summary>
+              Looks up a localized string similar to The previous pane is invalid. It can not be null, and its docking state must not be auto-hide..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_Show_NullDockPanel">
+            <summary>
+              Looks up a localized string similar to DockPanel can not be null..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_Show_NullPane">
+            <summary>
+              Looks up a localized string similar to The Pane can not be null..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockContentHandler_ShowHint_InvalidValue">
+            <summary>
+              Looks up a localized string similar to Invalid value, check DockableAreas property..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockHandler_TabPageContextMenuStrip_Description">
+            <summary>
+              Looks up a localized string similar to Context menu displayed for the dock pane tab strip..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockIndicator_ToolTipText">
+            <summary>
+              Looks up a localized string similar to Press SHIFT for docking to full side..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_ActiveContent_InvalidValue">
+            <summary>
+              Looks up a localized string similar to Invalid Content: ActiveContent must be one of the visible contents, or null if there is no visible content..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_Constructor_NullContent">
+            <summary>
+              Looks up a localized string similar to Invalid argument: Content can not be &quot;null&quot;..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_Constructor_NullDockPanel">
+            <summary>
+              Looks up a localized string similar to Invalid argument: The content&apos;s DockPanel can not be &quot;null&quot;..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_DockTo_InvalidContainer">
+            <summary>
+              Looks up a localized string similar to The specified container conflicts with the IsFloat property..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_DockTo_NoPrevPane">
+            <summary>
+              Looks up a localized string similar to The previous pane does not exist in the nested docking pane collection..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_DockTo_NullContainer">
+            <summary>
+              Looks up a localized string similar to The container can not be null..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_DockTo_NullPrevPane">
+            <summary>
+              Looks up a localized string similar to The previous pane can not be null when the nested docking pane collection is not empty..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_DockTo_SelfPrevPane">
+            <summary>
+              Looks up a localized string similar to The previous pane can not be itself..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_FloatWindow_InvalidValue">
+            <summary>
+              Looks up a localized string similar to FloatWindow property can not be set to &quot;null&quot; when DockState is DockState.Float..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_SetContentIndex_InvalidContent">
+            <summary>
+              Looks up a localized string similar to Invalid Content: Content not within the collection..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_SetContentIndex_InvalidIndex">
+            <summary>
+              Looks up a localized string similar to Invalid Index: The index is out of range..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPane_SetDockState_InvalidState">
+            <summary>
+              Looks up a localized string similar to The state for the dock pane is invalid..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPaneCaption_ToolTipAutoHide">
+            <summary>
+              Looks up a localized string similar to Auto Hide.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPaneCaption_ToolTipClose">
+            <summary>
+              Looks up a localized string similar to Close.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPaneCaption_ToolTipOptions">
+            <summary>
+              Looks up a localized string similar to Options.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ActiveAutoHideContent_InvalidValue">
+            <summary>
+              Looks up a localized string similar to Invalid Content: The content must be auto-hide state and associates with this DockPanel..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ActiveContentChanged_Description">
+            <summary>
+              Looks up a localized string similar to Occurs when the value of ActiveContentProperty changed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ActiveDocumentChanged_Description">
+            <summary>
+              Looks up a localized string similar to Occurs when the value of ActiveDocument property changed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ActivePaneChanged_Description">
+            <summary>
+              Looks up a localized string similar to Occurs when the value of ActivePane property changed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_AllowEndUserDocking_Description">
+            <summary>
+              Looks up a localized string similar to Determines if the drag and drop docking is allowed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_AllowEndUserNestedDocking_Description">
+            <summary>
+              Looks up a localized string similar to Determines if the drag and drop nested docking is allowed..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ContentAdded_Description">
+            <summary>
+              Looks up a localized string similar to Occurs when a content added to the DockPanel..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ContentRemoved_Description">
+            <summary>
+              Looks up a localized string similar to Occurs when a content removed from the DockPanel..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DefaultFloatWindowSize_Description">
+            <summary>
+              Looks up a localized string similar to The default size of float window..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_Description">
+            <summary>
+              Looks up a localized string similar to Provides Visual Studio .Net style docking..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DockBottomPortion_Description">
+            <summary>
+              Looks up a localized string similar to Size of the bottom docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DockLeftPortion_Description">
+            <summary>
+              Looks up a localized string similar to Size of the left docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DockPanelSkin">
+            <summary>
+              Looks up a localized string similar to The visual skin to use when displaying the docked windows..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DockRightPortion_Description">
+            <summary>
+              Looks up a localized string similar to Size of the right docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DockTopPortion_Description">
+            <summary>
+              Looks up a localized string similar to Size of the top docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DocumentStyle_Description">
+            <summary>
+              Looks up a localized string similar to The style of the document window..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_DocumentTabStripLocation">
+            <summary>
+              Looks up a localized string similar to Determines where the tab strip for Document style content is drawn..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_LoadFromXml_AlreadyInitialized">
+            <summary>
+              Looks up a localized string similar to The DockPanel has already been initialized..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_LoadFromXml_InvalidFormatVersion">
+            <summary>
+              Looks up a localized string similar to The configuration file&apos;s version is invalid..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_LoadFromXml_InvalidXmlFormat">
+            <summary>
+              Looks up a localized string similar to The XML file format is invalid..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ParentForm_Invalid">
+            <summary>
+              Looks up a localized string similar to Invalid parent form. When using DockingMdi or SystemMdi document style, the DockPanel control must be the child control of the main MDI container form..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_Persistor_XmlFileComment1">
+            <summary>
+              Looks up a localized string similar to DockPanel configuration file. Author: Weifen Luo, all rights reserved..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_Persistor_XmlFileComment2">
+            <summary>
+              Looks up a localized string similar to !!! AUTOMATICALLY GENERATED FILE. DO NOT MODIFY !!!.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_RightToLeftLayout_Description">
+            <summary>
+              Looks up a localized string similar to Indicates whether the control layout is right-to-left when the RightToLeft property is set to Yes..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_SetPaneIndex_InvalidIndex">
+            <summary>
+              Looks up a localized string similar to Invalid Index: The index is out of range..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_SetPaneIndex_InvalidPane">
+            <summary>
+              Looks up a localized string similar to Invalid Pane: DockPane not within the collection..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPanel_ShowDocumentIcon_Description">
+            <summary>
+              Looks up a localized string similar to Determines if the document icon will be displayed in the tab strip..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPaneStrip_ToolTipClose">
+            <summary>
+              Looks up a localized string similar to Close.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.DockPaneStrip_ToolTipWindowList">
+            <summary>
+              Looks up a localized string similar to Window List.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.FloatWindow_Constructor_NullDockPanel">
+            <summary>
+              Looks up a localized string similar to Invalid argument: DockPanel can not be &quot;null&quot;..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.FloatWindow_SetPaneIndex_InvalidIndex">
+            <summary>
+              Looks up a localized string similar to Invalid Index: The index is out of range..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.FloatWindow_SetPaneIndex_InvalidPane">
+            <summary>
+              Looks up a localized string similar to Invalid Pane: DockPane not within the collection..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.Strings.IDockDragSource_DockTo_InvalidPanel">
+            <summary>
+              Looks up a localized string similar to Invalid DockPanel..
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Docking.VS2005DockPaneCaption.CloseButtonVisible">
+            <summary>
+            Determines whether the close button is visible on the content
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Docking.VS2005DockPaneStrip.CalculateTabs_Document">
+            <summary>
+            Calculate which tabs are displayed and in what order.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Helpers.PrinterHelper">
+            <summary>
+            Data Grid View Printer. Print functions for a datagridview, since MS
+            didn't see fit to do it.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.title">
+            <summary>
+            Title for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.titlefont">
+            <summary>
+            Font for the title. Default is Tahoma, 18pt.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.titlecolor">
+            <summary>
+            Foreground color for the title. Default is Black
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.titlealignment">
+            <summary>
+            Allow the user to override the title string alignment. Default value is
+            Alignment - Near;
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.titleformatflags">
+            <summary>
+            Allow the user to override the title string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.subtitle">
+            <summary>
+            SubTitle for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.subtitlefont">
+            <summary>
+            Font for the subtitle. Default is Tahoma, 12pt.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.subtitlecolor">
+            <summary>
+            Foreground color for the subtitle. Default is Black
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.subtitlealignment">
+            <summary>
+            Allow the user to override the subtitle string alignment. Default value is
+            Alignment - Near;
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.subtitleformatflags">
+            <summary>
+            Allow the user to override the subtitle string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.footer">
+            <summary>
+            footer for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.footerfont">
+            <summary>
+            Font for the footer. Default is Tahoma, 10pt.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.footercolor">
+            <summary>
+            Foreground color for the footer. Default is Black
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.footeralignment">
+            <summary>
+            Allow the user to override the footer string alignment. Default value is
+            Alignment - Center;
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.footerformatflags">
+            <summary>
+            Allow the user to override the footer string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.pageno">
+            <summary>
+            Include page number in the printout. Default is true.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.pagenofont">
+            <summary>
+            Font for the page number, Default is Tahoma, 8pt.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.pagenocolor">
+            <summary>
+            Text color (foreground) for the page number. Default is Black
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.pagenumberalignment">
+            <summary>
+            Allow the user to override the page number string alignment. Default value is
+            Alignment - Near;
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.pagenumberformatflags">
+            <summary>
+            Allow the user to override the pagenumber string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.pagenumberontop">
+            <summary>
+            Allow the user to select whether to have the page number at the top or bottom
+            of the page. Default is false: page numbers on the bottom of the page
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.pagenumberonseparateline">
+            <summary>
+            Should the page number be printed on a separate line, or printed on the
+            same line as the header / footer? Default is false;
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.PrinterHelper.printmargins">
+            <summary>
+            Page margins override. Default is (60, 60, 60, 60)
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.#ctor(System.Windows.Forms.PageSetupDialog)">
+            <summary>
+            Constructor for PrinterHelper
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.PrintEditForm(LSLEditor.EditForm)">
+            <summary>
+            Start the printing process, print to a printer.
+            </summary>
+            <param name="editForm">The EditForm to print</param>
+            NOTE: Any changes to this method also need to be done in PrintPreviewEditForm
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.PrintPreviewEditForm(LSLEditor.EditForm)">
+            <summary>
+            Start the printing process, print to a print preview dialog
+            </summary>
+            <param name="editForm">The EditForm to print</param>
+            NOTE: Any changes to this method also need to be done in PrintDataGridView
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.SetupPrint(System.Windows.Forms.PrintDialog)">
+            <summary>
+            Set up the print job. Save information from print dialog
+            and print document for easy access. Also sets up the rows
+            and columns that will be printed.
+            </summary>
+            <param name="pd">The print dialog the user just filled out</param>
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.managestringformat(System.Drawing.StringAlignment,System.Drawing.StringFormatFlags)">
+            <summary>
+            Centralize the string format settings. Does the work of checking for user
+            overrides, and if they're not present, setting the cell alignment to match
+            (somewhat) the source control's string alignment.
+            </summary>
+            <param name="alignment">String alignment</param>
+            <param name="flags">String format flags</param>
+            <param name="controlstyle">DataGridView style to apply (if available)</param>
+            <param name="overrideformat">True if user overrode alignment or flags</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.printDoc_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            PrintPage event handler. This routine prints one page. It will
+            skip non-printable pages if the user selected the "some pages" option
+            on the print dialog.
+            </summary>
+            <param name="sender">default object from windows</param>
+            <param name="e">Event info from Windows about the printing</param>
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.printsection(System.Drawing.Graphics,System.Single@,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.StringAlignment,System.Drawing.StringFormatFlags)">
+            <summary>
+            Print a header or footer section. Used for page numbers and titles
+            </summary>
+            <param name="g">Graphic context to print in</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="text">String to print</param>
+            <param name="font">Font to use for printing</param>
+            <param name="color">Color to print in</param>
+            <param name="alignment">Alignment - print to left, center or right</param>
+            <param name="flags">String format flags</param>
+            <param name="useroverride">True if the user overrode the alignment or flags</param>
+        </member>
+        <member name="M:LSLEditor.Helpers.PrinterHelper.printfooter(System.Drawing.Graphics,System.Single@)">
+            <summary>
+            Print the footer. This handles the footer spacing, and printing the page number
+            at the bottom of the page (if the page number is not in the header).
+            </summary>
+            <param name="g">Graphic context to print in</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+        </member>
+        <member name="T:LSLEditor.Helpers.TaskQueue">
+            <summary>
+            Represents an object that performs a certain action asynchronously, by using an internal buffer queue
+            and one internal thread.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.TaskQueue.WorkerThread">
+            <summary>Reference to the thread used to empty the queue</summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.TaskQueue.Tasks">
+            <summary>Internal queue that serves as buffer for required actions</summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.TaskQueue.SignalNewTask">
+            <summary>Used to signal the thread when a new object is added to the queue</summary>
+        </member>
+        <member name="F:LSLEditor.Helpers.TaskQueue.stop">
+            <summary>Flag that notifies that the object should be disposed</summary>
+        </member>
+        <member name="M:LSLEditor.Helpers.TaskQueue.#ctor">
+            <summary>Creates a new buffered object</summary>
+        </member>
+        <member name="M:LSLEditor.Helpers.TaskQueue.Worker">
+            <summary>Method executed by the internal thread to empty the queue</summary>
+        </member>
+        <member name="T:LSLEditor.Helpers.TaskQueue.Task">
+            <summary>The tasks being saved in the queue</summary>
+        </member>
+        <member name="F:LSLEditor.llTextBoxForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.llTextBoxForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.llTextBoxForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.SecondLife">
+            <summary>
+            This part of the SecondLife class initialises the constants for LSL.
+            </summary>
+            <summary>
+            This part of the SecondLife class contains the Event definitions.
+            </summary>
+            <summary>
+            This part of the SecondLife class contains the LSL function definitions.
+            </summary>
+            <summary>
+            This part of the SecondLife class defines the Float struct.
+            </summary>
+            <summary>
+            Partial definition of SecondLife class to handle running scripts.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.SecondLife.Float">
+            <summary>
+            A struct for Float objects.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.Float.objValue">
+            <summary>
+            Stores the Float value.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.SecondLife.Float.value">
+            <summary>
+            Gets or sets the value of the Float.
+            </summary>
+            <value>Gets or sets the objValue data member.</value>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.#ctor(System.Double)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLife.Float"/> struct.
+            </summary>
+            <param name="a"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLife.Float"/> struct.
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.GetHashCode">
+            <summary>
+            No idea of the intention here ;-).
+            </summary>
+            <returns>The Float value as a 32 bit number.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.ToString">
+            <summary>
+            Converts the Float to a string representation.
+            </summary>
+            <returns>String representation of the Float.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Explicit(LSLEditor.SecondLife.Float)~LSLEditor.SecondLife.String">
+            <summary>
+            Converts the Float to a string representation.
+            </summary>
+            <param name="x"></param>
+            <returns>String representation of the Float.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Implicit(LSLEditor.SecondLife.Float)~System.Double">
+            <summary>
+            Converts the Float to a string representation.
+            </summary>
+            <param name="x"></param>
+            <returns>String representation of the Float.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Explicit(System.String)~LSLEditor.SecondLife.Float">
+            <summary>
+            Creates a new instance of a Float from a string.
+            </summary>
+            <param name="s"></param>
+            <returns>A new Float instance.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Explicit(LSLEditor.SecondLife.String)~LSLEditor.SecondLife.Float">
+            <summary>
+            Creates a new instance of a Float from a String.
+            </summary>
+            <param name="s"></param>
+            <returns>A new Float instance.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Implicit(System.Int32)~LSLEditor.SecondLife.Float">
+            <summary>
+            Creates a new instance of a Float from an Int32 .
+            </summary>
+            <param name="x"></param>
+            <returns>A new Float instance.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Implicit(System.Int64)~LSLEditor.SecondLife.Float">
+            <summary>
+            Creates a new instance of a Float from a long.
+            </summary>
+            <param name="x"></param>
+            <returns>A new Float instance.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Implicit(System.Double)~LSLEditor.SecondLife.Float">
+            <summary>
+            Creates a new instance of a Float from a Double.
+            </summary>
+            <param name="x"></param>
+            <returns>A new Float instance.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Implicit(LSLEditor.SecondLife.integer)~LSLEditor.SecondLife.Float">
+            <summary>
+            Creates a new instance of a Float from an integer type.
+            </summary>
+            <param name="x"></param>
+            <returns>A new Float instance.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Multiply(LSLEditor.SecondLife.Float,LSLEditor.SecondLife.Float)">
+            <summary>
+            Calculates the result of multiplying a and b.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>The product of a and b.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Division(LSLEditor.SecondLife.Float,LSLEditor.SecondLife.Float)">
+            <summary>
+            Calculates the result of dividing a by b.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>The result of dividing a by b.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Increment(LSLEditor.SecondLife.Float)">
+            <summary>
+            Calculates the result of incrementing the Float's value.
+            </summary>
+            <param name="a"></param>
+            <returns>The result of incrementing the Float's value.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Decrement(LSLEditor.SecondLife.Float)">
+            <summary>
+            Calculates the result of decrementing the Float's value.
+            </summary>
+            <param name="a"></param>
+            <returns>The result of decrementing the Float's value.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Addition(LSLEditor.SecondLife.Float,LSLEditor.SecondLife.Float)">
+            <summary>
+            Calculates the result of adding a to b.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>The result of adding a to b.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Subtraction(LSLEditor.SecondLife.Float,LSLEditor.SecondLife.Float)">
+            <summary>
+            Calculates the result of subtracting a from b.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>The result of subtracting a from b.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Explicit(LSLEditor.SecondLife.Float)~System.Boolean">
+            <summary>
+            Casts the Float to a boolean.
+            </summary>
+            <param name="a"></param>
+            <returns>A boolean value.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_True(LSLEditor.SecondLife.Float)">
+            <summary>
+            Defines a boolean true value.
+            </summary>
+            <param name="a"></param>
+            <returns>A boolean indicating whether the value is considered true.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_False(LSLEditor.SecondLife.Float)">
+            <summary>
+            Defines a boolean false value.
+            </summary>
+            <param name="a"></param>
+            <returns>A boolean indicating whether the value is considered false.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Equality(LSLEditor.SecondLife.Float,LSLEditor.SecondLife.Float)">
+            <summary>
+            Defines the equality operator.
+            </summary>
+            <param name="x">First operand.</param>
+            <param name="y">Second operand.</param>
+            <returns>A boolean value indicating equality.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.op_Inequality(LSLEditor.SecondLife.Float,LSLEditor.SecondLife.Float)">
+            <summary>
+            Defines the inequality operator.
+            </summary>
+            <param name="x">First operand.</param>
+            <param name="y">Second operand.</param>
+            <returns>A boolean value indicating inequality.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.Compare(LSLEditor.SecondLife.Float,LSLEditor.SecondLife.Float)">
+            <summary>
+            Compares two Floats.
+            </summary>
+            <param name="a">First operand.</param>
+            <param name="b">Second operand.</param>
+            <returns>An integer (-1, 0, or 1), indicating whether the first item is less than, same as, or greater than the second.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Float.Equals(System.Object)">
+            <summary>
+            Defines the Equals operator.
+            </summary>
+            <param name="o"></param>
+            <returns>A boolean value indicating equality.</returns>
+        </member>
+        <member name="F:LSLEditor.SecondLife.slhHost">
+            <summary>
+            Holds the host object.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.rdmRandom">
+            <summary>
+            Random generator.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.dtDateTimeScriptStarted">
+            <summary>
+            Holds the time of the script starting execution.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.blnAllowDrop">
+            <summary>
+            Contains a boolean value indicating whether this object accepts other items to be dropped into it.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.htLandPassList">
+            <summary>
+            Contains a list of keys of avatars that may enter a parcel.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.htLandBanList">
+            <summary>
+            Contains a list of keys of avatars that may NOT enter a parcel.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.fVolume">
+            <summary>
+            Volume of sound played by this prim.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.sObjectName">
+            <summary>
+            Name of the object/prim.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.sParcelMusicURL">
+            <summary>
+            URL for parcel's music stream.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.vPosition">
+            <summary>
+            Position of object/prim  placement in a simulator.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.rRotation">
+            <summary>
+            Rotation of the object/prim's placement in the simulator.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.rRotationlocal">
+            <summary>
+            Local rotation of the prim with respect to the object root.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.vScale">
+            <summary>
+            Scale of the object/prim.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.sSitText">
+            <summary>
+            Text for the "Sit" entry on object menu.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.fSoundRadius">
+            <summary>
+            Radius that sound may be heard around the object/prim.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.vRegionCorner">
+            <summary>
+            Region Coordinates of the simulator's bottom-left corner.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.iStartParameter">
+            <summary>
+            Parameter passed to the script on start up.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLife.#ctor">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLife"/> class.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.SecondLife.GetLocalPos">
+            <summary>
+            Gets the position of the object within the simulator.
+            </summary>
+            <value>Gets the vPosition data member.</value>
+        </member>
+        <member name="P:LSLEditor.SecondLife.host">
+            <summary>
+            Gets or sets the SecondLifeHost object.
+            </summary>
+            <value>The host property gets/sets the slhHost data member.</value>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Verbose(System.String,System.Object[])">
+            <summary>
+            Outputs messages during execution of the script.
+            </summary>
+            <param name="strLine">The text (with possible placeholders) to be output.</param>
+            <param name="parameters">Values to be put into corresponding placeholders.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Chat(LSLEditor.SecondLife.integer,System.String,LSLEditor.CommunicationType)">
+            <summary>
+            Wrapper to call the SecondLifeHost.Chat method.
+            </summary>
+            <param name="iChannel">Channel for message to be sent on.</param>
+            <param name="sText">Text of message to send.</param>
+            <param name="ctHow">Type of communication (from CommunicationType enumerator).</param>
+        </member>
+        <member name="M:LSLEditor.SecondLife.state(System.String)">
+            <summary>
+            Method to trigger change in script state.
+            </summary>
+            <param name="strStateName">Name of state to switch to.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLife.CorrectIt(System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            Takes the possibly negative value list indexes and corrects them to be absolute indexes.
+            </summary>
+            <param name="intLength">Length of list.</param>
+            <param name="intStart">Start index.</param>
+            <param name="intEnd">End index.</param>
+            <returns>True, unless an error occurred, then false.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.RandomShuffle(System.Collections.ArrayList)">
+            <summary>
+            Randomly rearranges the list of items.
+            </summary>
+            <param name="alCollection">List to shuffle.</param>
+            <returns>The reordered list.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.List2Buckets(LSLEditor.SecondLife.list,System.Int32)">
+            <summary>
+            Convert a list into an array of buckets containing Stride elements.
+            </summary>
+            <param name="lSource">List of items.</param>
+            <param name="intStride">Number of element for each bucket.</param>
+            <returns>The list separated into elements of Stride length.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Buckets2List(System.Collections.ArrayList,System.Int32)">
+            <summary>
+            Converts buckets back into a list.
+            </summary>
+            <param name="alBuckets">Array of buckets.</param>
+            <param name="intStride">Stride value.</param>
+            <returns>The items recombined into a simple list.</returns>
+        </member>
+        <member name="T:LSLEditor.SecondLife.BucketComparer">
+            <summary>
+            Implements the Comparer Interface for our custom types (Float, Integer, and String).
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLife.BucketComparer.iAscending">
+            <summary>
+            True/false parameter indicating whether the comparison should be done in ascending or descending order.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLife.BucketComparer.#ctor(LSLEditor.SecondLife.integer)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLife.BucketComparer"/> class.
+            </summary>
+            <param name="ascending"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLife.BucketComparer.Compare(System.Object,System.Object)">
+            <summary>
+            Perform the comparison between two objects.
+            </summary>
+            <param name="x">First object.</param>
+            <param name="y">Second object.</param>
+            <returns>An integer (-1, 0, or 1), indicating whether the first item is less than, same as, or greater than the second.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.ParseString(LSLEditor.SecondLife.String,LSLEditor.SecondLife.list,LSLEditor.SecondLife.list,System.Boolean)">
+            <summary>
+            Takes a string and splits it into a list based upon separators (which are not kept) and spacers (which are).
+            </summary>
+            <param name="sSource">The source text.</param>
+            <param name="lSeparators">Separators to split on.</param>
+            <param name="lSpacers">Spacers to split on.</param>
+            <param name="blnKeepNulls">True/false indicating whether nulls are kept in the resulting list.</param>
+            <returns>A new list of the split string.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.StringToBase64(System.String)">
+            <summary>
+            Convert string to Base64 representation.
+            </summary>
+            <param name="strText">Source string.</param>
+            <returns>Base64 encoding of the source string.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.Base64ToString(System.String)">
+            <summary>
+            Converts Base64 encoded string back to UTF-8.
+            </summary>
+            <param name="strText">Base64 encoded string.</param>
+            <returns>UTF-8 string.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.LookupBase64(System.String,System.Int32)">
+            <summary>
+            Performs the lookup.
+            </summary>
+            <param name="s">String source.</param>
+            <param name="intIndex">Byte within string.</param>
+            <returns>The Base64 value of the element.</returns>
+        </member>
+        <member name="F:LSLEditor.SecondLife.FastLookupBase64">
+            <summary>
+            Pre-generated matrix for quicker lookup.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLife.ModPow1(LSLEditor.SecondLife.integer,LSLEditor.SecondLife.integer,LSLEditor.SecondLife.integer)">
+            <summary>
+            Performs (iA ** iB) % iC.
+            </summary>
+            <param name="iA">Base value.</param>
+            <param name="iB">Exponent value .</param>
+            <param name="iC">Modulus value.</param>
+            <returns>The calculated result.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.ModPow2(LSLEditor.SecondLife.integer,LSLEditor.SecondLife.integer,LSLEditor.SecondLife.integer)">
+            <summary>
+            Performs the llModPow2() function.
+            </summary>
+            <param name="iValueX">Value one.</param>
+            <param name="iValueY">Value two.</param>
+            <param name="iModulus">The modulus value.</param>
+            <returns>The calculated result.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.GetListOfNumbers(LSLEditor.SecondLife.list)">
+            <summary>
+            Used by llListStatistics in generating the statistics.
+            </summary>
+            <param name="lInput">List of numbers (mixed types possible) to use.</param>
+            <returns>The numbers added together as a Float type.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.GetAverage(System.Double[])">
+            <summary>
+            Calculates the mean of the supplied numbers.
+            </summary>
+            <param name="data">Array of numbers.</param>
+            <returns>The mean of the supplied numbers as a double type.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.GetStandardDeviation(System.Double[])">
+            <summary>
+            Calculates standard deviation.
+            </summary>
+            <param name="dblNumbers">Array of numbers to work with.</param>
+            <returns>The standard deviation of the supplied numbers as a double type.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.SafeDivide(System.Double,System.Double)">
+            <summary>
+            Performs division, only if both values are non-zero.
+            </summary>
+            <param name="dblValue1">First number.</param>
+            <param name="dblValue2">Second number.</param>
+            <returns>The result of the division, or zero if not performed.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLife.HexToInt(System.Byte)">
+            <summary>
+            Takes a hexadecimal representation of a number and coverts it to an integer.
+            </summary>
+            <param name="b">Byte to convert.</param>
+            <returns>Integer value of the supplied byte.</returns>
+        </member>
+        <member name="F:LSLEditor.Solution.GuidProperty.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Solution.GuidProperty.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Solution.GuidProperty.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Solution.SolutionExplorer.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Solution.SolutionExplorer.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Solution.SolutionExplorer.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Solution.SvnAguments.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Solution.SvnAguments.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Solution.SvnAguments.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.NewProject.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.NewProject.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.NewProject.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.PermissionsForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.PermissionsForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.PermissionsForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.GotoWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.GotoWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.GotoWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Editor.Numbered.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Editor.Numbered.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Editor.Numbered.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.TooltipWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.TooltipWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.TooltipWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.GListBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.GListBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.GListBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.GListBoxWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.GListBoxWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.GListBoxWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.RichLabel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.RichLabel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.RichLabel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.llDialogForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.llDialogForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.llDialogForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Browser.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Browser.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Browser.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.EditForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.EditForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.EditForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.FindWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.FindWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.FindWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.LSLEditorForm.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.LSLEditorForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.LSLEditorForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.LSLEditorForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.ADDITEM">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.COPY">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.CUT">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.DEINDENT">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.DELETE">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.END">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.FIND">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.ININDENT">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.logo">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.NEWDOC">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.NEWPROJ">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.OPEN">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.PASTE">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.PRINT">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.PROJECT">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.PROPS">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.REDO">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.SAVE">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.SAVEAS">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.START">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:LSLEditor.Properties.Resources.UNDO">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.GroupboxEvent">
+            <summary>
+            Summary description for GroupboxTextbox.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.GroupboxEvent.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.GroupboxEvent.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.GroupboxEvent.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.LSL2CSharp.Parse(System.String)">
+            <summary>
+            This Class translates LSL script into CSharp code
+            </summary>
+            <param name="strLSLCode">LSL scripting code</param>
+            <returns>CSHarp code</returns>
+        </member>
+        <member name="F:LSLEditor.RuntimeConsole.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.RuntimeConsole.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.RuntimeConsole.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHostEventArgs">
+            <summary>
+            Represents an event with a single string argument.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostEventArgs.Message">
+            <summary>
+            Stores the text of the message.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHostEventArgs.#ctor(System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLifeHostEventArgs"/> class.
+            </summary>
+            <param name="strMessage">String Text.</param>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHostMessageLinkedEventArgs">
+            <summary>
+            Represents a linked message event.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostMessageLinkedEventArgs.LinkIndex">
+            <summary>
+            Stores the index of the sending link.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostMessageLinkedEventArgs.Number">
+            <summary>
+            Stores a 32 bit numerical value.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostMessageLinkedEventArgs.Text">
+            <summary>
+            Stores a text string.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostMessageLinkedEventArgs.ID">
+            <summary>
+            Stores a key.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHostMessageLinkedEventArgs.#ctor(LSLEditor.SecondLife.integer,LSLEditor.SecondLife.integer,LSLEditor.SecondLife.String,LSLEditor.SecondLife.key)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLifeHostMessageLinkedEventArgs"/> class.
+            </summary>
+            <param name="iLinkIndex"></param>
+            <param name="iNumber"></param>
+            <param name="sText"></param>
+            <param name="kID"></param>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHostChatEventArgs">
+            <summary>
+            Represents a chat event.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostChatEventArgs.Channel">
+            <summary>
+            Stores the 32-bit number of the channel.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostChatEventArgs.Name">
+            <summary>
+            Stores the name of the object/avatar.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostChatEventArgs.ID">
+            <summary>
+            Stores the key of the objewct/avatar.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostChatEventArgs.Message">
+            <summary>
+            Stores the text of the message.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHostChatEventArgs.How">
+            <summary>
+            Stores the type of communication the event represents.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHostChatEventArgs.#ctor(LSLEditor.SecondLife.integer,LSLEditor.SecondLife.String,LSLEditor.SecondLife.key,LSLEditor.SecondLife.String,LSLEditor.CommunicationType)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLifeHostChatEventArgs"/> class.
+            </summary>
+            <param name="channel">Channel to communicate on. Some communication types have channel limitations.</param>
+            <param name="name">Name of object/avatar.</param>
+            <param name="id">UUID of object/avatar.</param>
+            <param name="message">Text of message.</param>
+            <param name="how">Type of communication (CommunicationType enum).</param>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost">
+            <summary>
+            SecondLifeHost class.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.lstListenFilter">
+            <summary>
+            Stores a list of ListenFilters
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.lstLinks">
+            <summary>
+            Stores a list of the links in an object.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.slSecondLife">
+            <summary>
+            Stores the SecondLife object representing the script.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.tqTaskQueue">
+            <summary>
+            not sure?
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.areStateChanged">
+            <summary>
+            Flag indicating an event has occurred.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.tStateWatcher">
+            <summary>
+            Stores and controls a thread?.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.efMainForm">
+            <summary>
+            An editor form?
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.assCompiledAssembly">
+            <summary>
+            A compiled assembly of the LSL script.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.FullPath">
+            <summary>
+            Stores the path to the script (including script name).
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.GUID">
+            <summary>
+            Stores globally unique ID.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.SecondLifeHostMessageHandler">
+            <summary>
+            Stores SecondLifeHostMessageHandler function.
+            </summary>
+            <param name="sender">Sender of message.</param>
+            <param name="e">SecondLifeHostEventArgs object.</param>
+        </member>
+        <member name="E:LSLEditor.SecondLifeHost.OnVerboseMessage">
+            <summary>
+            OnVerboseMessage event handler.
+            </summary>
+        </member>
+        <member name="E:LSLEditor.SecondLifeHost.OnStateChange">
+            <summary>
+            OnStateChange event handler.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.SecondLifeHostChatHandler">
+            <summary>
+            Stores SecondLifeHostChatHandler function.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">SecondLifeHostChatEventArgs object.</param>
+        </member>
+        <member name="E:LSLEditor.SecondLifeHost.OnChat">
+            <summary>
+            OnChat event handler.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.SecondLifeHostMessageLinkedHandler">
+            <summary>
+            Stores SecondLifeHostMessageLinkedHandler function.
+            </summary>
+            <param name="sender">The caller.</param>
+            <param name="e">SecondLifeHostMessageLinkedEventArgs object.</param>
+        </member>
+        <member name="E:LSLEditor.SecondLifeHost.OnMessageLinked">
+            <summary>
+            OnMessageLinked event handler.
+            </summary>
+        </member>
+        <member name="E:LSLEditor.SecondLifeHost.OnDie">
+            <summary>
+            OnDie event handler.
+            </summary>
+        </member>
+        <member name="E:LSLEditor.SecondLifeHost.OnReset">
+            <summary>
+            OnReset event handler.
+            </summary>
+        </member>
+        <member name="E:LSLEditor.SecondLifeHost.OnListenChannelsChanged">
+            <summary>
+            OnListenChannelsChanged event handler.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.Timer">
+            <summary>
+            Stores a timer.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.SensorTimer">
+            <summary>
+            Stores the timer for a Sensor event.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.CurrentStateName">
+            <summary>
+            Name of currently active state.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.strNewStateName">
+            <summary>
+            Name of state to switch to.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.strObjectName">
+            <summary>
+            Name of the containing object/prim.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.strObjectDescription">
+            <summary>
+            Description of the containing object/prim.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.#ctor(LSLEditor.LSLEditorForm,System.Reflection.Assembly,System.String,System.Guid)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLifeHost"/> class.
+            </summary>
+            <param name="mainForm">Editor form this host is atached to.</param>
+            <param name="assCompiledAssembly">Assembly of the compiled script.</param>
+            <param name="strFullPath">Full path (including file name) to the script.</param>
+            <param name="guid">UUID of the containing object?</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Performs the timer event?
+            </summary>
+            <param name="sender">The caller.</param>
+            <param name="e">ElapsedEventArgs object.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.StateWatch">
+            <summary>
+            Watches for the flag to switch state, and enacts the change when needed.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.State(System.String,System.Boolean)">
+            <summary>
+            Raises the flag for switching state. If the Force argument is true it ensures a state change.
+            </summary>
+            <param name="strStateName"></param>
+            <param name="blnForce"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.SetState">
+            <summary>
+            Initialises a new state.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetArgumentsFromMethod(System.String)">
+            <summary>
+            Gets a methods arguments using reflection.
+            </summary>
+            <param name="strName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.VerboseEvent(System.String,System.Object[])">
+            <summary>
+            Runtime output of LSL event info.
+            </summary>
+            <param name="strEventName"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.ExecuteSecondLife(System.String,System.Object[])">
+            <summary>
+            Queue the method for execution.
+            </summary>
+            <param name="strName">Some method (is it event or state?).</param>
+            <param name="args">Array of arguments for the method.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetEvents">
+            <summary>
+            Fetches the names of all events (limited to current state?) in the script.
+            </summary>
+            <returns>List of events.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Reset">
+            <summary>
+            Reset the script?
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Die">
+            <summary>
+            Stop executing the script. Resets the queue, timer etc. first.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Dispose">
+            <summary>
+            Disposal method. Resets the Queue, Sensor, Timer, XMLRPC, etc.
+            </summary>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.Link">
+            <summary>
+            The Link structure holds data used in Link Messaging.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.Link.Number">
+            <summary>
+            Data - 32 bit integer.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.Link.Text">
+            <summary>
+            Data - string.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.Link.ID">
+            <summary>
+            Data - SL key.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.Link.Target">
+            <summary>
+            Destination for the data.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Link.#ctor(System.Int32,System.String,LSLEditor.SecondLife.key,LSLEditor.SecondLife.key)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLifeHost.Link"/> type.
+            </summary>
+            <param name="number">32 bit integer data.</param>
+            <param name="name">string data.</param>
+            <param name="id">SL key data.</param>
+            <param name="target">Destination for the message.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llBreakAllLinks">
+            <summary>
+            Resets the link list, "breaking" them.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llBreakLink(System.Int32)">
+            <summary>
+            Removes the specified Link from the list.
+            </summary>
+            <param name="iLinkIndex">The index number of the link to remove.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetListenChannels">
+            <summary>
+            Fetches the names of the ListenFilters.
+            </summary>
+            <returns>Array of ListenFilter names.</returns>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.ListenFilter">
+            <summary>
+            ListenFilter type structure.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.ListenFilter.Channel">
+            <summary>
+            Channel to listen on.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.ListenFilter.Name">
+            <summary>
+            Name of object/avatar to listen for.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.ListenFilter.ID">
+            <summary>
+            Key of object/avatar to listen for.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.ListenFilter.Message">
+            <summary>
+            Text from object/avatar to listen for.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.ListenFilter.Active">
+            <summary>
+            Flag indicating whether this filter is enabled or not.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.ListenFilter.#ctor(System.Int32,System.String,LSLEditor.SecondLife.key,System.String)">
+            <summary>
+            Initialises a new instance of the <see cref="T:LSLEditor.SecondLifeHost.ListenFilter"/> type.
+            </summary>
+            <param name="channel">Channel to listen to (required).</param>
+            <param name="name">Name to listen for (can be empty).</param>
+            <param name="id">UUID to listen for (can be empty/null).</param>
+            <param name="message">Text to listen for (can be empty).</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llListenControl(System.Int32,System.Int32)">
+            <summary>
+            Control for a ListenFilter
+            </summary>
+            <param name="number">32 bit integer handle of the ListenFilter.</param>
+            <param name="active">Flag indicating whether to enable or disable.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llListenRemove(System.Int32)">
+            <summary>
+            Removes a ListenFilter from the list.
+            </summary>
+            <param name="intHandle">32 bit integer handle of the ListenFilter.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llListen(System.Int32,System.String,LSLEditor.SecondLife.key,System.String)">
+            <summary>
+            Creates a ListenFilter from the llListen paramters.
+            </summary>
+            <param name="channel">Channel to listen ot.</param>
+            <param name="name">Name of object/avatar to listen for.</param>
+            <param name="id">Key of object/avatar to listen for.</param>
+            <param name="message">Text from object/avatar to listen for.</param>
+            <returns>32 bit integer handle.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.CheckListenFilter(System.Int32,System.String,LSLEditor.SecondLife.key,System.String)">
+            <summary>
+            Determines whether paremeters have a matching ListenFilter entry.
+            </summary>
+            <param name="channel"></param>
+            <param name="name"></param>
+            <param name="id"></param>
+            <param name="message"></param>
+            <returns>True if a matche is found, otherwise false.</returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Listen(LSLEditor.SecondLifeHostChatEventArgs)">
+            <summary>
+            // sink listen
+            </summary>
+            <param name="e">SecondLifeHostChatEventArgs object.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Chat(System.Object,System.Int32,System.String,LSLEditor.SecondLife.key,System.String,LSLEditor.CommunicationType)">
+            <summary>
+            Raise a chat event.
+            </summary>
+            <param name="sender"></param>
+            <param name="channel">Channel to send message on.</param>
+            <param name="name">Name of sender.</param>
+            <param name="id">Key of sender.</param>
+            <param name="message">Message to send.</param>
+            <param name="how">CommunicatioType enumerator value.</param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.MessageLinked(LSLEditor.SecondLife.integer,LSLEditor.SecondLife.integer,LSLEditor.SecondLife.String,LSLEditor.SecondLife.key)">
+            <summary>
+            Raise a linked message event.
+            </summary>
+            <param name="iLlinkIndex"></param>
+            <param name="iNumber"></param>
+            <param name="sText"></param>
+            <param name="kID"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.LinkMessage(LSLEditor.SecondLifeHostMessageLinkedEventArgs)">
+            <summary>
+            // sink
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Http(System.String,LSLEditor.SecondLife.list,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strURL"></param>
+            <param name="lParameters"></param>
+            <param name="strBody"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Email(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strRecipient"></param>
+            <param name="strSubject"></param>
+            <param name="strBody"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.VerboseMessage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strMessage"></param>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.ShowDialogDelegate">
+            <summary>
+            
+            </summary>
+            <param name="host"></param>
+            <param name="objectName"></param>
+            <param name="k"></param>
+            <param name="name"></param>
+            <param name="message"></param>
+            <param name="buttons"></param>
+            <param name="channel"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.Dialog(LSLEditor.SecondLifeHost,LSLEditor.SecondLife.String,LSLEditor.SecondLife.key,LSLEditor.SecondLife.String,LSLEditor.SecondLife.String,LSLEditor.SecondLife.list,LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="host"></param>
+            <param name="objectName"></param>
+            <param name="k"></param>
+            <param name="name"></param>
+            <param name="message"></param>
+            <param name="buttons"></param>
+            <param name="channel"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llDialog(LSLEditor.SecondLife.key,LSLEditor.SecondLife.String,LSLEditor.SecondLife.list,LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="avatar"></param>
+            <param name="message"></param>
+            <param name="buttons"></param>
+            <param name="channel"></param>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.ShowTextBoxDelegate">
+            <summary>
+            
+            </summary>
+            <param name="host"></param>
+            <param name="objectName"></param>
+            <param name="k"></param>
+            <param name="name"></param>
+            <param name="message"></param>
+            <param name="channel"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.TextBox(LSLEditor.SecondLifeHost,LSLEditor.SecondLife.String,LSLEditor.SecondLife.key,LSLEditor.SecondLife.String,LSLEditor.SecondLife.String,LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="host"></param>
+            <param name="objectName"></param>
+            <param name="k"></param>
+            <param name="name"></param>
+            <param name="message"></param>
+            <param name="channel"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llTextBox(LSLEditor.SecondLife.key,LSLEditor.SecondLife.String,LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="avatar"></param>
+            <param name="message"></param>
+            <param name="channel"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.SetPermissions(LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="intPermissions"></param>
+        </member>
+        <member name="T:LSLEditor.SecondLifeHost.RequestPermissionsDelegate">
+            <summary>
+            
+            </summary>
+            <param name="host"></param>
+            <param name="objectName"></param>
+            <param name="k"></param>
+            <param name="name"></param>
+            <param name="agent"></param>
+            <param name="intPermissions"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.RequestPermissions(LSLEditor.SecondLifeHost,LSLEditor.SecondLife.String,LSLEditor.SecondLife.key,LSLEditor.SecondLife.String,LSLEditor.SecondLife.key,LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="host"></param>
+            <param name="objectName"></param>
+            <param name="k"></param>
+            <param name="name"></param>
+            <param name="agent"></param>
+            <param name="intPermissions"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llRequestPermissions(LSLEditor.SecondLife.key,LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="agent"></param>
+            <param name="intPermissions"></param>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.intControls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.SendControl(System.Windows.Forms.Keys)">
+            <summary>
+            
+            </summary>
+            <param name="keys"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.TakeControls(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="intControls"></param>
+            <param name="accept"></param>
+            <param name="pass_on"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.ReleaseControls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetNotecardLineWorker(LSLEditor.SecondLife.key,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="k"></param>
+            <param name="strPath"></param>
+            <param name="line"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetNotecardLine(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetNumberOfNotecardLinesWorker(LSLEditor.SecondLife.key,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="k"></param>
+            <param name="strPath"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetNumberOfNotecardLines(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="F:LSLEditor.SecondLifeHost.listXmlRpc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llOpenRemoteDataChannel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.xmlRpc_OnRequest(System.Object,LSLEditor.Helpers.XmlRpcRequestEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llCloseRemoteDataChannel(LSLEditor.SecondLife.key)">
+            <summary>
+            
+            </summary>
+            <param name="channel"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llRemoteDataReply(LSLEditor.SecondLife.key,LSLEditor.SecondLife.key,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="channel"></param>
+            <param name="message_id"></param>
+            <param name="sdata"></param>
+            <param name="idata"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.llSendRemoteData(LSLEditor.SecondLife.key,System.String,System.Int32,System.String)">
+            <summary>
+            // Wiki sais this is not working in InWorld
+            </summary>
+            <param name="kChannelID"></param>
+            <param name="dest"></param>
+            <param name="idata"></param>
+            <param name="sdata"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.xmlRpc_OnReply(System.Object,LSLEditor.Helpers.XmlRpcRequestEventArgs)">
+            <summary>
+            // Wiki sais currently disabled
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetObjectName(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetObjectName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.SetObjectName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetObjectDescription(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetObjectDescription">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.SetObjectDescription(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="description"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetScriptName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetInventoryName(LSLEditor.SecondLife.integer,LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetInventoryKey(LSLEditor.SecondLife.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetInventoryNumber(LSLEditor.SecondLife.integer)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetInventoryType(LSLEditor.SecondLife.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.RemoveInventory(LSLEditor.SecondLife.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.GetSoundPlayer(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sound"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSLEditor.SecondLifeHost.sensor_timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:LSLEditor.SmtpClient">
+            <summary>
+            provides methods to send email via smtp direct to mail server
+            http://www.ietf.org/rfc/rfc0821.txt
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SmtpClient.SmtpServer">
+            <summary>
+            Get / Set the name of the SMTP mail server
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SyntaxRichTextBox.OnTextChanged(System.EventArgs)">
+             
+             OnTextChanged
+            
+        </member>
+        <member name="M:LSLEditor.SyntaxRichTextBox.ColorLine(System.Int32,System.Int32)">
+            
+            Color a line
+            
+        </member>
+        <member name="T:LSLEditor.CommunicationType">
+            <summary>
+            Enumeration of Communication Types that the host understands.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.CommunicationType.Whisper">
+            <summary>
+            Indicates the message can be heard only within 5m.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.CommunicationType.Say">
+            <summary>
+            Indicates the message can be heard only within 20m.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.CommunicationType.Shout">
+            <summary>
+            Indicates the message can be heard only within 100m.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.CommunicationType.OwnerSay">
+            <summary>
+            Indicates the message can be only heard by the owner any where within the same simulator.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.CommunicationType.RegionSay">
+            <summary>
+            Indicates the message can be heard any where within the same simulator.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.CommunicationType.RegionSayTo">
+            <summary>
+            Indicates the message can be heard any where within the same simulator, by a specific object.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SimulatorConsole.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SimulatorConsole.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.SimulatorConsole.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.SyntaxError.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.SyntaxError.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.SyntaxError.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.EnvironmentPlugins.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentPlugins.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentPlugins.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.RuntimeGeneral.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeGeneral.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeGeneral.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.TextEditorCodeCompletion.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.TextEditorCodeCompletion.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.TextEditorCodeCompletion.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.EnvironmentBrowser.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentBrowser.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentBrowser.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.ProjectSettings.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.ProjectSettings.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.ProjectSettings.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.RuntimeInternal.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeInternal.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeInternal.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.RuntimeSmtp.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeSmtp.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeSmtp.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.RuntimeExternal.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeExternal.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.RuntimeExternal.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.EnvironmentGeneral.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentGeneral.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentGeneral.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.TextEditorFontColors.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.TextEditorFontColors.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.TextEditorFontColors.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.EnvironmentHelp.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentHelp.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.EnvironmentHelp.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.TextEditorGeneral.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.TextEditorGeneral.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.TextEditorGeneral.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.ToolsOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.ToolsOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.ToolsOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.Tools.VersionControlGeneral.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.Tools.VersionControlGeneral.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.Tools.VersionControlGeneral.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.ToolWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.ToolWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.ToolWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSLEditor.UpdateApplicationForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSLEditor.UpdateApplicationForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSLEditor.UpdateApplicationForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NumberedTextBox.NumberedTextBoxUC.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NumberedTextBox.NumberedTextBoxUC.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NumberedTextBox.NumberedTextBoxUC.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Forms.TabControlExtended.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Forms.TabControlExtended.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
