@@ -27,25 +27,42 @@ default
     state_entry()
     {
 		r2chan = keyapp2chan();
-		llListen(r2chan,"","",""); 
+		llListen(r2chan,"","","");
+		llRequestPermissions(llGetOwner(), PERMISSION_TRIGGER_ANIMATION);
     }
-
+	
     on_rez(integer param) 
 	{
         llResetScript();
+		llRequestPermissions(llGetOwner(), PERMISSION_TRIGGER_ANIMATION);
+	}
+		
+    run_time_permissions(integer perm)
+    {
+        if (perm & PERMISSION_TRIGGER_ANIMATION)
+        {
+            llStopAnimation("bentohandrelaxedP1");
+            llStartAnimation("bentohandrelaxedP1");
+            llSetTimerEvent(3);
+        }
+    }
+
+    timer() 
+	{
+        llSetTimerEvent(0);
+        llRequestPermissions(llGetOwner(), PERMISSION_TRIGGER_ANIMATION);
     }	
-	
+
 	listen(integer channel,string name,key id,string message)
 	{
 		if (llGetOwnerKey(id) == llGetOwner()) 
 		{
 			if (channel == r2chan)
 			{
-				
 				list msglist = llParseString2List(message, [","], []);
 				string command = llToUpper(llList2String(msglist, 0));
 				
-				if (command = "TEXTURE");
+				if (command == "TEXTURE")
 				{
 					string descflag = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
 					string textureid = llList2String(msglist, 2);
@@ -61,13 +78,12 @@ default
 						if (objdesc == descflag)
 						{
 							//llOwnerSay("I heard your message:"+descflag+" "+objdesc+" "+textureid);
-							llSetLinkPrimitiveParamsFast(i, [PRIM_TEXTURE, 0, textureid, <1,1,0>, <0,0,0>, 0]);
+							llSetLinkPrimitiveParamsFast(i, [PRIM_TEXTURE, ALL_SIDES, textureid, <1,1,0>, <0,0,0>, 0]);
 							//llOwnerSay("Changed " + objname + " texture.");
 						}
 
 					}
-				}
-				if (command = "ALPHA")
+				} else if (command == "ALPHA")
 				{
 					string prim2change = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
 					integer face2change = llList2Integer(msglist, 2);
