@@ -17,3 +17,6 @@ The ElfEars can be resized and moved about like any attachment.
 For Ruth 2.0, you can simply add in the current "Head Receiver" script
 (called "r2_head_receiver.lsl"  and the normal Ruth 2.0 Skin Applier will
 also set your ears to the appropriate skin texture.
+
+Original Blender mesh by Fred Beckhusen (avatar: Ferd Frederix).
+OpenSim preparation by Austin Tate (avatar: Ai Austin).
