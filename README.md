@@ -6,5 +6,5 @@ Ruth 2.0 is a low-poly mesh body, and is specifically designed for Opensimulator
 Google+ Community Page:
 https://plus.google.com/communities/103360253120662433219
 
-Github:
+Github Repository:
 https://github.com/Outworldz/Ruth
