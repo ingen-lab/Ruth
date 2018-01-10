@@ -1,5 +1,5 @@
-ElfEars -  9 January 2018
-CC-BY-NC by Fred K. Beckhusen
+ElfEars - 10 January 2018
+CC-BY by Fred K. Beckhusen
 
 The ElfEars attachment should load and be attachable as two separate prims.
 
@@ -8,7 +8,8 @@ There are blank skin textures at the Outworldz image collection.
 
 https://www.outworldz.com/cgi/free-seamless-textures.plx
 
-Then do a ctrl-F and look for skin, or Starlight for open source starlight_face texture.
+Then do a ctrl-F and look for skin, or Starlight for an open source
+starlight_face texture.
 
 The ElfEars can be resized and moved about like any attachment.
 * ElfEars-Original is the originally sized longer pointy ears.
