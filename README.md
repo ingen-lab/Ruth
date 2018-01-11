@@ -1,7 +1,6 @@
-# Ruth 2.0
-Project Ruth 2.0 - an Open Source Mesh Avatar by Shin Ingen.
+# Ruth and Roth 2.0 Mesh Avatar Project
 
-Ruth 2.0 is a low-poly mesh body, and is specifically designed for Opensimulator. She is built to use standard SL UV maps using a scratch-built mesh body. 
+Ruth and Roth 2.0 are low-poly mesh bodies, specifically designed for Opensimulator. They are built to use standard SL UV maps using scratch-built mesh bodies. 
 
 Google+ Community Page:
 https://plus.google.com/communities/103360253120662433219
