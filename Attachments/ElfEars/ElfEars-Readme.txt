@@ -1,5 +1,5 @@
 ElfEars - 10 January 2018
-CC-BY by Fred K. Beckhusen
+AGPL by Fred K. Beckhusen
 
 The ElfEars attachment should load and be attachable as two separate prims.
 
