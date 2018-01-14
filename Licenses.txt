@@ -1,6 +1,8 @@
-License terms for this project vary by part type.  Please do not delete any credits or license files that are included in this project.   Built with Blender 2.79 with Avastar 2 RC12.
+License terms for this project vary by part type. Copyrights are by the original Authors. Please do not delete any credits or license files that are included in this project.   
 
-Ruth 2.0 is by Shin Ingen, who can be found at https://plus.google.com/+ShinIngen. 
+Built with Blender 2.79 with Avastar 2 RC12.
+
+Ruth 2.0 Copyright 2018 AGPL by Shin Ingen, who can be found at https://plus.google.com/+ShinIngen. 
 
 The following mesh body parts are AGPL.
 Upper Body
@@ -15,4 +17,16 @@ The UV map is CC-BY Linden Lab.
 
 Skin templates by Chip Midnight:  http://forums-archive.secondlife.com/109/72/40762/1.html
 
-ElfEars are AGPL by Fred K. Beckhusen.
+Elf Ears are AGPL by Fred K. Beckhusen.
+
+CMFF Templates are Licensed as CC-BY 3.0 by Chip Midnight 
+
+Splendor Skin by Sezmra Svarog, (Laurie Ellis) is free to use and Non Commercial
+
+Pleaides Skin by Eloh Eliot is BSD License--this covers both source files and in-world skins
+
+StarLight Skin, Strawberry Mods by Eloh Eliot is MIT License--this covers both source files and in-world skins
+
+Ghana Skin is CC-BY Ina Centaur 
+
+Ruth 2.0 Logo and photos are AGPL by Shin Ingen
