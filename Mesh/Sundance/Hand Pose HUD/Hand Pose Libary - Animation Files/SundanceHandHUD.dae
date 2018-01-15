@@ -1,0 +1,1544 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <contributor>
+      <author>Avastar User</author>
+      <authoring_tool>Avastar 2-2-1 on Blender 2.79 (sub 0)</authoring_tool>
+    </contributor>
+    <created>2018-01-14T15:03:36</created>
+    <modified>2018-01-14T15:03:36</modified>
+    <unit meter="1" name="meter" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras />
+  <library_lights />
+  <library_images>
+    <image id="HandPoseHUD_png" name="HandPoseHUD_png">
+      <init_from>HandPoseHUD_png.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Material_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Left-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Right-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Left-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Right-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Left-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Right-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_000-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Left_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Right_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Left_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Right_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Left_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Right_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Left_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Right_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Left_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Right_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Left_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Right_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_003-effect">
+      <profile_COMMON>
+        <newparam sid="HandPoseHUD_png-surface">
+          <surface type="2D">
+            <init_from>HandPoseHUD_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandPoseHUD_png-sampler">
+          <sampler2D>
+            <source>HandPoseHUD_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="1st Set of Buttons" texture="HandPoseHUD_png-sampler" />
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Left_003-effect">
+      <profile_COMMON>
+        <newparam sid="HandPoseHUD_png-surface">
+          <surface type="2D">
+            <init_from>HandPoseHUD_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandPoseHUD_png-sampler">
+          <sampler2D>
+            <source>HandPoseHUD_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="1st Set of Buttons" texture="HandPoseHUD_png-sampler" />
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01Right_003-effect">
+      <profile_COMMON>
+        <newparam sid="HandPoseHUD_png-surface">
+          <surface type="2D">
+            <init_from>HandPoseHUD_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandPoseHUD_png-sampler">
+          <sampler2D>
+            <source>HandPoseHUD_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="1st Set of Buttons" texture="HandPoseHUD_png-sampler" />
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Left_003-effect">
+      <profile_COMMON>
+        <newparam sid="HandPoseHUD_png-surface">
+          <surface type="2D">
+            <init_from>HandPoseHUD_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandPoseHUD_png-sampler">
+          <sampler2D>
+            <source>HandPoseHUD_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="1st Set of Buttons" texture="HandPoseHUD_png-sampler" />
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02Right_003-effect">
+      <profile_COMMON>
+        <newparam sid="HandPoseHUD_png-surface">
+          <surface type="2D">
+            <init_from>HandPoseHUD_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandPoseHUD_png-sampler">
+          <sampler2D>
+            <source>HandPoseHUD_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="1st Set of Buttons" texture="HandPoseHUD_png-sampler" />
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Left_003-effect">
+      <profile_COMMON>
+        <newparam sid="HandPoseHUD_png-surface">
+          <surface type="2D">
+            <init_from>HandPoseHUD_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandPoseHUD_png-sampler">
+          <sampler2D>
+            <source>HandPoseHUD_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="1st Set of Buttons" texture="HandPoseHUD_png-sampler" />
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="03Right_003-effect">
+      <profile_COMMON>
+        <newparam sid="HandPoseHUD_png-surface">
+          <surface type="2D">
+            <init_from>HandPoseHUD_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandPoseHUD_png-sampler">
+          <sampler2D>
+            <source>HandPoseHUD_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="1st Set of Buttons" texture="HandPoseHUD_png-sampler" />
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="01_Material_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="02_StopAllButton_-_Upper_Right-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material_002-material" name="Material.002">
+      <instance_effect url="#Material_002-effect" />
+    </material>
+    <material id="01Left-material" name="01Left">
+      <instance_effect url="#01Left-effect" />
+    </material>
+    <material id="01Right-material" name="01Right">
+      <instance_effect url="#01Right-effect" />
+    </material>
+    <material id="02Left-material" name="02Left">
+      <instance_effect url="#02Left-effect" />
+    </material>
+    <material id="02Right-material" name="02Right">
+      <instance_effect url="#02Right-effect" />
+    </material>
+    <material id="03Left-material" name="03Left">
+      <instance_effect url="#03Left-effect" />
+    </material>
+    <material id="03Right-material" name="03Right">
+      <instance_effect url="#03Right-effect" />
+    </material>
+    <material id="Material_000-material" name="Material.000">
+      <instance_effect url="#Material_000-effect" />
+    </material>
+    <material id="01Left_001-material" name="01Left.001">
+      <instance_effect url="#01Left_001-effect" />
+    </material>
+    <material id="01Right_001-material" name="01Right.001">
+      <instance_effect url="#01Right_001-effect" />
+    </material>
+    <material id="02Left_001-material" name="02Left.001">
+      <instance_effect url="#02Left_001-effect" />
+    </material>
+    <material id="02Right_001-material" name="02Right.001">
+      <instance_effect url="#02Right_001-effect" />
+    </material>
+    <material id="03Left_001-material" name="03Left.001">
+      <instance_effect url="#03Left_001-effect" />
+    </material>
+    <material id="03Right_001-material" name="03Right.001">
+      <instance_effect url="#03Right_001-effect" />
+    </material>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect" />
+    </material>
+    <material id="01Left_002-material" name="01Left.002">
+      <instance_effect url="#01Left_002-effect" />
+    </material>
+    <material id="01Right_002-material" name="01Right.002">
+      <instance_effect url="#01Right_002-effect" />
+    </material>
+    <material id="02Left_002-material" name="02Left.002">
+      <instance_effect url="#02Left_002-effect" />
+    </material>
+    <material id="02Right_002-material" name="02Right.002">
+      <instance_effect url="#02Right_002-effect" />
+    </material>
+    <material id="03Left_002-material" name="03Left.002">
+      <instance_effect url="#03Left_002-effect" />
+    </material>
+    <material id="03Right_002-material" name="03Right.002">
+      <instance_effect url="#03Right_002-effect" />
+    </material>
+    <material id="Material_003-material" name="Material.003">
+      <instance_effect url="#Material_003-effect" />
+    </material>
+    <material id="01Left_003-material" name="01Left.003">
+      <instance_effect url="#01Left_003-effect" />
+    </material>
+    <material id="01Right_003-material" name="01Right.003">
+      <instance_effect url="#01Right_003-effect" />
+    </material>
+    <material id="02Left_003-material" name="02Left.003">
+      <instance_effect url="#02Left_003-effect" />
+    </material>
+    <material id="02Right_003-material" name="02Right.003">
+      <instance_effect url="#02Right_003-effect" />
+    </material>
+    <material id="03Left_003-material" name="03Left.003">
+      <instance_effect url="#03Left_003-effect" />
+    </material>
+    <material id="03Right_003-material" name="03Right.003">
+      <instance_effect url="#03Right_003-effect" />
+    </material>
+    <material id="01_Material_001-material" name="01_Material.001">
+      <instance_effect url="#01_Material_001-effect" />
+    </material>
+    <material id="02_StopAllButton_-_Upper_Right-material" name="02_StopAllButton - Upper Right">
+      <instance_effect url="#02_StopAllButton_-_Upper_Right-effect" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="A_ButtonSet-mesh" name="A_ButtonSet">
+      <mesh>
+        <source id="A_ButtonSet-mesh-positions">
+          <float_array count="72" id="A_ButtonSet-mesh-positions-array">1.80124e-07 -1.33054 -0.325433   -8.75926e-08 1.29177 -0.325433   -1.21086e-08 0.55096 -0.325433   1.23303e-07 -0.805968 -0.325433   4.42832e-08 -0.167615 -0.325433   -8.75926e-08 1.29177 -0.125289   -5.0247e-08 0.764249 -0.325433   1.20519e-07 -1.33054 -0.125289   -7.17915e-09 0.338175 -0.325433   -7.17132e-08 0.55096 -0.125289   -7.17915e-09 0.338175 -0.125289   6.36981e-08 -0.805968 -0.125289   -5.0247e-08 0.764249 -0.125289   -2.46982e-08 0.145803 -0.125289   -2.43243e-08 1.07745 -0.325433   -8.39289e-08 1.07745 -0.125289   3.49064e-08 0.145803 -0.325433   6.91517e-08 -1.11454 -0.325433   6.91517e-08 -1.11454 -0.125289   4.42832e-08 -0.167615 -0.125289   7.08494e-08 -0.373701 -0.325433   1.12448e-08 -0.373701 -0.125289   2.58699e-08 -0.60371 -0.325433   2.58699e-08 -0.60371 -0.125289  </float_array>
+          <technique_common>
+            <accessor count="24" source="#A_ButtonSet-mesh-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet-mesh-normals">
+          <float_array count="3" id="A_ButtonSet-mesh-normals-array">-1 0 -0  </float_array>
+          <technique_common>
+            <accessor count="1" source="#A_ButtonSet-mesh-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet-mesh-map-0">
+          <float_array count="88" id="A_ButtonSet-mesh-map-0-array">0.359924 0.497906   0.359924 0.565975   0.32078 0.565975   0.32078 0.497906   0.19963 0.497906   0.19963 0.565975   0.163417 0.565975   0.163417 0.497906   0.44686 0.497906   0.44686 0.565975   0.394346 0.565975   0.394346 0.497906   0.0738165 0.497906   0.0738165 0.565975   0.0373421 0.565975   0.0373421 0.497906   0.163417 0.497906   0.163417 0.565975   0.127118 0.565975   0.127118 0.497906   0.232369 0.497906   0.232369 0.565975   0.19963 0.565975   0.19963 0.497906   0.127118 0.497906   0.127118 0.565975   0.0738165 0.565975   0.0738165 0.497906   0.48362 0.497906   0.48362 0.565975   0.44686 0.565975   0.44686 0.497906   0.285708 0.497906   0.285708 0.565975   0.232369 0.565975   0.232369 0.497906   0.32078 0.497906   0.32078 0.565975   0.285708 0.565975   0.285708 0.497906   0.394346 0.497906   0.394346 0.565975   0.359924 0.565975   0.359924 0.497906  </float_array>
+          <technique_common>
+            <accessor count="44" source="#A_ButtonSet-mesh-map-0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="A_ButtonSet-mesh-vertices">
+          <input semantic="POSITION" source="#A_ButtonSet-mesh-positions" />
+        </vertices>
+        <polylist count="10" material="Material_002-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet-mesh-map-0" />
+          <vcount>4 4 4 4 4</vcount>
+          <p>22 0 0  23 0 1  21 0 2  20 0 3     8 0 4  10 0 5  9 0 6  2 0 7     17 0 8  18 0 9  11 0 10  3 0 11     6 0 24  12 0 25  15 0 26  14 0 27     4 0 32  19 0 33  13 0 34  16 0 35    </p>
+        </polylist>
+        <polylist count="2" material="01Left-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>14 0 12  15 0 13  5 0 14  1 0 15    </p>
+        </polylist>
+        <polylist count="2" material="01Right-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>2 0 16  9 0 17  12 0 18  6 0 19    </p>
+        </polylist>
+        <polylist count="2" material="02Left-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>16 0 20  13 0 21  10 0 22  8 0 23    </p>
+        </polylist>
+        <polylist count="2" material="02Right-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>20 0 36  21 0 37  19 0 38  4 0 39    </p>
+        </polylist>
+        <polylist count="2" material="03Left-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>3 0 40  11 0 41  23 0 42  22 0 43    </p>
+        </polylist>
+        <polylist count="2" material="03Right-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>0 0 28  7 0 29  18 0 30  17 0 31    </p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="A_ButtonSet_001-mesh" name="A_ButtonSet.001">
+      <mesh>
+        <source id="A_ButtonSet_001-mesh-positions">
+          <float_array count="72" id="A_ButtonSet_001-mesh-positions-array">1.59382e-07 -1.29871 -0.325433   -6.74555e-08 1.26087 -0.325433   -3.51977e-09 0.537781 -0.325433   1.10739e-07 -0.786688 -0.325433   4.16703e-08 -0.163605 -0.325433   -6.74555e-08 1.26087 -0.125289   -3.83333e-08 0.745968 -0.325433   9.97778e-08 -1.29871 -0.125289   -1.90741e-09 0.330086 -0.325433   -6.31244e-08 0.537781 -0.125289   -1.90741e-09 0.330086 -0.125289   5.1134e-08 -0.786688 -0.125289   -3.83333e-08 0.745968 -0.125289   -2.24253e-08 0.142315 -0.125289   -7.52817e-09 1.05167 -0.325433   -6.71328e-08 1.05167 -0.125289   3.71793e-08 0.142315 -0.325433   5.17774e-08 -1.08788 -0.325433   5.17774e-08 -1.08788 -0.125289   4.16703e-08 -0.163605 -0.125289   6.50238e-08 -0.364762 -0.325433   5.4192e-09 -0.364762 -0.125289   1.64588e-08 -0.589268 -0.325433   1.64588e-08 -0.589268 -0.125289  </float_array>
+          <technique_common>
+            <accessor count="24" source="#A_ButtonSet_001-mesh-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet_001-mesh-normals">
+          <float_array count="3" id="A_ButtonSet_001-mesh-normals-array">-1 0 -0  </float_array>
+          <technique_common>
+            <accessor count="1" source="#A_ButtonSet_001-mesh-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet_001-mesh-map-0">
+          <float_array count="88" id="A_ButtonSet_001-mesh-map-0-array">0.359924 0.497906   0.359924 0.565975   0.32078 0.565975   0.32078 0.497906   0.19963 0.497906   0.19963 0.565975   0.163417 0.565975   0.163417 0.497906   0.44686 0.497906   0.44686 0.565975   0.394346 0.565975   0.394346 0.497906   0.0738165 0.497906   0.0738165 0.565975   0.0373421 0.565975   0.0373421 0.497906   0.163417 0.497906   0.163417 0.565975   0.127118 0.565975   0.127118 0.497906   0.232369 0.497906   0.232369 0.565975   0.19963 0.565975   0.19963 0.497906   0.127118 0.497906   0.127118 0.565975   0.0738165 0.565975   0.0738165 0.497906   0.48362 0.497906   0.48362 0.565975   0.44686 0.565975   0.44686 0.497906   0.285708 0.497906   0.285708 0.565975   0.232369 0.565975   0.232369 0.497906   0.32078 0.497906   0.32078 0.565975   0.285708 0.565975   0.285708 0.497906   0.394346 0.497906   0.394346 0.565975   0.359924 0.565975   0.359924 0.497906  </float_array>
+          <technique_common>
+            <accessor count="44" source="#A_ButtonSet_001-mesh-map-0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="A_ButtonSet_001-mesh-vertices">
+          <input semantic="POSITION" source="#A_ButtonSet_001-mesh-positions" />
+        </vertices>
+        <polylist count="10" material="Material_000-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_001-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_001-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_001-mesh-map-0" />
+          <vcount>4 4 4 4 4</vcount>
+          <p>22 0 0  23 0 1  21 0 2  20 0 3     8 0 4  10 0 5  9 0 6  2 0 7     17 0 8  18 0 9  11 0 10  3 0 11     6 0 24  12 0 25  15 0 26  14 0 27     4 0 32  19 0 33  13 0 34  16 0 35    </p>
+        </polylist>
+        <polylist count="2" material="01Left_001-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_001-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_001-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_001-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>14 0 12  15 0 13  5 0 14  1 0 15    </p>
+        </polylist>
+        <polylist count="2" material="01Right_001-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_001-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_001-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_001-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>2 0 16  9 0 17  12 0 18  6 0 19    </p>
+        </polylist>
+        <polylist count="2" material="02Left_001-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_001-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_001-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_001-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>16 0 20  13 0 21  10 0 22  8 0 23    </p>
+        </polylist>
+        <polylist count="2" material="02Right_001-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_001-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_001-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_001-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>20 0 36  21 0 37  19 0 38  4 0 39    </p>
+        </polylist>
+        <polylist count="2" material="03Left_001-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_001-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_001-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_001-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>3 0 40  11 0 41  23 0 42  22 0 43    </p>
+        </polylist>
+        <polylist count="2" material="03Right_001-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_001-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_001-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_001-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>0 0 28  7 0 29  18 0 30  17 0 31    </p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="A_ButtonSet_002-mesh" name="A_ButtonSet.002">
+      <mesh>
+        <source id="A_ButtonSet_002-mesh-positions">
+          <float_array count="72" id="A_ButtonSet_002-mesh-positions-array">1.59382e-07 -1.29871 -0.325433   -6.74555e-08 1.26087 -0.325433   -3.51977e-09 0.537781 -0.325433   1.10739e-07 -0.786688 -0.325433   4.16703e-08 -0.163605 -0.325433   -6.74555e-08 1.26087 -0.125289   -3.83333e-08 0.745968 -0.325433   9.97778e-08 -1.29871 -0.125289   -1.90741e-09 0.330086 -0.325433   -6.31244e-08 0.537781 -0.125289   -1.90741e-09 0.330086 -0.125289   5.1134e-08 -0.786688 -0.125289   -3.83333e-08 0.745968 -0.125289   -2.24253e-08 0.142315 -0.125289   -7.52817e-09 1.05167 -0.325433   -6.71328e-08 1.05167 -0.125289   3.71793e-08 0.142315 -0.325433   5.17774e-08 -1.08788 -0.325433   5.17774e-08 -1.08788 -0.125289   4.16703e-08 -0.163605 -0.125289   6.50238e-08 -0.364762 -0.325433   5.4192e-09 -0.364762 -0.125289   1.64588e-08 -0.589268 -0.325433   1.64588e-08 -0.589268 -0.125289  </float_array>
+          <technique_common>
+            <accessor count="24" source="#A_ButtonSet_002-mesh-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet_002-mesh-normals">
+          <float_array count="3" id="A_ButtonSet_002-mesh-normals-array">-1 0 -0  </float_array>
+          <technique_common>
+            <accessor count="1" source="#A_ButtonSet_002-mesh-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet_002-mesh-map-0">
+          <float_array count="88" id="A_ButtonSet_002-mesh-map-0-array">0.359924 0.497906   0.359924 0.565975   0.32078 0.565975   0.32078 0.497906   0.19963 0.497906   0.19963 0.565975   0.163417 0.565975   0.163417 0.497906   0.44686 0.497906   0.44686 0.565975   0.394346 0.565975   0.394346 0.497906   0.0738165 0.497906   0.0738165 0.565975   0.0373421 0.565975   0.0373421 0.497906   0.163417 0.497906   0.163417 0.565975   0.127118 0.565975   0.127118 0.497906   0.232369 0.497906   0.232369 0.565975   0.19963 0.565975   0.19963 0.497906   0.127118 0.497906   0.127118 0.565975   0.0738165 0.565975   0.0738165 0.497906   0.48362 0.497906   0.48362 0.565975   0.44686 0.565975   0.44686 0.497906   0.285708 0.497906   0.285708 0.565975   0.232369 0.565975   0.232369 0.497906   0.32078 0.497906   0.32078 0.565975   0.285708 0.565975   0.285708 0.497906   0.394346 0.497906   0.394346 0.565975   0.359924 0.565975   0.359924 0.497906  </float_array>
+          <technique_common>
+            <accessor count="44" source="#A_ButtonSet_002-mesh-map-0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="A_ButtonSet_002-mesh-vertices">
+          <input semantic="POSITION" source="#A_ButtonSet_002-mesh-positions" />
+        </vertices>
+        <polylist count="10" material="Material_001-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_002-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_002-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_002-mesh-map-0" />
+          <vcount>4 4 4 4 4</vcount>
+          <p>22 0 0  23 0 1  21 0 2  20 0 3     8 0 4  10 0 5  9 0 6  2 0 7     17 0 8  18 0 9  11 0 10  3 0 11     6 0 24  12 0 25  15 0 26  14 0 27     4 0 32  19 0 33  13 0 34  16 0 35    </p>
+        </polylist>
+        <polylist count="2" material="01Left_002-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_002-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_002-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_002-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>14 0 12  15 0 13  5 0 14  1 0 15    </p>
+        </polylist>
+        <polylist count="2" material="01Right_002-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_002-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_002-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_002-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>2 0 16  9 0 17  12 0 18  6 0 19    </p>
+        </polylist>
+        <polylist count="2" material="02Left_002-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_002-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_002-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_002-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>16 0 20  13 0 21  10 0 22  8 0 23    </p>
+        </polylist>
+        <polylist count="2" material="02Right_002-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_002-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_002-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_002-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>20 0 36  21 0 37  19 0 38  4 0 39    </p>
+        </polylist>
+        <polylist count="2" material="03Left_002-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_002-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_002-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_002-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>3 0 40  11 0 41  23 0 42  22 0 43    </p>
+        </polylist>
+        <polylist count="2" material="03Right_002-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_002-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_002-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_002-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>0 0 28  7 0 29  18 0 30  17 0 31    </p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="A_ButtonSet_003-mesh" name="A_ButtonSet.003">
+      <mesh>
+        <source id="A_ButtonSet_003-mesh-positions">
+          <float_array count="72" id="A_ButtonSet_003-mesh-positions-array">1.80124e-07 -1.33054 -0.325433   -8.75926e-08 1.29177 -0.325433   -1.21086e-08 0.55096 -0.325433   1.23303e-07 -0.805968 -0.325433   4.42832e-08 -0.167615 -0.325433   -8.75926e-08 1.29177 -0.125289   -5.0247e-08 0.764249 -0.325433   1.20519e-07 -1.33054 -0.125289   -7.17915e-09 0.338175 -0.325433   -7.17132e-08 0.55096 -0.125289   -7.17915e-09 0.338175 -0.125289   6.36981e-08 -0.805968 -0.125289   -5.0247e-08 0.764249 -0.125289   -2.46982e-08 0.145803 -0.125289   -2.43243e-08 1.07745 -0.325433   -8.39289e-08 1.07745 -0.125289   3.49064e-08 0.145803 -0.325433   6.91517e-08 -1.11454 -0.325433   6.91517e-08 -1.11454 -0.125289   4.42832e-08 -0.167615 -0.125289   7.08494e-08 -0.373701 -0.325433   1.12448e-08 -0.373701 -0.125289   2.58699e-08 -0.60371 -0.325433   2.58699e-08 -0.60371 -0.125289  </float_array>
+          <technique_common>
+            <accessor count="24" source="#A_ButtonSet_003-mesh-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet_003-mesh-normals">
+          <float_array count="3" id="A_ButtonSet_003-mesh-normals-array">-1 0 -0  </float_array>
+          <technique_common>
+            <accessor count="1" source="#A_ButtonSet_003-mesh-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="A_ButtonSet_003-mesh-map-0">
+          <float_array count="88" id="A_ButtonSet_003-mesh-map-0-array">0.359924 0.497906   0.359924 0.565975   0.32078 0.565975   0.32078 0.497906   0.19963 0.497906   0.19963 0.565975   0.163417 0.565975   0.163417 0.497906   0.44686 0.497906   0.44686 0.565975   0.394346 0.565975   0.394346 0.497906   0.0738165 0.497906   0.0738165 0.565975   0.0373421 0.565975   0.0373421 0.497906   0.163417 0.497906   0.163417 0.565975   0.127118 0.565975   0.127118 0.497906   0.232369 0.497906   0.232369 0.565975   0.19963 0.565975   0.19963 0.497906   0.127118 0.497906   0.127118 0.565975   0.0738165 0.565975   0.0738165 0.497906   0.48362 0.497906   0.48362 0.565975   0.44686 0.565975   0.44686 0.497906   0.285708 0.497906   0.285708 0.565975   0.232369 0.565975   0.232369 0.497906   0.32078 0.497906   0.32078 0.565975   0.285708 0.565975   0.285708 0.497906   0.394346 0.497906   0.394346 0.565975   0.359924 0.565975   0.359924 0.497906  </float_array>
+          <technique_common>
+            <accessor count="44" source="#A_ButtonSet_003-mesh-map-0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="A_ButtonSet_003-mesh-vertices">
+          <input semantic="POSITION" source="#A_ButtonSet_003-mesh-positions" />
+        </vertices>
+        <polylist count="10" material="Material_003-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_003-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_003-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_003-mesh-map-0" />
+          <vcount>4 4 4 4 4</vcount>
+          <p>22 0 0  23 0 1  21 0 2  20 0 3     8 0 4  10 0 5  9 0 6  2 0 7     17 0 8  18 0 9  11 0 10  3 0 11     6 0 24  12 0 25  15 0 26  14 0 27     4 0 32  19 0 33  13 0 34  16 0 35    </p>
+        </polylist>
+        <polylist count="2" material="01Left_003-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_003-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_003-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_003-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>14 0 12  15 0 13  5 0 14  1 0 15    </p>
+        </polylist>
+        <polylist count="2" material="01Right_003-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_003-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_003-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_003-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>2 0 16  9 0 17  12 0 18  6 0 19    </p>
+        </polylist>
+        <polylist count="2" material="02Left_003-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_003-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_003-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_003-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>16 0 20  13 0 21  10 0 22  8 0 23    </p>
+        </polylist>
+        <polylist count="2" material="02Right_003-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_003-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_003-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_003-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>20 0 36  21 0 37  19 0 38  4 0 39    </p>
+        </polylist>
+        <polylist count="2" material="03Left_003-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_003-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_003-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_003-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>3 0 40  11 0 41  23 0 42  22 0 43    </p>
+        </polylist>
+        <polylist count="2" material="03Right_003-material">
+          <input offset="0" semantic="VERTEX" source="#A_ButtonSet_003-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#A_ButtonSet_003-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#A_ButtonSet_003-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>0 0 28  7 0 29  18 0 30  17 0 31    </p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="Hand_HUD_Backboard-mesh" name="Hand HUD Backboard">
+      <mesh>
+        <source id="Hand_HUD_Backboard-mesh-positions">
+          <float_array count="27" id="Hand_HUD_Backboard-mesh-positions-array">-8.12989e-07 2.91993 1.44589   -5.54445e-07 2.91993 -1.44589   5.54444e-07 -2.96215 1.44589   8.1299e-07 -2.96215 -1.44589   4.21965e-07 -2.23476 1.44589   -7.74605e-07 2.91993 1.01656   7.08023e-07 -2.23475 -1.44589   5.92829e-07 -2.96215 1.01656   4.87863e-07 -2.23475 1.01656  </float_array>
+          <technique_common>
+            <accessor count="9" source="#Hand_HUD_Backboard-mesh-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Hand_HUD_Backboard-mesh-normals">
+          <float_array count="3" id="Hand_HUD_Backboard-mesh-normals-array">-1 -0 -0  </float_array>
+          <technique_common>
+            <accessor count="1" source="#Hand_HUD_Backboard-mesh-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Hand_HUD_Backboard-mesh-map-0">
+          <float_array count="32" id="Hand_HUD_Backboard-mesh-map-0-array">0.876263 0.837207   0.876263 9.91821e-05   0.999901 9.91821e-05   0.999901 0.837207   0.876263 0.992925   0.876263 0.837207   0.999901 0.837207   0.999901 0.992925   9.94205e-05 0.992925   9.94205e-05 0.837207   0.876263 0.837207   0.876263 0.992925   9.94205e-05 0.837207   9.91821e-05 9.94802e-05   0.876263 9.91821e-05   0.876263 0.837207  </float_array>
+          <technique_common>
+            <accessor count="16" source="#Hand_HUD_Backboard-mesh-map-0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Hand_HUD_Backboard-mesh-vertices">
+          <input semantic="POSITION" source="#Hand_HUD_Backboard-mesh-positions" />
+        </vertices>
+        <polylist count="6" material="01_Material_001-material">
+          <input offset="0" semantic="VERTEX" source="#Hand_HUD_Backboard-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#Hand_HUD_Backboard-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#Hand_HUD_Backboard-mesh-map-0" />
+          <vcount>4 4 4</vcount>
+          <p>8 0 0  6 0 1  3 0 2  7 0 3     0 0 8  5 0 9  8 0 10  4 0 11     5 0 12  1 0 13  6 0 14  8 0 15    </p>
+        </polylist>
+        <polylist count="2" material="02_StopAllButton_-_Upper_Right-material">
+          <input offset="0" semantic="VERTEX" source="#Hand_HUD_Backboard-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#Hand_HUD_Backboard-mesh-normals" />
+          <input offset="2" semantic="TEXCOORD" set="0" source="#Hand_HUD_Backboard-mesh-map-0" />
+          <vcount>4</vcount>
+          <p>4 0 4  8 0 5  7 0 6  2 0 7    </p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_controllers />
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="A_ButtonSet" name="A_ButtonSet" type="NODE">
+        <translate sid="location">-0.0050983 1.39819 1.89923</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#A_ButtonSet-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_002-material" target="#Material_002-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Left-material" target="#01Left-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Right-material" target="#01Right-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Left-material" target="#02Left-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Right-material" target="#02Right-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Left-material" target="#03Left-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Right-material" target="#03Right-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="A_ButtonSet_001" name="A_ButtonSet_001" type="NODE">
+        <translate sid="location">-0.0050983 -1.409 1.89923</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#A_ButtonSet_001-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_000-material" target="#Material_000-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Left_001-material" target="#01Left_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Right_001-material" target="#01Right_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Left_001-material" target="#02Left_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Right_001-material" target="#02Right_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Left_001-material" target="#03Left_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Right_001-material" target="#03Right_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="A_ButtonSet_002" name="A_ButtonSet_002" type="NODE">
+        <translate sid="location">-0.0050983 -1.409 0.757234</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#A_ButtonSet_002-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Left_002-material" target="#01Left_002-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Right_002-material" target="#01Right_002-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Left_002-material" target="#02Left_002-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Right_002-material" target="#02Right_002-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Left_002-material" target="#03Left_002-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Right_002-material" target="#03Right_002-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="A_ButtonSet_003" name="A_ButtonSet_003" type="NODE">
+        <translate sid="location">-0.0050983 1.39819 0.763426</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#A_ButtonSet_003-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_003-material" target="#Material_003-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Left_003-material" target="#01Left_003-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="01Right_003-material" target="#01Right_003-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Left_003-material" target="#02Left_003-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="02Right_003-material" target="#02Right_003-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Left_003-material" target="#03Left_003-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+              <instance_material symbol="03Right_003-material" target="#03Right_003-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="1st Set of Buttons" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Hand_HUD_Backboard" name="Hand_HUD_Backboard" type="NODE">
+        <translate sid="location">-0.000380211 0.00153387 1.55367</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#Hand_HUD_Backboard-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="01_Material_001-material" target="#01_Material_001-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="Backboard" />
+              </instance_material>
+              <instance_material symbol="02_StopAllButton_-_Upper_Right-material" target="#02_StopAllButton_-_Upper_Right-material">
+                <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="Backboard" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene" />
+  </scene>
+</COLLADA>
