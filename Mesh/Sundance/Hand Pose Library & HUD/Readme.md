@@ -1,4 +1,4 @@
-Here's a summary of Hand Pose Library and HUD from Chimera Firecaster.
+Here's a summary of what's in this directory (Hand Pose Library and HUD) from Chimera Firecaster . . .
 
 I’ve finished creating a series of Bento hand poses. There are 14 different poses, but the number of animation files resulting from the poses actually totals 42. The higher number is the result of creating 3 animation files for each pose: right, left and dual-hand versions. They have all been built from scratch, especially for Ruth in Blender.
 
