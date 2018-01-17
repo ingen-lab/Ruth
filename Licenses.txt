@@ -1,5 +1,7 @@
 License terms for this project vary by part type. Copyrights are by the original Authors. Please do not delete any credits or license files that are included in this project.   
 
+**Avatar Mesh**
+
 Built with Blender 2.79 with Avastar 2 RC12.
 
 Ruth 2.0 Copyright 2018 AGPL by Shin Ingen, who can be found at https://plus.google.com/+ShinIngen. 
@@ -15,9 +17,11 @@ The mesh head is CC-BY Linden Lab.
 
 The UV map is CC-BY Linden Lab.
 
-Skin templates by Chip Midnight:  http://forums-archive.secondlife.com/109/72/40762/1.html
+Ruth 2.0 Logo and photos are AGPL by Shin Ingen
 
-Elf Ears are AGPL by Fred K. Beckhusen.
+**Skins**
+
+Skin templates by Chip Midnight:  http://forums-archive.secondlife.com/109/72/40762/1.html
 
 CMFF Templates are Licensed as CC-BY 3.0 by Chip Midnight 
 
@@ -29,4 +33,11 @@ StarLight Skin, Strawberry Mods by Eloh Eliot is MIT License--this covers both s
 
 Skin.African Ghana and Jarad Skins are CC-BY Ina Centaur 
 
-Ruth 2.0 Logo and photos are AGPL by Shin Ingen
+**Attachments**
+
+Elf Ears are AGPL by Fred K. Beckhusen.
+
+**Apparel**
+
+...
+
