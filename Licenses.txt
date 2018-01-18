@@ -11,8 +11,22 @@ Bento Hands
 Flat Feet
 High Feet
 
-The mesh head is CC-BY Linden Lab.
+Authors and contributors in alphabetical order are:
+Ada Radius
+Ai Austin
+Chimera Firecaster
+Elenia Boucher
+Fred Beckhusen
+Fritigern Gothly
+Joe Builder
+Leono Morro
+Mike Dickson
+Noxluna Nightfire
+Shin Ingen
+Sundance Haiku
 
+
+The mesh head is CC-BY Linden Lab.
 The UV map is CC-BY Linden Lab.
 
 Skin templates by Chip Midnight:  http://forums-archive.secondlife.com/109/72/40762/1.html
@@ -27,6 +41,6 @@ Pleaides Skin by Eloh Eliot is BSD License--this covers both source files and in
 
 StarLight Skin, Strawberry Mods by Eloh Eliot is MIT License--this covers both source files and in-world skins
 
-Skin.African Ghana and Jarad Skins are CC-BY Ina Centaur 
+Ghana Skin is CC-BY Ina Centaur 
 
 Ruth 2.0 Logo and photos are AGPL by Shin Ingen
