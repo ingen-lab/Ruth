@@ -1,0 +1,3 @@
+*.blend -diff
+*.dae -diff
+*.bvh -diff
