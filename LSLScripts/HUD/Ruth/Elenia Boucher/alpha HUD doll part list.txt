@@ -1,0 +1,38 @@
+
+01, rootprim
+02, backboard
+03, buttonbar3
+04, buttonbar4
+05, buttonbar5
+06, buttonbar6
+07, buttonbar7
+08, buttonbar8
+
+09, pelvisback
+10, pelvisfront
+11, legright1
+12, legright2
+13, legright3
+14, legright4
+15, legright5
+16, legright6
+17, legright7
+18, legright8
+
+19, legleft1
+20, legleft2
+21, legleft3
+22, legleft4
+23, legleft5
+24, legleft6
+25, legleft7
+26, legleft8
+
+27, backlower
+28, backupper
+29, belly
+30, chest
+31, breastleft
+32, breastright
+33, armleft
+34, armright
