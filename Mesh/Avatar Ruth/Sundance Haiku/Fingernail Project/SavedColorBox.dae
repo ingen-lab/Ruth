@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <contributor>
+      <author>Avastar User</author>
+      <authoring_tool>Avastar 2-2-1 on Blender 2.79 (sub 0)</authoring_tool>
+    </contributor>
+    <created>2018-01-31T11:05:10</created>
+    <modified>2018-01-31T11:05:10</modified>
+    <unit meter="1" name="meter" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras />
+  <library_lights />
+  <library_effects>
+    <effect id="A_Bottom-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="B_Top-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="A_Bottom-material" name="A_Bottom">
+      <instance_effect url="#A_Bottom-effect" />
+    </material>
+    <material id="B_Top-material" name="B_Top">
+      <instance_effect url="#B_Top-effect" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="SavedColors-mesh" name="SavedColors">
+      <mesh>
+        <source id="SavedColors-mesh-positions">
+          <float_array count="78" id="SavedColors-mesh-positions-array">-0.0809716 -0.046375 -0.167868   -0.0809716 -0.046375 0.167869   -0.0661494 0.167868 -0.167868   -0.0661494 0.167868 0.167868   0.0803909 -0.046375 -0.167868   0.0803909 -0.046375 0.167869   0.095213 0.167868 -0.167868   0.095213 0.167868 0.167868   -0.0735605 0.0607468 -0.167868   -0.0809716 -0.046375 0.0709994   -0.0735605 0.0607468 0.167868   -0.0661494 0.167868 0.0709994   0.0145318 0.167868 -0.167868   0.0145318 0.167868 0.167868   0.095213 0.167868 0.0709994   0.087802 0.0607468 -0.167868   0.087802 0.0607468 0.167868   0.0803909 -0.046375 0.0709994   -0.000290322 -0.046375 -0.167868   -0.000290322 -0.046375 0.167869   0.00712075 0.0607468 0.167868   0.00712075 0.0607468 -0.167868   -0.000290322 -0.046375 0.0709994   0.087802 0.0607468 0.0709994   0.0145318 0.167868 0.0709994   -0.0735605 0.0607468 0.0709994  </float_array>
+          <technique_common>
+            <accessor count="26" source="#SavedColors-mesh-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="SavedColors-mesh-normals">
+          <float_array count="18" id="SavedColors-mesh-normals-array">-0.997615 0.069019 0   0 1 0   0.997615 -0.069019 0   0 -1 0   -0 -0 -1   -0 0 1  </float_array>
+          <technique_common>
+            <accessor count="6" source="#SavedColors-mesh-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="SavedColors-mesh-vertices">
+          <input semantic="POSITION" source="#SavedColors-mesh-positions" />
+        </vertices>
+        <polylist count="24" material="A_Bottom-material">
+          <input offset="0" semantic="VERTEX" source="#SavedColors-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#SavedColors-mesh-normals" />
+          <vcount>4 4 4 4 4 4 4 4 4 4 4 4</vcount>
+          <p>21 4  15 4  4 4  18 4     8 4  21 4  18 4  0 4     2 4  12 4  21 4  8 4     12 4  6 4  15 4  21 4     18 3  22 3  9 3  0 3     4 3  17 3  22 3  18 3     15 2  23 2  17 2  4 2     6 2  14 2  23 2  15 2     12 1  24 1  14 1  6 1     2 1  11 1  24 1  12 1     8 0  25 0  11 0  2 0     0 0  9 0  25 0  8 0    </p>
+        </polylist>
+        <polylist count="24" material="B_Top-material">
+          <input offset="0" semantic="VERTEX" source="#SavedColors-mesh-vertices" />
+          <input offset="1" semantic="NORMAL" source="#SavedColors-mesh-normals" />
+          <vcount>4 4 4 4 4 4 4 4 4 4 4 4</vcount>
+          <p>25 0  10 0  3 0  11 0     24 1  13 1  7 1  14 1     23 2  16 2  5 2  17 2     22 3  19 3  1 3  9 3     20 5  10 5  1 5  19 5     16 5  20 5  19 5  5 5     7 5  13 5  20 5  16 5     13 5  3 5  10 5  20 5     17 3  5 3  19 3  22 3     14 2  7 2  16 2  23 2     11 1  3 1  13 1  24 1     9 0  1 0  10 0  25 0    </p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_controllers />
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="SavedColors" name="SavedColors" type="NODE">
+        <translate sid="location">-0.020997 -2.27281 1.17152</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#SavedColors-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="A_Bottom-material" target="#A_Bottom-material" />
+              <instance_material symbol="B_Top-material" target="#B_Top-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene" />
+  </scene>
+</COLLADA>
