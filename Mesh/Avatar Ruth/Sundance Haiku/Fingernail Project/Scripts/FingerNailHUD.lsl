@@ -73,7 +73,7 @@
 //    Currently, llSetLinkPrimitiveParams(0,[ PRIM_SPECULAR...] has a bug.  It will trigger
 //   an error in the script if it tries to execute the function.  Setting the following
 //   to TRUE allows the program to skip the function.  Set it to FALSE when the bug is fixed
-integer glSkipSpecFunction = 1;
+integer glSkipSpecFunction = 0;
 
 //Channel to pass color values to a script in the object which is being colored
 integer gFChannelID = -2471717;  //fingernail channel ID
@@ -401,6 +401,7 @@ MoveLumPointer(vector ColorHSL)
      }           
      ColorHSL.y = ColorHSL.y-.47;     
      //llOwnerSay("Moving Lum Pointer - Actual Offset: "+(string)ColorHSL.y);
+     //llOwnerSay("TextName: "+TextName+"  ColorHSL: "+(string)ColorHSL);
      llSetLinkPrimitiveParamsFast(gLPointerNo, [PRIM_TEXTURE, 4, TextName, Repeats, ColorHSL, PI ]);
 }
 
@@ -906,7 +907,8 @@ default
              }   
              v.y -= .47;  //.47 instead of .5 provide more accurate placement                   
              //llOwnerSay("Lum pointer MOVED to OFFSET = " + (string)v.y);
-             //this moves the lum pointer to the touched location             
+             //this moves the lum pointer to the touched location         
+             //llOwnerSay("TextName: "+TextName+"  ColorHSL: "+(string)v);    
              llSetLinkPrimitiveParamsFast(gLPointerNo, [PRIM_TEXTURE, llDetectedTouchFace(0), 
                                        TextName, Repeats, v, PI ]);                        
              //clicking high on the luminosity slider gives us smaller numbers
@@ -991,7 +993,10 @@ default
              gnShinyValue = llRound(vShinySlider.y * 255);             
              //llOwnerSay("Shiny value = " + (string)gnShinyValue);
              gnSaveShiny = gnShinyValue;
-             glSkipSpecFunction = 2;
+             if  (glSkipSpecFunction)
+             {
+                 glSkipSpecFunction = 2;
+             }
              SendColorInfo();
         }
         
@@ -1162,7 +1167,10 @@ default
                 llSetLinkPrimitiveParamsFast(1, [PRIM_COLOR, 6, gvONColor, 1.0]);  //highlight user's choice
                 llSetLinkPrimitiveParamsFast(1, [PRIM_COLOR, 7, gvOFFColor, 1.0]);
                 gnShinyValue = gnSaveShiny;
-                glSkipSpecFunction = 2;
+                if  (glSkipSpecFunction)
+                 {
+                     glSkipSpecFunction = 2;
+                 }                
                 SendColorInfo();
             }   
             if(Linkno == 1 && nFace == 7 )  //Shiny Button pressed - OFF
@@ -1170,7 +1178,10 @@ default
                 llSetLinkPrimitiveParamsFast(1, [PRIM_COLOR, 6, gvOFFColor, 1.0]);  //highlight user's choice
                 llSetLinkPrimitiveParamsFast(1, [PRIM_COLOR, 7, gvONColor, 1.0]);
                 gnShinyValue = 0;
-                glSkipSpecFunction = 2;
+                if  (glSkipSpecFunction)
+                 {
+                     glSkipSpecFunction = 2;
+                 }
                 SendColorInfo();
             }                                   
             

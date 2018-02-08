@@ -1,8 +1,10 @@
 ﻿HOW TO ASSEMBLE RUTH 2
 
-By Sundance Haiku
+Concept, Topology and Scripting by Shin Ingen
+UV Mapping and Weighting by Ada Radius
+Text by Sundance Haiku
 
-Note: this a text version of the instructions on how to assemble Ruth.  There’s also a formatted PDF version.  If you find editorial errors – or need to clarify some of the text, you can make changes on the .txt file version GitHub.  Just us know where you make the changes.  
+Note: this the .txt version of the instructions on how to assemble Ruth.  There’s also a formatted PDF version.  If you find editorial errors – or need to clarify some of the text, you can make changes on this file.  Just us know where you make the changes.  
 
 
 General Information on Downloading Source Files
@@ -39,6 +41,8 @@ RUTH BODY PROCEDURE
 3. Re-name all prims making up the body. Here’s where you need the parts list.  Make sure the name for each part is the same as on the parts list.  You will also need to make an entry in “Description” to indicate whether the prim is in the upper half of the body or lower half.  Thus, you'll type in “upper” or “lower” depending on where the prim is located.
 
 4. Upload the root prim for the body.  The root prim is a small cube which will hold the body script.  Currently it’s called “r2ROOTPRIM_rigged.dae,” but the name could change.  Create a new script.  Copy the “r2_body_receiver.lsl” script from the directory (Ruth >> LSLScripts >> HUD >> Ruth >> Current Release) and paste it in and save it.  
+
+A Note on Copying Scripts directly from GitHub.  You can download the script file as describe previously, but it’s just as easy to copy the script in GitHub.  But you can’t copy the script directly.  If you do, you’ll end up getting line numbers, and the code won’t run unless you remove the numbers.  That’s a hassle.  There is a way to copy it without line numbers.  Here’s how to do (thanks to a note from Seth Nygard):  Select the script file so you can see its contents.  You will see the code appear with the line numbers and color highlighting.  Don’t copy that, but rather click on the "Raw" button (on the upper right).  A new window will open with only the code (and no line numbers).  This is what you want.  Copy it and then paste it in place.  .
 
 5. Upload the hand pose: bentohandrelaxedP1.bvh found in the Animation folder: Ruth >> Animations >> bentohandrelaxedP1.bvh.  When you upload it, use “loop enabled” and “priority 1” animation.  Place the animation in the HUD along with the script.
 
