@@ -2,7 +2,7 @@
 // CATEGORY: Ruth 2.0 Scripts
 // AUTHOR: Sundance Haiku (https://plus.google.com/u/0/114880810031398834985)
 // AUTHOR: Chimera Firecaster (https://plus.google.com/115549296923155647217 & https://chimerafire.wordpress.com/)
-// VERSION: 1.01 - February, 2018
+// VERSION: 1.02 - February, 2018
 // DESCRIPTION:
 //      This script is intended to be placed inside a HUD to change the coloring in finger/toe nails
 //      Complete instructions on how to assemble the HUD and the use this script are found on the Ruth Github site (below)
@@ -73,7 +73,7 @@
 //    Currently, llSetLinkPrimitiveParams(0,[ PRIM_SPECULAR...] has a bug.  It will trigger
 //   an error in the script if it tries to execute the function.  Setting the following
 //   to TRUE allows the program to skip the function.  Set it to FALSE when the bug is fixed
-integer glSkipSpecFunction = 0;
+integer glSkipSpecFunction = 1;
 
 //Channel to pass color values to a script in the object which is being colored
 integer gFChannelID = -2471717;  //fingernail channel ID
@@ -587,7 +587,7 @@ vector CalcFreeAreaColor (vector vColorInput)
         float nTotRGB = R + G + B ;
         //float nTotRGB = 100 * gPreviewColorHSL.z ;  //next version - will use LUM for this
         //llOwnerSay("Color in Usual RGB BEFORE conversion:  "+(string)vColorRGB);
-        llOwnerSay("nTotRGB is: " + (string)nTotRGB);
+        //llOwnerSay("nTotRGB is: " + (string)nTotRGB);
         
         if (nTotRGB > 700)
         {        
@@ -809,7 +809,11 @@ default
         string Msg = "Re-set";
         llSay(nTChannel, Msg);     
     }
-    
+     
+    on_rez(integer param)
+    {
+        llResetScript();
+    }
 
     touch_start(integer total_number)
     {

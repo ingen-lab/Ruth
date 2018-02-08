@@ -1,7 +1,7 @@
 // NAME: Fingernail Receiver Script
 // CATEGORY: Ruth 2.0 Scripts
 // AUTHOR: Sundance Haiku (https://plus.google.com/u/0/114880810031398834985)
-// VERSION: 1.0 - February, 2018
+// VERSION: 1.02 - February, 2018
 // DESCRIPTION:
 //  This script is intended to be placed toenail mesh to change the coloring and specularity of the nails
 //  It works in conjunction with the Fingernail HUD which sends the required coloring information
@@ -9,8 +9,8 @@
 //  Ruth Discussion Forum: https://plus.google.com/communities/103360253120662433219
 //  Ruth GitHub Site: https://github.com/Outworldz/Ruth
 // COPYRIGHT: AGPL - When used, please do three things: 1. credit the author 
-//    2. include the author's web link, and 3. tell me if you find ways of improving
-//    the code - and we can learn from each other.
+//    2. include the author's web link, and 3. tell me if you find ways of i/mproving
+//  the code - and we can learn from each other.
 //
 // NOTE . . . WHEN RECOMPILING, USE THE MONO OPTION
 //
@@ -24,7 +24,6 @@
 //    Currently, llSetLinkPrimitiveParams(0,[ PRIM_SPECULAR...] has a bug.  It will trigger
 //   an error in the script if it tries to execute the function.  Setting the following
 //   to TRUE allows the program to skip the function.  Set it to FALSE when the bug is fixed
-//
 integer glSkipSpecFunction = 1;
 
 //Global Variables
@@ -55,7 +54,7 @@ vector CalcFreeAreaColor (vector vColorInput)
         float nTotRGB = R + G + B ;
         //float nTotRGB = 100 * gPreviewColorHSL.z ;  //next version - will use LUM for this
         //llOwnerSay("Color in Usual RGB BEFORE conversion:  "+(string)vColorRGB);
-        llOwnerSay("nTotRGB is: " + (string)nTotRGB);
+        //llOwnerSay("nTotRGB is: " + (string)nTotRGB);
         
         if (nTotRGB > 700)
         {        
@@ -132,6 +131,12 @@ default
         integer nFChannel = 0x80000000 | ((integer)("0x"+(string)llGetOwner()) ^ gFChannelID);
         llListen(nFChannel, "", "", "");
     }
+    
+     on_rez(integer param)
+    {
+        llResetScript();
+    }
+    
     
     listen(integer Channel, string Name, key ID, string Msg)
     {
