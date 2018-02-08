@@ -11,7 +11,7 @@ General Information on Downloading Source Files
 
 You’ll find all of the parts of the Ruth mesh body on the Ruth 2 GitHub site (https://github.com/Outworldz/Ruth).  
 
-With GitHub, you either have to download the entire project or individual files.  (There are ways to download folders, but it requires additional software).  It’s easiest to download the entire project; otherwise you would have to download each of the files separately.  The following explains how to download the entire project (entire “repository” to use GitHub terms) – or, if desired, how you can download individual files.
+With GitHub, you either have to download the entire project or individual files.  (There are ways to download folders, but it requires additional software).  It’s easiest to download the entire project; otherwise you would end up having to download each of the files separately.  The following explains how to download the entire project (entire “repository” to use GitHub terms) – or, if desired, how you can download individual files.
 
 Download Entire Project.  To download the entire project from GitHub, start at the opening page for Ruth and click on “Clone or Download.”  You’ll have a choice of downloading a zip file that has the entire project and all of its folders.  
 
