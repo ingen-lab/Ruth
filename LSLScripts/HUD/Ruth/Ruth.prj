@@ -67,6 +67,8 @@
 		<Script name="r2HUD_sa_trigger.lsl" guid="2ee7fd4f-59f4-4796-abea-bbe76df16005">
 		</Script>
 	</Object>
+	<Object name="Shin Ingen" guid="9386c85f-3aa0-424e-a89a-92e2afb2f640">
+	</Object>
 	<Object name="Sundance Haiku" guid="cef0a21d-d11f-4c1c-b71c-c44985a1d950">
 		<Notecard name="alpha HUD command list.txt" guid="445c778a-a029-4e3d-ad9d-656f220218ac">
 		</Notecard>
