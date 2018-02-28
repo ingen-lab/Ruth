@@ -40,7 +40,7 @@ default
         {
             integer f = 2;
             integer x = 4;
-            integer l = 1;
+            integer l = llGetLinkNumber();
             
             for (; f <= x; ++f)
             {
@@ -53,17 +53,17 @@ default
                     string message = "TEXTURE," + "head"  + "," + primTexture;
                     llRegionSayTo(llGetOwner(),r2chan,message);
                 }
-				if (f == 3)
+                if (f == 3)
                 {
                     string message = "TEXTURE," + "upper"  + "," + primTexture;
                     llRegionSayTo(llGetOwner(),r2chan,message);
                 } 
-				if (f == 4)
+                if (f == 4)
                 {
                     string message = "TEXTURE," + "lower"  + "," + primTexture;
                     llRegionSayTo(llGetOwner(),r2chan,message);
                 }
-			//llOwnerSay("face:"+(string)f + " " + primTexture");	
+            //llOwnerSay("face:"+(string)f + " " + primTexture);    
             }
 
             llOwnerSay("You should now be wearing your beautiful skin.");
