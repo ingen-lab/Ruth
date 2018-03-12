@@ -9,12 +9,13 @@
 // :MORE INFORMATION:
 //      Ruth Discussion Forum: https://plus.google.com/communities/103360253120662433219
 //      Ruth GitHub Site: https://github.com/Outworldz/Ruth
-// :COPYRIGHT: AGPL - When used, please credit the authors and include author web links
-//
-//  Note: this is a FREE script.  It is given generously to the virtual community without
-//  the expectation of anything in return. It may be distributed as long as you credit the
-//  authors and include their web links. But please do not charge for it. That's bad form.
-//  Besides dishonoring the kindness of others, it will most certainly bring you bad karma.
+
+// COPYRIGHT:  Copyright 2018 Sundance Haiku & Chimera Firecaster, Permission required if using this code or derivatives in your own project.  All other rights reserved.  			 
+// 	   If you ask permission and it is for non-commercial purposes, use is almost always cost free.  Once you have obtained permission, I ask for three things: 
+//			1. Credit the author 
+//      		2. Include author web links
+//			3. Tell me if you make improvements I  appreciate hearing from you if you find ways of improving or 
+//			   making the code more efficient. 
 //
 //-----Do Not Remove Above Header
 

@@ -12,9 +12,13 @@
 // MAJOR CONTRIBUTION:
 //      A major part of this script is a color picker that was developed by Chimera Firecaster in 2014
 //      Chimera's notes and remarks concerning the color picker have been included below
-// COPYRIGHT: AGPL - When used, please do three things: 1. Credit the authors 
-//      2. Include author web links, and 3. Tell us if you make improvements (The authors would appreciate hearing from you
-//      if you find ways of improving or making the code more efficient.  We share with you . . . and you can share with us.)
+//
+// COPYRIGHT:  Copyright 2018 Sundance Haiku, Permission required if using this code or derivatives in your own project.  All other rights reserved.  //			 
+// 	   If you ask and it is for non-commercial purposes, use is almost always cost free.  Once you have obtained permission, we ask for three things: 
+//			1. Credit the authors 
+//      		2. Include author web links, and 3. 
+//			3. Tell us if you make improvements (The authors would appreciate hearing from you if you find ways of improving or 
+//			   making the code more efficient.  We share with you . . . and you can share with us.)
 //
 // COMPILING NOTE . . . WHEN RECOMPILING, USE THE MONO OPTION
 //

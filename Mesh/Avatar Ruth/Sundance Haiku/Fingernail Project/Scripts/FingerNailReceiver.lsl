@@ -8,9 +8,14 @@
 // MORE INFORMATION:
 //  Ruth Discussion Forum: https://plus.google.com/communities/103360253120662433219
 //  Ruth GitHub Site: https://github.com/Outworldz/Ruth
-// COPYRIGHT: AGPL - When used, please do three things: 1. credit the author 
-//    2. include the author's web link, and 3. tell me if you find ways of i/mproving
-//  the code - and we can learn from each other.
+//
+// COPYRIGHT:  Copyright 2018 Sundance Haiku, Permission required if using this code or derivatives in your own project.  All other rights reserved.  			 
+// 	   If you ask and it is for non-commercial purposes, use is almost always cost free.  Once you have obtained permission, I ask for three things: 
+//			1. Credit the author 
+//      		2. Include author web links
+//			3. Tell me if you make improvements I  appreciate hearing from you if you find ways of improving or 
+//			   making the code more efficient. 
+
 //
 // NOTE . . . WHEN RECOMPILING, USE THE MONO OPTION
 //
