@@ -27,31 +27,30 @@ Noxluna Nightfire
 Shin Ingen
 Sundance Haiku
 
-
 The mesh head is CC-BY Linden Lab.
 The UV map is CC-BY Linden Lab.
 
-Ruth 2.0 Logo and photos are AGPL by Shin Ingen
+Ruth 2.0 Logo and photos are AGPL by Shin Ingen.
 
 **Skins**
 
 Skin templates by Chip Midnight:  http://forums-archive.secondlife.com/109/72/40762/1.html
 
-CMFF Templates are Licensed as CC-BY 3.0 by Chip Midnight 
+CMFF Templates are Licensed as CC-BY 3.0 by Chip Midnight. 
 
-Splendor Skin by Sezmra Svarog, (Laurie Ellis) is free to use and Non Commercial
+Splendor Skin by Sezmra Svarog, (Laurie Ellis) is free to use and Non Commercial.
 
-Pleaides Skin by Eloh Eliot is BSD License--this covers both source files and in-world skins
+Pleaides Skin by Eloh Eliot is BSD License--this covers both source files and in-world skins.
 
-StarLight Skin, Strawberry Mods by Eloh Eliot is MIT License--this covers both source files and in-world skins
+StarLight Skin, Strawberry Mods by Eloh Eliot is MIT License--this covers both source files and in-world skins.
 
-Ghana Skin is CC-BY Ina Centaur 
+Ghana Skin is CC-BY Ina Centaur. 
 
 **Attachments**
 
 Elf Ears are AGPL by Fred K. Beckhusen.
 
-**Apparel**
+**Clothing**
 
 ...
 
