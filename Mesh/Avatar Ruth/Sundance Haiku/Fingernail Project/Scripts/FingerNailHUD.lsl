@@ -6,27 +6,31 @@
 // DESCRIPTION:
 //      This script is intended to be placed inside a HUD to change the coloring in finger/toe nails
 //      Complete instructions on how to assemble the HUD and the use this script are found on the Ruth Github site (below)
+//
 // MORE INFORMATION:
 //      Ruth Discussion Forum: https://plus.google.com/communities/103360253120662433219
 //      Ruth GitHub Site: https://github.com/Outworldz/Ruth
+//
+// COPYRIGHT:  Copyright 2018 Sundance Haiku. All rights reserved.  If you are using 
+//		this original work in your personal projects which are not distributed to others, no permission is 
+//		required.  If you distribute this work, or use this work in products which will be distributed to others, 
+//		permission is required.  Two exceptions are allowed to the permission requirement.  The two 
+//		exceptions are: 1) permission is not required for those individuals who have made major contributions
+//		to the Ruth 2 project; and, 2) permission is not required if this work is distributed in free (no cost)
+//		packages which include Ruth and Roth avatars and related items.  Unless otherwise warranted, use of this
+// 		work for non-commercial purposes is granted without charge.  Fees may be charged if the work or 
+//		derivatives of it are used in commercial products, except in the case of individuals making significant 
+//		contributions to the Ruth 2 project whose use of this work is free of any cost.
+//
+//	  	If permission is granted, typical requirements include:
+//			1. Credit the author 
+//      		2. Include author's web links
+//			3. Drop the author a note if you make improvements. (We appreciate hearing 
+//			   from you if you find ways of improving or making the code more efficient.)
+//
 // MAJOR CONTRIBUTION:
 //      A major part of this script is a color picker that was developed by Chimera Firecaster in 2014
-//      Chimera's notes and remarks concerning the color picker have been included below
-//
-// COPYRIGHT:  Copyright 2018 Sundance Haiku, Permission required if using this code or derivatives in your own project.  All other rights reserved.  //			 
-// 	   If you ask and it is for non-commercial purposes, use is almost always cost free.  Once you have obtained permission, we ask for three things: 
-//			1. Credit the authors 
-//      		2. Include author web links, and 3. 
-//			3. Tell us if you make improvements (The authors would appreciate hearing from you if you find ways of improving or 
-//			   making the code more efficient.  We share with you . . . and you can share with us.)
-//
-// COMPILING NOTE . . . WHEN RECOMPILING, USE THE MONO OPTION
-//
-// CODE & KARMA
-//      Note: this is a FREE script.  It is given generously to the virtual community without
-//      the expectation of anything in return. It may be distributed as long as you credit the
-//      authors and include their web links. But please do not charge for it. That's bad form.
-//      Besides dishonoring the kindness of others, it will most certainly bring you bad karma.
+//      Chimera's notes and remarks concerning the color picker have been included below.  
 //
 // INFORMATION ON CHIMERA'S COLOR PICKER
 //      The color picker built into this HUD has been adapted from Chimera's Color Picker, ver 1, 2014
@@ -68,6 +72,7 @@
 //      the scripting forum.  Finally I would like to thank all of the Second Life scripters who freely
 //      make their knowledge available by public postings of code samples and projects which benefit us all.
 //
+// COMPILING NOTE . . . WHEN RECOMPILING, USE THE MONO OPTION
 //
 //-----Do Not Remove Above Information
 //
