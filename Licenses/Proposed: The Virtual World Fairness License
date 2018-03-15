@@ -1,0 +1,162 @@
+A Proposal for the Ruth 2 Project:
+The Virtual World Fairness License
+
+In this draft of the proposed license, commercial entities are required to ask permission if they want to use something which falls under the terms of this license.  This is something of a test.  I would like to see if there are commercial entities out there who are interested in off-shoots of the Ruth Project, and, if so, what they want to use them for.  
+
+The language can be easily changed so that the license does away with the permission requirement and simply doesn’t permit commercial use.  Nonetheless, but we might be able to learn something from it – and having that ability might be attractive to potential contributors to the Ruth Project.  I’ve included the permission requirement, but if there is a strong feeling otherwise, then I’m fine to do otherwise.
+
+Summary of “The Virtual World Fairness License”
+
+Note the term “Licensed Work” means the component or script the original owner has placed under this license.  So, if the Fingernail HUD used this license, it would be the “Licensed Work.”  Or if a script use this license, it would be the “Licensed Work,” etc.
+
+•	No Permission is required for the following:
+•	Personal projects
+•	All non-commercial purposes
+•	Distributing free (no cost) packages which include Ruth/Roth avatars & related
+•	Selling skins, clothing, etc for Ruth/Roth
+
+Example:  One of members of the Ruth Google + group creates a tattoo for Ruth and uses an Applier which is a Licensed Work.  He or she would NOT have to ask permission
+
+Example:  An OpenSim merchant uses an Applier (which is a Licensed Work) to create a tattoo for Ruth.  They would NOT have to ask permission.
+
+Example: The Mesh Project wants to use the Applier (which is a Licensed Work) to distribute skins for their mesh avatars.  Permission would be required. 
+
+•	Permission is required if the Licensed Work is used for commercial purposes.  
+Example:  Maitreya wants to use sell my Fingernail HUD along with a package of 30 designs.  They would have to ask permission.  
+
+•	Permission required to distribute Licensed Work with non-Ruth related packages.  
+
+Example:  Belleza wants to package a Ruth Project script, HUD, and some other components along with one their commercially sold avatars.  They would have to ask permission.  
+
+Example: Slink wants to create a fee package consisting of the Fingernail HUD along some fingernail designs.  The package is free so it meets the non commercial clause of the license.  However, it is a non-Ruth package, so they would need to seek permission.
+
+•	If someone is selling skins, clothing, etc. for Ruth, and they are using the Licensed Work, they don’t have to worry about the license requirement.
+
+Example:  An individual can create a series of fingernail designs that they plan to sell.  To get the designs to their customers, they use an Applier (which is a Licensed Work).  Under this clause in the license terms, if they use the Applier, they wouldn’t have to worry about including copies of the license and all of the other stipulations required of someone who is actually distributing or modifying the Applier.  This is to mitigate concerns raised in the Google + group that their creations might have to become open source.
+
+•	Includes boiler-plate legal language for the sharing or conveying of source code and/or artistic, literary or other types of creative work.  All downstream recipients must share in the same way and they must provide links to where the source code or creative work is located.
+
+•	Includes boiler plate legal language for copyright, identification of the creator, term, no endorsement, disclaimer or warranties, release of liability, etc. 
+
+•	Includes typical language for allowing modifications and making those modifications publically available.  
+
+•	There is one clause which allows for the unpublished modification of the source code (i.e. change of channel number) if, and only if, it protects intellectual & artistic property of individuals who are creating skins, clothing, etc. for the project.  This again is to respond to concerns raised on Google + on how protect a creator’s work.  
+
+•	There is a clause which protects Virtual World propriety source code.  This is to respond to the reported concerns virtual world owner.
+
+(End of Summary)
+
+The Virtual World Fairness License
+
+To the extent this License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Work available under these terms and conditions.  Some uses of this Licensed Work require permission from the Licensor.
+
+Section 1 – Definitions.
+a.	Copyright and Similar Rights means copyright and/or similar rights closely related to copyright.
+b.	Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Work.
+c.	Licensed Work (also referred to as Work) means computer code or artistic, literary, other types of creative work, or some combination thereof, to which the Licensor applied this License.
+d.	Licensed Rights means the rights granted to You subject to the terms and conditions of this License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Work and that the Licensor has authority to license.
+e.	Licensor means the individual(s) or entity(ies) granting rights under this License.
+f.	NonCommercial means activity not primarily intended for or directed towards commercial advantage or monetary compensation. For purposes of this License, the exchange of the Licensed Material for other material subject to Copyright and Similar Rights by digital file-sharing or similar means is NonCommercial provided there is no payment of monetary compensation in connection with the exchange.
+g.	Commercial means intended for or directed towards commercial advantage or monetary compensation.
+h.	Share means to provide the Licensed Work to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the Licensed Work from a place and at a time individually chosen by them.
+i.	Modified Work means Work subject to Copyright and Similar Rights that is derived from or based upon the Licensed Work in which the Work is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. 
+j.	Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to the Modified Work in accordance with the terms and conditions of this License.
+k.	Computer Code or Scripts are instructions written by a programmer in a programming language.  In a Virtual World context, computer code is often referred to as scripts.  Within this license, computer code and scripts mean the same thing. 
+l.	Source Code is the original series of instructions written by a programmer before it may be compiled into a different form.  If modifications are made, they are made to the Source Code.
+m.	Virtual World means a computer-based online environment in which users create and use an Avatar to explore a simulated world, participate in its activities and communicate with others.
+n.	Avatar means a representation of a person or entity in the virtual world.  Ruth (female) and Roth (male) are avatars in the Ruth 2 Project.
+o.	Ruth 2 Project means the open source, collaborative venture to create Avatars and ancillary components and scripts for the Virtual World.  Source code and other components of the project are publically available and are found on the GitHub repository: https://github.com/Outworldz/Ruth
+p.	Open Source has a narrow and specific definition under this License.  It means that Source Code or derivatives of Source Code are publicity accessible and may be used, changed, and shared (in modified or unmodified form). 
+q.	You means the individual or entity exercising the Licensed Rights under this License. Your has a corresponding meaning.
+
+Section 2 – Permission Requirements
+a. Personal Projects.  If You are using this Work in your personal projects which are not distributed to others, no permission is required.
+
+b. Distribution of this Work.  If You distribute this Licensed Work, whether in original or modified form, or use it in products which will be distributed to others, permission is required.  Three exceptions are allowed:
+1.	Permission is not required for if You have made major contributions to the Ruth 2 Project. 
+2.	Permission is not required if You are distributing this Licensed Work in free (no cost) packages which include Avatars and/or ancillary components related to the Ruth 2 Project.  
+3.	Permission is not required if You are distributing this Licensed Work free of cost for NonCommercial purposes.
+
+c. Commercial Use of the Licensed Work.  If You use this Work for commercial purposes, permission is required.  Two exceptions are allowed:
+1.	If You have made major contributions to the Ruth 2 Project, You may use the Licensed Work for Commercial purposes.
+2.	If You have created clothing, skins and other accessories for Commercial purposes in the Virtual World, and if you are using this Work in some way in connection with those creations, permission is not required as long as the creations are intended for Ruth 2 Project avatars and/or ancillary components. 
+
+d. Permission Requests.  If You do not meet one of the exceptions outlined in Section 2c, you may request permission from the Licensor at this address: SunHaiku@gmail.com.
+
+Section 3 – License Grant. 
+a. NonCommercial. If You meet one of the exceptions outlined in Section 2b, subject to the terms and conditions of this License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Work to Share the Work, in whole or in part, for NonCommercial purposes.  
+
+b. Commercial.  You may not charge a fee or receive financial compensation for distributing the Licensed Work; nor may you use the Licensed Work in some Commercial manner, unless You have met the exception described in Section 2 (c) (1), in which case the Licensor grants the same license terms as Section 3a.
+
+c. Virtual World.  If you meet one of the exceptions described in Section 2 (c) (2), you may create and distribute Virtual World items such as clothing, skins and ancillary items for, or involving the use of, this Licensed Work.  Such creative properties, whether intended for Commercial or NonCommercial purposes, remain under your ownership, and they may be distributed in the Virtual World according to your choice of permissions.  You do not need to include a copy of this license, nor comply with Sections 4, 5 and 6.
+
+d. Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this License does not apply, and You do not need to comply with its terms and conditions.
+
+Section 4 – Attribution.
+a. Sharing the Licensed Work. If you meet one of the exceptions in Section 2b and 2(c)(1), and You Share the Licensed Work (including in modified form), You must:
+1.	retain the following if it is supplied by the Licensor with the Licensed Work: 
+i.	identification of the creator(s) of the Licensed Work and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+ii.	a copyright notice;
+iii.	if the Licensed Work consists computer code, a hyperlink to where the source code may be found.  
+iv.	if the Licensed Work consist of artistic or literary or some other type of creative work a URI or hyperlink to the Licensed Work to the extent reasonably practicable;
+v.	a notice that refers to this License; 
+vi.	a notice that refers to the disclaimer of warranties;
+2.	indicate if You modified the Licensed Work and retain an indication of any previous modifications; and
+3.	indicate the Licensed Work is licensed under License, and include the text of, or the URI or hyperlink to, this License.
+4.	You may satisfy the conditions in Section 4 (a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Work. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
+5.	If requested by the Licensor, You must remove any of the information required by Section 4(a)(1)(A) to the extent reasonably practicable.
+6.	If You Share Modified Work You produce, the Adapter's License You apply must not prevent recipients of the Modified Work from complying with this License.
+
+Section 5 –Modified Work
+a. Modifications.  If You meet one of the exceptions outlined in Section 2b, the Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. 
+
+b. Source Code.  If this Licensed Work involves computer code, any modification You make must continue to be Open Source as defined by this License and publically accessible in a source code repository. 
+
+c. Protection of Virtual Intellectual & Artistic Property.  If this Licensed Work involves computer code, there is one, very limited, exception to the Open Source requirement.  This is in concern for the protection of the intellectual and artistic property of individuals in the Virtual World who are creating items for the Ruth Project.  In some computer code applications, a creator’s intellectual or artistic property may be vulnerable to the theft.  Since this License places an important value on the security of Ruth Project creators, You may make a limited, but unpublished, modification in the Source Code to eliminated potential vulnerabilities.  In most cases, this will be as simple as changing a communication channel.  Such changes, however, must be limited and the remainder of the code must remain Open Source as defined in this License. 
+
+Section 6 –Licensing of Downstream Recipients.
+a.  Offer from the Licensor – Licensed Work.  Every recipient of the Licensed Work automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this License.
+
+b.  Additional offer from the Licensor –Modified Work.  Every recipient of Modified Work from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Modified Work under the conditions of the Adapter’s License You apply.
+
+c. No Downstream Restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Work if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Work.
+
+Section 7 – Virtual World Proprietary Source Code
+Nothing in this license shall be construed as requiring the release of proprietary source code associated with the Virtual World in which this License Work may be used.
+
+Section 8 – Term 
+This License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this License, then Your rights under this License terminate automatically.
+
+Section 10 – No Endorsement
+Nothing in this License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Work is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 4 (a)(1)(A)(i). 
+
+Section 11 – Disclaimer of Warranties and Limitation of Liability.
+a. Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Work as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Work, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
+
+b. To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this License or use of the Licensed Work, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
+
+c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+
+Section 12 – Other Terms and Conditions.
+a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed. 
+
+b. Any arrangements, understandings, or agreements regarding the Licensed Work not stated herein are separate from and independent of the terms and conditions of this License. 
+
+Section 13 – Interpretation.
+a. For the avoidance of doubt, this License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Work that could lawfully be made without permission under this License.
+
+b.  the extent possible, if any provision of this License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this License without affecting the enforceability of the remaining terms and conditions.
+
+c. No term or condition of this License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
+
+d. Nothing in this License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+
+
+ADDENDUM
+Sample language to be placed on a script or component which falls under this license:
+
+Copyright 2018, Name
+Licensed under “The Virtual World Fairness License,” Version 1.0 (the "License"); you may not use this file except in compliance with the License.  Note that the license is largely open source but has restrictions on commercial use.  You may obtain a copy of the License at:  https://github.com/Outworldz/Ruth/tree/master/Licenses.
+
+Unless required by applicable law or agreed to in writing, the software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
