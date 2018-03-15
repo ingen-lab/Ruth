@@ -11,22 +11,7 @@
 //      Ruth Discussion Forum: https://plus.google.com/communities/103360253120662433219
 //      Ruth GitHub Site: https://github.com/Outworldz/Ruth
 //
-// COPYRIGHT:  Copyright 2018 Sundance Haiku. All rights reserved.  If you are using 
-//		this original work in your personal projects which are not distributed to others, no permission is 
-//		required.  If you distribute this work, or use this work in products which will be distributed to others, 
-//		permission is required.  Two exceptions are allowed to the permission requirement.  The two 
-//		exceptions are: 1) permission is not required for those individuals who have made major contributions
-//		to the Ruth 2 project; and, 2) permission is not required if this work is distributed in free (no cost)
-//		packages which include Ruth and Roth avatars and related items.  Unless otherwise warranted, use of this
-// 		work for non-commercial purposes is granted without charge.  Fees may be charged if the work or 
-//		derivatives of it are used in commercial products, except in the case of individuals making significant 
-//		contributions to the Ruth 2 project whose use of this work is free of any cost.
-//
-//	  	If permission is granted, typical requirements include:
-//			1. Credit the author 
-//      		2. Include author's web links
-//			3. Drop the author a note if you make improvements. (We appreciate hearing 
-//			   from you if you find ways of improving or making the code more efficient.)
+// COPYRIGHT:  Copyright 2018 Sundance Haiku. 
 //
 // MAJOR CONTRIBUTION:
 //      A major part of this script is a color picker that was developed by Chimera Firecaster in 2014
