@@ -11,7 +11,13 @@
 //      Ruth Discussion Forum: https://plus.google.com/communities/103360253120662433219
 //      Ruth GitHub Site: https://github.com/Outworldz/Ruth
 //
-// COPYRIGHT:  Copyright 2018 Sundance Haiku. 
+// USE
+//		For non-commercial use
+//
+//		Note: this is a FREE script.  It is given generously to the virtual community without
+//		the expectation of anything in return. It may be distributed as long as you credit the
+//		author and include his web link. But please do not charge for it. That's bad form.
+//		Besides dishonoring the kindness of others, it will most certainly bring you bad karma.
 //
 // MAJOR CONTRIBUTION:
 //      A major part of this script is a color picker that was developed by Chimera Firecaster in 2014
