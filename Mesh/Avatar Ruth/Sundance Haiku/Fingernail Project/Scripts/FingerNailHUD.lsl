@@ -2,7 +2,7 @@
 // CATEGORY: Ruth 2.0 Scripts
 // AUTHOR: Sundance Haiku (https://plus.google.com/u/0/114880810031398834985)
 // AUTHOR: Chimera Firecaster (https://plus.google.com/115549296923155647217 & https://chimerafire.wordpress.com/)
-// VERSION: 1.02 - February, 2018
+// VERSION: 1.03 - February, 2018
 // DESCRIPTION:
 //      This script is intended to be placed inside a HUD to change the coloring in finger/toe nails
 //      Complete instructions on how to assemble the HUD and the use this script are found on the Ruth Github site (below)

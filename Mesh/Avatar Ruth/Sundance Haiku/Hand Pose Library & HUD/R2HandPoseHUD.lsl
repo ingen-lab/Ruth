@@ -2,7 +2,7 @@
 // :CATEGORY: Ruth 2.0 Scripts
 // :AUTHOR: Sundance Haiku (https://plus.google.com/u/0/114880810031398834985)
 // :AUTHOR: Chimera Firecaster (https://plus.google.com/115549296923155647217 & https://chimerafire.wordpress.com/)
-// :VERSION: 1.0
+// :VERSION: 1.01
 // :DESCRIPTION:
 //      This script is intended to be placed inside a HUD to animate the hands into different poses
 //      Complete instructions on how to assemble the HUD and use this script are found on the Ruth Github site (below)

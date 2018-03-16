@@ -1,7 +1,7 @@
 // :NAME: Toenail Receiver Script
 // :CATEGORY: Ruth 2.0 Scripts
 // :AUTHOR: Sundance Haiku (https://plus.google.com/u/0/114880810031398834985)
-// :VERSION: 1.02 - February, 2018
+// :VERSION: 1.03 - February, 2018
 // :DESCRIPTION:
 //      This script is intended to be placed toenail mesh to change the coloring and specularity of the nails
 //      It works in conjunction with the Fingernail HUD which sends the required coloring information
