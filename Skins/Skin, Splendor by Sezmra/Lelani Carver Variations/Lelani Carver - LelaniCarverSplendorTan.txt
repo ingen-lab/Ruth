@@ -1,0 +1,10 @@
+This mod of the Splendor skin is light tan, with restrained eye makeup and berry-colored lipstick. Transparency has been removed from the face texture to deal with issues at the neck join, as discussed on the G+ group for Ruth 2.0. 
+
+NOTE - there are two torso files. One is the original version by Sezmra Svarog with French manicure (white tip) nails. The white shading shows up on the Bento hands, so the second torso file SplendorTanNailBed.png has a lot of the white painted out. Wear this version ONLY if you plan to wear mesh nail attachments!
+
+Thank you,
+Lelani Carver
+lelanicarver@gmail.com
+http://Haleakaloha.Outworldz.net:8002
+
+For more information, see https://plus.google.com/u/1/communities/103360253120662433219.
