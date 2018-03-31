@@ -1,0 +1,6 @@
+<Project name="XTEA" guid="186d4393-f319-4563-8ac9-114ca6a91b5b">
+	<Object name="Object" guid="5880f700-e0cd-4d37-a914-d50bdeee6c51" active="true">
+		<Script name="XTEA test program.lsl" guid="1a01a851-42b4-4825-87e6-5eb181767d9a">
+		</Script>
+	</Object>
+</Project>
