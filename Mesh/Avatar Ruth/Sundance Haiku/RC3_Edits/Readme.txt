@@ -24,7 +24,7 @@ Specifically the following changes were made:
 
 It was on the flat foot where I spent the bulk of the time.  I unwrapped and re-did the map several times trying to come up with the closest facsimile of the SL UV map.  
 
-All of that work, somewhere around 30 hours, never resulted in something that I was completely satisfied with.  The final version of it in “Release3_AdaEdit_SundanceEdit_09.blend” is the best that I can come up with.  Ada might want to see if she can tweak it.  I’ll also throw it open to the group to see if anyone else wants to take a crack at it.
+All of that work, somewhere around 30 hours, resulted in a series of compromises.  The final version of it in “Release3_AdaEdit_SundanceEdit_09.blend” is the best that I can come up with.  Ada might want to see if she can tweak it.  I’ll also throw it open to the group to see if anyone else wants to take a crack at it.
 
 To supplement the Blender file, I have included a series of screen shots comparing my final edit of Ruth’s foot with the default avatar foot – both wearing Robin Wood’s UV template.  As one can see from the map, we are good as far as adjacent UV maps.  All of the UV’s from the foot line up with the UV’s of the lower leg, and the bottom of the foot (which is on a separate UV island) lines up with the upper foot.  The color bands as shown on Robin Wood’s UV templates are in the same approximate locations – and there is a general overall replication of the UV.  
 
