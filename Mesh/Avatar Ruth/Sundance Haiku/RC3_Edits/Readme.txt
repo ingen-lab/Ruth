@@ -7,7 +7,7 @@ The file "Release3_AdaEdit_SundanceEdit_09.blend" has the latest updates for Rel
 
 Edits and Changes
 
-Any changed in the Blender file has been indicated by the following two suffixes added to the name of the item (found on Blender’s “Outliner”): “SundanceUV_RC3” and “Sundance_RC3.”
+Any changes in the Blender file has been indicated by the following two suffixes added to the name of the item (found on Blender’s “Outliner”): “SundanceUV_RC3” and “Sundance_RC3.”
 
 “SundanceUV_RC3” – This suffix means I re-created or made changes in the UV map associated with the body part.  In two cases, I made some vertex weighting changes which are explained below.
 
