@@ -1,4 +1,4 @@
-I have added Curious Creator's Blender File so it is a bit easier to access.  It has a number of edits on my Release3_AdaEdit_SundanceEdit_09.blend file.
+I have added Curious Creator's Blender File so it is a bit easier to access.  Curious has very kindly made a number of edits on my Release3_AdaEdit_SundanceEdit_09.blend file.
 
 Here are Curious' notes on changes she made . . . 
 
