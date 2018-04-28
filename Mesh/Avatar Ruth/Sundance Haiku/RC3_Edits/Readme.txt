@@ -1,9 +1,4 @@
-Quick Start:
-
-The file "Release3_AdaEdit_SundanceEdit_09.blend" has the latest updates for Release Candidate #3.  
-
-(The other files are sequential stages in development and are included if, for some reason, data is needed from an earlier stage.)
-
+NOTE: This has been superseded by more recent files in the directory: Sundance Haiku/RC3_Edits/RC3_Final.  Use those instead.  This has been left to keep a paper (digital?) trail of changes.  
 
 Edits and Changes
 
