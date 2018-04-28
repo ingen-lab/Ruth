@@ -1,4 +1,4 @@
-NOTE: This has been superseded by more recent files in the directory: Sundance Haiku/RC3_Edits/RC3_Final.  Use those instead.  This has been left to keep a paper (digital?) trail of changes.  
+NOTE: The information & files in this directory has been superseded by more recent files in the directory: Sundance Haiku/RC3_Edits/RC3_Final.  Use those instead.  I left the contents of this directory to keep a paper trail of changes.  
 
 Edits and Changes
 
