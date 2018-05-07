@@ -1,22 +1,49 @@
-// :NAME: Hand Pose HUD Script
-// :CATEGORY: Ruth 2.0 Scripts
-// :AUTHOR: Sundance Haiku (https://plus.google.com/u/0/114880810031398834985)
-// :AUTHOR: Chimera Firecaster (https://plus.google.com/115549296923155647217 & https://chimerafire.wordpress.com/)
-// :VERSION: 1.01
-// :DESCRIPTION:
+// NAME: Hand Pose HUD Script
+// AUTHOR: Sundance Haiku (https://plus.google.com/u/0/114880810031398834985)
+// AUTHOR: Chimera Firecaster (https://plus.google.com/115549296923155647217 & https://chimerafire.wordpress.com/)
+// VERSION: 1.02
+// DESCRIPTION:
 //      This script is intended to be placed inside a HUD to animate the hands into different poses
 //      Complete instructions on how to assemble the HUD and use this script are found on the Ruth Github site (below)
-// :MORE INFORMATION:
+// MORE INFORMATION:
 //      Ruth Discussion Forum: https://plus.google.com/communities/103360253120662433219
 //      Ruth GitHub Site: https://github.com/Outworldz/Ruth
 //
-// USE
-//		For non-commercial use
+// COPYRIGHT:
+//   Copyright 2018 by Sundance Haiku and Chimera Firecaster
+//   For: Hand Pose HUD Script, Hand Pose HUD & Scripts
 //
-//		Note: this is a FREE script.  It is given generously to the virtual community without
-//		the expectation of anything in return. It may be distributed as long as you credit the
-//		author and include his web link. But please do not charge for it. That's bad form.
-//		Besides dishonoring the kindness of others, it will most certainly bring you bad karma.
+//   Licensed under “The Virtual License: Open Source, Non-commercial,” Version 1.0
+//   (the "License"); you may not use this Work except in compliance with the License.  
+//   If the License is not included this work, a copy is available at the following:
+//      https://tinyurl.com/ycaom8g7
+//   This is an open source work.  The source files are found at:  
+//      https://github.com/Outworldz/Ruth
+//   Subsidiary Creations (see License for more information): Hand Pose Animations
+//
+//   Unless required by applicable law or agreed to in writing, the software distributed 
+//   under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+//   OR CONDITIONS OF ANY KIND, either express or implied.  
+//
+//   You may give this work to another person or share or distribute this work with 
+//   other non-commercial work as long as it is provided FREE OF COST and the following 
+//   is met:  (1) Include the above text.  (2) Include a copy of the License document 
+//   including the “Plain Language Summary” and copy of the License.  If not 
+//   reasonably possible to include to the License document, use the above hyperlink.)  
+//   (3) Indicate if you have modified the work and where you modified it.  If 
+//   modified and if sharing it, include either a “Modify, Transfer” version of the 
+//   Work or provide a link to the modified source files.  Any modification made by 
+//   you or others falls under the same License terms.  
+//
+//   See the License for the specific language governing the use of this Work and 
+//   limitations under the License.
+//
+// CODE & KARMA
+//  Note: this is a FREE script.  It is given generously to the virtual community without
+//  the expectation of any financial return.  It may be distributed as long as you observe
+//  the license requirements described above.  Please do not charge for it. That's bad form.
+//  Besides dishonoring the kindness of others, it will most certainly bring you bad karma.
+
 //
 //
 //-----Do Not Remove Above Header
