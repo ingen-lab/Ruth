@@ -1,6 +1,6 @@
 As you may know Shin and Ada are looking into the possibility of using static poses to place the flat feet in various positions for high heels.  Ada – who has contributed so much to this project - has already weighted the flat feet for that purpose.  In my work with the flat feet, I only made UV changes.  I did not make any changes in Ada’s weighting.
 
-Ada has created the five poses for the flat feet to be used with heels.  She has created poses for 1, 2, 3, 4 and 5 inch (US) or 25, 50, 75, 100 & 125 mm (Metric).  (She also has a Pointe pose for any ballerinas out there.) 
+Ada has created five poses for the flat feet to be used with heels.  She has created poses for 1, 2, 3, 4 and 5 inch (US) or 25, 50, 75, 100 & 125 mm (Metric).  (She also has a Pointe pose for any ballerinas out there.) 
 
 Using Ada’s poses (found in the Pose Library in Blender), I exported each to ANIM files.  I created one additional pose (the default flat foot position) and exported that as well.  
 
