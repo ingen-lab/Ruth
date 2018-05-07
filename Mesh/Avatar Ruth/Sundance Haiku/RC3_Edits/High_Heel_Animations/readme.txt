@@ -10,7 +10,7 @@ Members of the Ruth 2 community might want to have a look and see how the poses 
 
 To use the animations on the Ruth character in-world, you’ll also need to upload the DAE files of the various body parts found in the following directory:  Ruth/Mesh/Avatar Ruth/Sundance Haiku/RC3_Edits/RC3_Final/. 
 
-The poses were all exported using a Level 4 priority, and that, of course, may change depending how poses work when combined with dance animations, etc.  Members of the Ruth community with expertise in the animation area, may be able to help in that regard. 
+The poses were all exported using a Level 4 priority, and that, of course, may change depending how poses work when combined with dance animations, etc.  Members of the Ruth community with expertise in the animation area may be able to help in that regard. 
 
 Ada has given us a great start.  There is still some work that needs to be done so that flat feet respond better when an avatar’s sliders are used to change the size of the foot.  Taarna Welles has kindly volunteered to do work in that area.  
 
