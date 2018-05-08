@@ -4,7 +4,7 @@ Ada has created five poses for the flat feet to be used with heels.  She has cre
 
 Using Ada’s poses (found in the Pose Library in Blender), I exported each to ANIM files.  I created one additional pose (the default flat foot position) and exported that as well.  
 
-I want to see what they looked like in-world - and they look quite nice!  Good work Ada!  
+I wanted to see what they looked like in-world - and they look quite nice!  Good work Ada!  
 
 Members of the Ruth 2 community might want to have a look and see how the poses appear when used in-world.  You can find the animation files in following GitHub directory:  Ruth/Mesh/Avatar Ruth/Sundance Haiku/RC3_Edits/High_Heel_Animations.  
 
