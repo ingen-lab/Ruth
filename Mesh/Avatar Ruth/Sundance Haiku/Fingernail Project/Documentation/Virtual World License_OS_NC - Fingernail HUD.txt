@@ -1,0 +1,276 @@
+VIRTUAL WORLD LICENSE: OPEN SOURCE, NON-COMMERCIAL 
+(User’s Text Version – Virtual World License_OS_NC)
+
+PLAIN LANGUAGE SUMMARY
+
+The following is a plain language summary of the license.  For details, see the actual license which follows this summary.  Note that the word “Work” below means the item(s) which is licensed.  It might be a script, a mesh item, an animation, etc.  Or might be a combination of items.
+
+You’ll notice below that there are several places in the Copyright Statement that include brackets:  [like this].  The copyright owner will fill this in, and you’ll find this information included with the Work.  In most cases, it will be included in a separate text document which reproduces the entire license below.  In some cases you’ll find it in a short statement in the header of a script (if present) – or in some other readable portion of the Work.
+
+Would you prefer a nicely formatted version of this document?
+     You can find it here: https://tinyurl.com/ycaom8g7
+
+Interested in more information, including background & supporting information?
+     Lots more details are found here: https://tinyurl.com/y8a7exgc
+
+-----------------------------------------
+SHARING THIS WORK . . .
+
+If you give this Work to another person – or you include this Work in a package which you plan to distribute – you need to include the following three informational pieces: 
+
+
+* SHARING THIS WORK #1 *
+INCLUDE THE FOLLOWING COPYRIGHT STATEMENT:
+
+    Copyright Chimera Firecaster & Sundance Haiku
+
+    For: Fingernail HUD, Fingernail Script, Fingernails & Toenails
+
+    Licensed “Virtual World License: Non-Commercial, Open Source,” Version 1.0 (the "License"); you may not use this Work except in compliance with the License.  Unless required by applicable law or agreed to in writing, the Work distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing the use of this Work and limitations under the License.
+
+    Open Source. This is an open source Work.  The source files are found at:  https://github.com/Outworldz/Ruth
+
+    Subsidiary Creations (see below more information):  Fingernails & Toenails
+
+
+* SHARING THIS WORK #2 *
+INCLUDE A COPY OF THIS “PLAIN LANGUAGE SUMMARY” AND 
+A Copy of the Actual License (Found Below).
+
+
+* SHARING THIS WORK #3 *
+INDICATE IF YOU HAVE MODIFIED THE WORK & WHERE YOU MODIFIED IT.  (Your help and generosity is appreciated!  If you made a modification and are sharing it, be sure to include your name so you can be properly credited.)  Additionally, if you have modified it, include either a “Modify, Transfer” version of the Work in your distribution package or provide a link to the modified source files.  The Work must be reproducible from the source files and clear instructions on how to do so should be provided.
+-----------------------------------------
+
+
+
+WHAT IS PERMISSIBLE UNDER THE LICENSE .  .  .
+
+-- This is OK:  
+SHARING OR DISTRIBUTING FREE (NO COST) PACKAGES WHICH INCLUDE THE LICENSED WORK
+
+You can share or distribute this Work as long as you do not charge for.  If you include it in a package along with other items, everything else in the package must be free of cost as well.  Any distribution of this Work must include the three informational pieces described above under “Sharing this Work.”
+
+
+-- This is OK:  
+PERSONAL PROJECTS 
+
+If you are using this Work for your own private use, you can make changes to it and use it in any manner you desire.  (If you, however, give it to someone else – or share it in some way – then you need to include the three informational pieces described above under “Sharing this Work.”)
+
+
+-- This is OK:  
+SELLING “SUBSIDIARY CREATIONS” 
+
+Your license may include “Subsidiary Creations.”  If it does, you’ll find those listed in the Copyright Statement, above.  These items, if included above, are exempted from the terms of the License.  In other words, you can sell Subsidiary Creations.  You do not have to make them open source, nor follow the other terms of the license.  This applies only to Subsidiary Creations and not to the Work itself.  
+
+While it may seem that having the right to sell Subsidiary Creations is a non-brainer, some licenses are vague on whether this possible – and may even require you to reveal your source files to the public if your creation uses or interacts with the Licensed Work in some way.  Subsidiary Creations were specifically included in the Virtual World License to protect you and your creations.
+
+
+-- This is OK:  
+USING THE WORK TO TRANSFER “SUBSIDIARY CREATIONS” 
+
+The Work covered by this License may be used to transfer Subsidiary Creations.  (If the Work isn’t used for that purpose, you don’t have to worry about it.)  The best way to describe this is to use an example.  Let’s say that the Work covered by this license is a Skin Applier.  Let’s also say that you see “skins” listed as a Subsidiary Creation in Copyright Statement.  In that case, this License allows you to package your own skins with the Applier and transfer them to a mesh avatar, as long as the following are meet:
+
+1) The Applier must be used to transfer the skins to a non-commercial avatar only.  You cannot use it to transfer skins to commercially sold avatar.
+
+2) Since you are distributing the Applier along with the skins, you must include the three informational pieces described above under “Sharing this Work.”  
+
+3) The Applier, itself cannot be sold, but you are under no other restrictions as far as the skins are concerned.  You can sell the skins.  You can package the Applier and skins together, and you can use whatever permissions are appropriate, i.e. “No Modify” or “No Modify/No Transfer,” etc.  
+
+
+-----------------------------------------
+
+
+WHAT IS *NOT* PERMISSIBLE UNDER THE LICENSE  .  .  .
+
+-- This is NOT OK:  
+SELLING THE LICENSED WORK 
+
+You cannot sell the Licensed Work.  If your License includes Subsidiary Creations, you can sell these, but you cannot sell the Work or any modification of it 
+
+
+-- This is NOT OK:  
+USING THE WORK TO TRANSFER SUBSIDIARY CREATIONS TO COMMERCIAL PRODUCTS
+
+As described above, some works covered this license may be used to transfer Subsidiary Creations.  An example is an Applier which might be used to transfer skins from you to a customer.  The customer then applies the skins to a mesh avatar.  The license requires that you can only use the Work to transfer skins to a non-commercial avatar.  It cannot be used for a commercially sold avatar.  
+
+
+-- This is NOT OK:  
+NON-COMMERCIAL DISTRIBUTION OF THE LICENSED WORK WITHOUT INCLUDING THE LICENSE 
+
+The license allows you to give away the Work as long as it is not included in a commercial package.  If you distribute it, you must include the License which is one of the three informational pieces listed above under “Sharing This Work.”  You cannot distribute it if you do not include these items. 
+
+
+-- This is NOT OK:  
+INCLUDING THE LICENSED WORK IN A COMMERCIAL PACKAGE
+
+The Work cannot be included in a package or with packages in which one or more items are being sold.  It can only be packaged with other non-commercial items. In other words, the in-world vendor which is dispensing the package is only dispensing items which are free of cost.
+
+
+-- This is NOT OK:  SHARING OR DISTRIBUTING WORK AS NO-MODIFY, NO TRANSFER (WITHOUT INSTRUCTIONS)
+
+When you share or distribute the Work, it must be done in a way that people can reproduce the Work.  The best way to do that is to distribute the Work using “Modify, Transfer” permissions.  The only situation in which you can distribute it as “No Modify” or “No Modify, No Transfer” is if you provide instructions on how to reproduce the Work from the source files.  The instructions should be clear and unambiguous so that the average virtual world user can successfully reproduce. (Remember, also, to include the three informational pieces described above under “Sharing this Work.”)
+
+------------------------------------------------------------------------------------------------------
+
+
+And now, the legal language . . .
+
+VIRTUAL WORLD LICENSE: OPEN SOURCE, NON-COMMERCIAL 
+
+To the extent this License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Work available under these terms and conditions.  
+
+SECTION 1 – DEFINITIONS
+
+a. Copyright and Similar Rights means copyright and/or similar rights closely related to copyright.
+
+b. Copyright Statement means the Copyright Notice (consisting of the copyright symbol, or the word "Copyright", or the abbreviation "Copr.", the owner’s name and year) and explanatory information accompanying the Copyright Notice regarding this License.
+
+c. Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Work.
+
+d. Licensed Work (also referred to as Work) means computer code or artistic, literary, other types of creative work, or some combination thereof, to which the Licensor applied this License.
+
+e. Subsidiary Creations means computer code or artistic, literary or other types of creative work which are not integral to the Licensed Work but which may use or interact with the Licensed Work.  If these items are not listed here or in the Copyright Statement, You can assume there are none.  
+
+f. Licensed Rights means the rights granted to You subject to the terms and conditions of this License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Work and that the Licensor has authority to license.
+
+g. Licensor means the individual(s) or entity(ies) granting rights under this License.
+
+h. Non-commercial means activity not primarily intended for or directed towards commercial advantage or monetary compensation. For purposes of this License, the exchange of the Licensed Work for other material subject to Copyright and Similar Rights by digital file-sharing or similar means is Non-commercial provided there is no payment of monetary compensation in connection with the exchange.
+
+i. Commercial means intended for or directed towards commercial advantage or monetary compensation.
+
+j. Share means to provide the Licensed Work to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, copying, distribution, dissemination, communication, or importation, and to make the Work available to the public (with or without modification) including ways in which members of the public may access and reproduce the Licensed Work.  Share does not include personal use, modifying a private copy or interaction with a user through a computer network or through a virtual world browser, in which copies of the Work are not transferred.
+
+k. Modified Work means Work subject to Copyright and Similar Rights that is derived from or based upon the Licensed Work in which the Work is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. 
+
+l. Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to the Modified Work in accordance with the terms and conditions of this License.
+
+m. Computer Code or Scripts are instructions written by a programmer in a programming language.  In a Virtual World context, Computer Code is often referred to as Scripts.  Within this license, Computer Code and Scripts mean the same thing. 
+
+n. Source Files are the original files from which the Work or modifications of the Work have been derived.  These may consist of text, document, graphic, image, web, 3d, database or spreadsheet files.  Source files also consist of the original series of instructions written by a programmer in the form of Computer Code or Script before it is compiled into a different form.  
+
+o. Virtual World means a computer-based online environment in which users create and use an Avatar to explore a simulated world, participate in its activities and communicate with others.
+
+p. Avatar means a representation of a person or entity in the virtual world.  
+
+q. Open Source has a narrow and specific definition under this License.  It means that Source Files or modifications of Source Files are publicity accessible and may be used, changed, and shared (in modified or unmodified form). 
+
+r. You means the individual or entity exercising the Licensed Rights under this License. Your has a corresponding meaning.
+
+
+SECTION 2 – LICENSE GRANT 
+
+a. Non-commerial Use.  Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Work to:
+
+  1. reproduce and Share the Licensed Work, in whole or in part, for Non-commercial purposes only; and
+
+  2. produce, reproduce, and Share Modified Work for Non-commercial purposes only
+
+b. Subsidiary Commercial Use.  If the Licensor has specified and named Subsidiary Creations in the Copyright Statement and/or in Section 1, and You are the original creator or owner of Subsidiary Creations, the following apply:
+
+  1. Subsidiary Creations remain under Your ownership.  They may be distributed in a Non-commercial or Commercial manner and in accordance to Your choice of permissions.  You do not need to include a copy of this license, nor comply with other License terms.  
+
+  2. If applicable, this Work may be used to move or transfer Subsidiary Creations as long as the final destination is a work of a Non-commercial nature.  The terms of this License must be met in regards to the Licensed Work, but Subsidiary Creations remain under Your ownership and may be distributed in a Non-commercial or Commercial manner, in accordance to Your choice of permissions.
+
+c. Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this License does not apply, and You do not need to comply with its terms and conditions.
+
+
+SECTION 3 – LICENSE CONDITIONS
+
+Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+
+a. Attribution.
+
+  1. If You Share the Licensed Work (including in modified form), You must:
+
+   A. retain the following if it is supplied by the Licensor with the Licensed Work: 
+
+     i. identification of the creator(s) of the Licensed Work and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+
+     ii. a copyright notice; 
+
+     iii. if the Licensed Work consists of computer code, a hyperlink to where the Source Files may be found.  
+
+     iv. if the Licensed Work consist of artistic or literary or some other type of creative work, a URI or hyperlink to the Licensed Work to the extent reasonably practicable;
+
+     v. if the Licensed Work is being Shared with “No Modify” permissions, it must be accompanied by clear instructions by which a recipient can use the Source Files to reproduce the Work;
+
+     vi. a notice that refers to this License; 
+
+     vii. a notice that refers to the disclaimer of warranties;
+
+   B. indicate if You modified the Licensed Work and retain an indication of any previous modifications; and
+
+   C. indicate the Licensed Work is licensed under this license, and include the text of, or the URI or hyperlink to, this License.
+
+  2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Work. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
+
+  3. If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
+
+  4. If You Share Modified Work You produce, the Adapter's License You apply must not prevent recipients of the Modified Work from complying with this License.
+
+
+SECTION 4 –MODIFIED WORK
+
+a. Modifications.  If You meet the Non-commercial requirement in Section 2a, the Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so.  The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. 
+
+b. Source Files.  If You meet the Non-commercial requirement in Section 2a, You must continue to keep any modification Open Source as defined by this License and publically accessible as provided in Section 3(a)(1)(A)(iii) and (iv).  Recipients of the Licensed Work must be able to reproduce the Work from the Source Files, and clear instructions should be provided. 
+
+
+SECTION 5 –LICENSING OF DOWNSTREAM RECIPIENTS
+
+a.  Offer from the Licensor – Licensed Work.  Every recipient of the Licensed Work automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this License.
+
+b.  Additional offer from the Licensor – Modified Work.  Every recipient of Modified Work from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Modified Work under the conditions of the Adapter’s License You apply.
+
+c. No Downstream Restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Work if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Work.
+
+
+SECTION 6 – VIRTUAL WORLD PROPRIETARY SOURCE CODE
+
+Nothing in this license shall be construed as requiring the release of proprietary source code associated with the Virtual World in which this Licensed Work may be used, nor is does it impose any restrictions or requirements in any form on the ownership of Virtual Worlds.
+
+
+SECTION 7 – COMPATIBILITY WITH OTHER LICENSES
+
+This Work or Modified Work may be packaged with other work which may be licensed differently as long as each separately licensed work is clearly delineated, and the terms of this Licensed Work remain in effect. 
+
+
+SECTION 8 – TERM 
+
+This License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this License, then Your rights under this License terminate automatically.
+
+
+SECTION 9 – NO ENDORSEMENT
+
+Nothing in this License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Work is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3 (a)(1)(A)(i). 
+
+
+SECTION 10 – DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY
+
+a. Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Work as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Work, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
+
+b. To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this License or use of the Licensed Work, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
+
+c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+
+
+SECTION 11 – OTHER TERMS AND CONDITIONS
+
+a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed. 
+
+b. Any arrangements, understandings, or agreements regarding the Licensed Work not stated herein are separate from and independent of the terms and conditions of this License. 
+
+
+SECTION 12 – INTERPRETATION
+
+a. For the avoidance of doubt, this License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Work that could lawfully be made without permission under this License.
+
+b. To the extent possible, if any provision of this License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this License without affecting the enforceability of the remaining terms and conditions.
+
+c. No term or condition of this License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
+
+d. Nothing in this License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+
+(End of License)
