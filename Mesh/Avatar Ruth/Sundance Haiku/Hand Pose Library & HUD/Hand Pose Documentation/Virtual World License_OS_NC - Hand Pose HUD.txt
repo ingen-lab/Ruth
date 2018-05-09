@@ -3,9 +3,9 @@ VIRTUAL WORLD LICENSE: OPEN SOURCE, NON-COMMERCIAL
 
 PLAIN LANGUAGE SUMMARY
 
-The following is a plain language summary of the license.  For details, see the actual license which follows this summary.  Note that the word “Work” below means the item(s) which is licensed.  It might be a script, a mesh item, an animation, etc.  Or might be a combination of items.
+The following is a plain language summary of the License.  For details, see the actual License which follows this summary.  Note that the word “Work” below means the item(s) which is licensed.  It might be a script, a mesh item, an animation, etc.  Or might be a combination of items.
 
-You’ll notice below that there are several places in the Copyright Statement that include brackets:  [like this].  The copyright owner will fill this in, and you’ll find this information included with the Work.  In most cases, it will be included in a separate text document which reproduces the entire license below.  In some cases you’ll find it in a short statement in the header of a script (if present) – or in some other readable portion of the Work.
+You’ll notice below that there are several places in the Copyright Statement that include brackets:  [like this].  The copyright owner will fill this in, and you’ll find this information included with the Work.  In most cases, it will be included in a separate text document which reproduces the entire License below.  In some cases you’ll find it in a short statement in the header of a script (if present) – or in some other readable portion of the Work.
 
 Would you prefer a nicely formatted version of this document?
      You can find it here: https://tinyurl.com/ycaom8g7
@@ -61,7 +61,7 @@ If you are using this Work for your own private use, you can make changes to it 
 -- This is OK:  
 SELLING “SUBSIDIARY CREATIONS” 
 
-Your license may include “Subsidiary Creations.”  If it does, you’ll find those listed in the Copyright Statement, above.  These items, if included above, are exempted from the terms of the License.  In other words, you can sell Subsidiary Creations.  You do not have to make them open source, nor follow the other terms of the license.  This applies only to Subsidiary Creations and not to the Work itself.  
+Your License may include “Subsidiary Creations.”  If it does, you’ll find those listed in the Copyright Statement, above.  These items, if included above, are exempted from the terms of the License.  In other words, you can sell Subsidiary Creations.  You do not have to make them open source, nor follow the other terms of the License.  This applies only to Subsidiary Creations and not to the Work itself.  
 
 While it may seem that having the right to sell Subsidiary Creations is a non-brainer, some licenses are vague on whether this possible – and may even require you to reveal your source files to the public if your creation uses or interacts with the Licensed Work in some way.  Subsidiary Creations were specifically included in the Virtual World License to protect you and your creations.
 
@@ -69,7 +69,7 @@ While it may seem that having the right to sell Subsidiary Creations is a non-br
 -- This is OK:  
 USING THE WORK TO TRANSFER “SUBSIDIARY CREATIONS” 
 
-The Work covered by this License may be used to transfer Subsidiary Creations.  (If the Work isn’t used for that purpose, you don’t have to worry about it.)  The best way to describe this is to use an example.  Let’s say that the Work covered by this license is a Skin Applier.  Let’s also say that you see “skins” listed as a Subsidiary Creation in Copyright Statement.  In that case, this License allows you to package your own skins with the Applier and transfer them to a mesh avatar, as long as the following are meet:
+The Work covered by this License may be used to transfer Subsidiary Creations.  (If the Work isn’t used for that purpose, you don’t have to worry about it.)  The best way to describe this is to use an example.  Let’s say that the Work covered by this License is a Skin Applier.  Let’s also say that you see “skins” listed as a Subsidiary Creation in Copyright Statement.  In that case, this License allows you to package your own skins with the Applier and transfer them to a mesh avatar, as long as the following are meet:
 
 1) The Applier must be used to transfer the skins to a non-commercial avatar only.  You cannot use it to transfer skins to commercially sold avatar.
 
@@ -92,13 +92,13 @@ You cannot sell the Licensed Work.  If your License includes Subsidiary Creation
 -- This is NOT OK:  
 USING THE WORK TO TRANSFER SUBSIDIARY CREATIONS TO COMMERCIAL PRODUCTS
 
-As described above, some works covered this license may be used to transfer Subsidiary Creations.  An example is an Applier which might be used to transfer skins from you to a customer.  The customer then applies the skins to a mesh avatar.  The license requires that you can only use the Work to transfer skins to a non-commercial avatar.  It cannot be used for a commercially sold avatar.  
+As described above, some works covered this License may be used to transfer Subsidiary Creations.  An example is an Applier which might be used to transfer skins from you to a customer.  The customer then applies the skins to a mesh avatar.  The License requires that you can only use the Work to transfer skins to a non-commercial avatar.  It cannot be used for a commercially sold avatar.  
 
 
 -- This is NOT OK:  
 NON-COMMERCIAL DISTRIBUTION OF THE LICENSED WORK WITHOUT INCLUDING THE LICENSE 
 
-The license allows you to give away the Work as long as it is not included in a commercial package.  If you distribute it, you must include the License which is one of the three informational pieces listed above under “Sharing This Work.”  You cannot distribute it if you do not include these items. 
+The License allows you to give away the Work as long as it is not included in a commercial package.  If you distribute it, you must include the License which is one of the three informational pieces listed above under “Sharing This Work.”  You cannot distribute it if you do not include these items. 
 
 
 -- This is NOT OK:  
@@ -146,7 +146,7 @@ k. Modified Work means Work subject to Copyright and Similar Rights that is deri
 
 l. Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to the Modified Work in accordance with the terms and conditions of this License.
 
-m. Computer Code or Scripts are instructions written by a programmer in a programming language.  In a Virtual World context, Computer Code is often referred to as Scripts.  Within this license, Computer Code and Scripts mean the same thing. 
+m. Computer Code or Scripts are instructions written by a programmer in a programming language.  In a Virtual World context, Computer Code is often referred to as Scripts.  Within this License, Computer Code and Scripts mean the same thing. 
 
 n. Source Files are the original files from which the Work or modifications of the Work have been derived.  These may consist of text, document, graphic, image, web, 3d, database or spreadsheet files.  Source files also consist of the original series of instructions written by a programmer in the form of Computer Code or Script before it is compiled into a different form.  
 
@@ -169,7 +169,7 @@ a. Non-commerial Use.  Subject to the terms and conditions of this Public Licens
 
 b. Subsidiary Commercial Use.  If the Licensor has specified and named Subsidiary Creations in the Copyright Statement and/or in Section 1, and You are the original creator or owner of Subsidiary Creations, the following apply:
 
-  1. Subsidiary Creations remain under Your ownership.  They may be distributed in a Non-commercial or Commercial manner and in accordance to Your choice of permissions.  You do not need to include a copy of this license, nor comply with other License terms.  
+  1. Subsidiary Creations remain under Your ownership.  They may be distributed in a Non-commercial or Commercial manner and in accordance to Your choice of permissions.  You do not need to include a copy of this License, nor comply with other License terms.  
 
   2. If applicable, this Work may be used to move or transfer Subsidiary Creations as long as the final destination is a work of a Non-commercial nature.  The terms of this License must be met in regards to the Licensed Work, but Subsidiary Creations remain under Your ownership and may be distributed in a Non-commercial or Commercial manner, in accordance to Your choice of permissions.
 
@@ -202,7 +202,7 @@ a. Attribution.
 
    B. indicate if You modified the Licensed Work and retain an indication of any previous modifications; and
 
-   C. indicate the Licensed Work is licensed under this license, and include the text of, or the URI or hyperlink to, this License.
+   C. indicate the Licensed Work is licensed under this License, and include the text of, or the URI or hyperlink to, this License.
 
   2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Work. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
 
@@ -229,7 +229,7 @@ c. No Downstream Restrictions. You may not offer or impose any additional or dif
 
 SECTION 6 – VIRTUAL WORLD PROPRIETARY SOURCE CODE
 
-Nothing in this license shall be construed as requiring the release of proprietary source code associated with the Virtual World in which this Licensed Work may be used, nor is does it impose any restrictions or requirements in any form on the ownership of Virtual Worlds.
+Nothing in this License shall be construed as requiring the release of proprietary source code associated with the Virtual World in which this Licensed Work may be used, nor is does it impose any restrictions or requirements in any form on the ownership of Virtual Worlds.
 
 
 SECTION 7 – COMPATIBILITY WITH OTHER LICENSES
