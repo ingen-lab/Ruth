@@ -67,6 +67,30 @@
 		<Script name="r2HUD_sa_trigger.lsl" guid="2ee7fd4f-59f4-4796-abea-bbe76df16005">
 		</Script>
 	</Object>
+	<Object name="Fred Beckhusen" guid="f682e131-378d-4036-bba2-a32685c00288">
+		<Notecard name="alpha HUD command list.txt" guid="8c886ba7-1e55-48ba-ab92-60a9b4900fd0">
+		</Notecard>
+		<Notecard name="alpha HUD doll part list.txt" guid="601605f1-99a8-4b47-ba60-fdeea1218cb0">
+		</Notecard>
+		<Notecard name="alpha HUD part list.txt" guid="084d365c-c3c5-47cb-867f-afb54ce2f521">
+		</Notecard>
+		<Notecard name="licensekey" guid="39e79041-1c8f-4178-8c58-c4c41dfd286c">
+		</Notecard>
+		<Script name="r2_body_receiver.lsl" guid="7cead68d-167f-4b48-843d-4528b9a0b117">
+		</Script>
+		<Script name="r2_feet_receiver.lsl" guid="ad097155-be26-4be1-9cf5-dd3024115ae8">
+		</Script>
+		<Script name="r2_hand_receiver.lsl" guid="f9ea38e3-7c08-4a43-a3cb-14e0d1abc0d8">
+		</Script>
+		<Script name="r2_head_receiver.lsl" guid="3d350f8f-56ef-4367-b7a8-03744505667d">
+		</Script>
+		<Script name="r2HUD_ac_trigger.lsl" guid="b48f218e-b0d9-4f30-8040-ab3125f81ddc">
+		</Script>
+		<Script name="r2HUD_sa_trigger.lsl" guid="514fce5d-8749-4290-9e79-9a503654609b">
+		</Script>
+		<Script name="XTEA.lsl" guid="f9bf00f8-7c0e-4898-a653-8e7b021c6297">
+		</Script>
+	</Object>
 	<Object name="Shin Ingen" guid="9386c85f-3aa0-424e-a89a-92e2afb2f640">
 	</Object>
 	<Object name="Sundance Haiku" guid="cef0a21d-d11f-4c1c-b71c-c44985a1d950">
