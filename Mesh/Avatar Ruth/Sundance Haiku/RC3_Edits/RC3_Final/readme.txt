@@ -1,3 +1,17 @@
+﻿UPDATED August 15, 2018 . . .
+
+I have posted a new file (Version 12): Release3_AdaEdit_SundanceEdit_11.blend
+
+Shin had found a problem with the leg UV's in the Version 11 file. Thanks, Shin, for bringing this to my attention.
+
+I'm not sure what happened with the Blender file that I posted. I guess I must have click the wrong button somewhere during the transition to GitHub. 
+
+The good news is that my original file is just fine. What I've done is to post a version 12 file: "Release3_AdaEdit_SundanceEdit_12.blend" under the following directory: Mesh/SundanceHaiku/RC3_Edits/RC3_Final.
+
+The rest of the information, below, is fine
+
+--------------
+
 Here's the text of my Ruth Google Plus posting.  This should pretty well explain all changes . . .
 
 If someone told me last year that I would spend my entire winter and spring dealing with fingernails and feet, I would have told them they are crazy.  But that’s exactly what I’ve done.  
