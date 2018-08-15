@@ -1,0 +1,34 @@
+PROCEDURE FOR LINKING AND RENAMING THE RUTH 2.0 MESH BODY, USING FRITIGERN GOTHLY'S PARTS RENAMER SCRIPT
+                                                or 
+                           How To Easily Rename The Parts Of Your Mesh Body
+
+BEFORE WE BEGIN:
+----------------
+This script and procedure was written for release candidate 3 of the Ruth 2.0 mesh body.
+This procedure does NOT cover linking and renaming the alpha HUD, but applies ONLY to the wearable mesh body.
+
+
+WHAT YOU NEED:
+--------------
+- The Ruth 2.0 mesh body. If you import the body yourself, then its file name on the hard drive is "r2BODY_UpperLower_ada1.9.dae".
+- The Physics prim. If you import this yourself, then its file name on the hard drive is "r2ROOTPRIM_rigged.dae".
+- Fritigern Gothly's parts renamer script.
+
+From here, we will refer to these items as "the body", "the phisics prim" and "the script".
+It will also be assumed that you have already imported these items, as well as the script.
+If you need help with importing anything, please refer to the assembly instructions (not included with this document).
+
+
+STEPS TO GET A WORKING MESH BODY:
+---------------------------------
+
+- Rez the body by dragging it from your inventory onto the ground.
+- Rez the physics prim by dragging it from your inventory onto the ground.
+- Select the body (right-click, edit)
+- Select the physics prim (CTRL+click)
+- Link both objects. This will make the whole object appear as if it got the name of the physics prim (you can rename it later)
+- Adjust the position of the physics prim by enabling "edit linked parts" in the build panel of your viewer, then move the physics prim INTO the mesh body so that it's hidden.
+- Place the script inside the linked object. The script will now immediately rename all the parts and give them the proper description ("upper" or "lower").
+- Verify that the script has renamed all the body parts by clicking them. They should briefly flash red, and report their name.
+
+If all went well, you should now have a fully renamed mesh body, ready to wear and to enjoy to the fullest.
