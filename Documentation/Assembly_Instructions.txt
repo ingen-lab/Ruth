@@ -5,8 +5,7 @@ UV Mapping and Weighting by Ada Radius
 Ruth Parts Illustration by Fejui Love (Alvina)
 Text by Sundance Haiku
 
-Note: this a PDF version of the instructions on how to assemble Ruth.  There’s also an unformatted .txt version.  If you find editorial errors – or need to clarify some of the text, you can make changes on the .txt file version GitHub.  Just us know where you make the changes.  
-
+Note: This is an unformatted text version of Ruth's Assembly Instructions.  There's a much easier-to-read PDF version found in Ruth/Documentation.
 
 General Information on Downloading Source Files
 
