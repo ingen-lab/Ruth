@@ -1,0 +1,3 @@
+FYI, Use "Layer Comps" in PhotoShop to access makeup/etc variations in the PSD files.
+
+"Another skins" are released under a "BSD license"--which allows you to pretty much copy, mod, transfer as you wish... so you could legally make and sell your own modifications to them or even just "as-is" without any modifications. Really! No, I don't have a rabid team of lawyers waiting to DMCA-pounce you...
