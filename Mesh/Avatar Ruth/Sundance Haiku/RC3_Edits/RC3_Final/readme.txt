@@ -4,7 +4,7 @@ I have posted a new file (Version 13): Release3_AdaEdit_SundanceEdit_13.blend
 
 Shin had found a problem with the leg UV's in the Version 11 file. Thanks, Shin, for bringing this to my attention.
 
-I'm not sure what happened with the UV's in the Blender file that I posted. I must have click the wrong button somewhere during the transition to GitHub - or perhaps it occurred when I symmetrized the right and left legs. At any rate, I have posted a version 13 file ("Release3_AdaEdit_SundanceEdit_13.blend").  (Yep, there was a version 12 but sad to say, it wasn't quite ready for prime time.)  The version 13 file is found under the following directory: Mesh/SundanceHaiku/RC3_Edits/RC3_Final.  Along with the other images found in this directory, I posted an image of the version 13 leg UV's (LegUVsVer13.jpg).
+I'm not sure what happened with the UV's in the Blender file that I posted. I must have click the wrong button somewhere during the transition to GitHub - or perhaps it occurred when I symmetrized the right and left legs. At any rate, I have posted a version 13 file ("Release3_AdaEdit_SundanceEdit_13.blend").  (Yep, there was a version 12 but sad to say, it wasn't quite ready for prime time.)  The version 13 file is found under the following directory: Mesh/SundanceHaiku/RC3_Edits/RC3_Final.  Along with the other images found in this directory, I posted an image of the version 13 leg UV's (LegUVs_Ver13.jpg).
 
 I have revised and clarified some of the information below:
 
