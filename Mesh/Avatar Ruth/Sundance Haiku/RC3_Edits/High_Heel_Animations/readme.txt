@@ -14,7 +14,7 @@ The poses were all exported using a Level 4 priority, and that, of course, may c
 
 Ada has given us a great start.  There is still some work that needs to be done so that flat feet respond better when an avatar’s sliders are used to change the size of the foot.  Taarna Welles has kindly volunteered to do work in that area.  
 
-Just a reminder:  anyone should feel free to dig in and help if they see aspects of the project in which they can provide assistance.
+Just a reminder: anyone should feel free to dig in and help if they see aspects of the project in which they can provide assistance.
 
 My job moves me to the field for the summer, and the only time I have Internet access is when I’m able to get back into town.  So, I wanted to get as much detailed information posted on GitHub before I leave at the end of the week.
 

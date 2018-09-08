@@ -107,9 +107,9 @@ INCLUDING THE LICENSED WORK IN A COMMERCIAL PACKAGE
 The Work cannot be included in a package or with packages in which one or more items are being sold.  It can only be packaged with other non-commercial items. In other words, the in-world vendor which is dispensing the package is only dispensing items which are free of cost.
 
 
--- This is NOT OK:  SHARING OR DISTRIBUTING WORK AS NO-MODIFY, NO TRANSFER (WITHOUT INSTRUCTIONS)
+-- This is NOT OK:  SHARING OR DISTRIBUTING WORK AS NO-MODIFY (WITHOUT INSTRUCTIONS)
 
-When you share or distribute the Work, it must be done in a way that people can reproduce the Work.  The best way to do that is to distribute the Work using “Modify, Transfer” permissions.  The only situation in which you can distribute it as “No Modify” or “No Modify, No Transfer” is if you provide instructions on how to reproduce the Work from the source files.  The instructions should be clear and unambiguous so that the average virtual world user can successfully reproduce. (Remember, also, to include the three informational pieces described above under “Sharing this Work.”)
+When you share or distribute the Work, it must be done in a way that people can reproduce the Work.  The best way to do that is to distribute the Work using “Modify” permissions.  The only situation in which you can distribute it as “No Modify” is if you provide instructions on how to reproduce the Work from the source files.  The instructions should be clear and unambiguous so that the average virtual world user can successfully reproduce. (Remember, also, to include the three informational pieces described above under “Sharing this Work.”)
 
 ------------------------------------------------------------------------------------------------------
 

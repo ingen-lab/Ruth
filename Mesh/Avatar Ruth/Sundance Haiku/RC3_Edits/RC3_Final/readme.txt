@@ -40,5 +40,5 @@ This file also includes some tweaks that I made to the fingernails and toenails.
 
 7. NOTE ABOUT DAE FILES.  This version and the accompanying DAE files lack Alpha Cuts.  In other words, you would not be able to use the Alpha HUD to turn different body parts on or off.  The DAE files are included for in-world testing purposes.  Eventually When testing (and any additional tweaking) is complete, and when a final version is decided upon, Shin will make the necessary partitions and create the DAE file for the next release.
 
-There is still some work that needs to be done on the flat feet – and that will be covered in readme file in the High_Heels_Animations directory.
+There is still some work that needs to be done on the flat feet – and that will be covered in readme file in the Mesh/SundanceHaiku/RC3_Edits/High_Heels_Animations directory.
 
