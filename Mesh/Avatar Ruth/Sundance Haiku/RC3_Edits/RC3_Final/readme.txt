@@ -1,4 +1,8 @@
-﻿UPDATED August 21, 2018 . . .
+UPDATED October 4, 2018 . . .
+
+Shin reported finding double nodes in the lower UV map.  These were fixed in version 14 (Release3_AdaEdit_SundanceEdit_13.blend).
+
+UPDATED August 21, 2018 . . .
 
 I have posted a new file (Version 13): Release3_AdaEdit_SundanceEdit_13.blend
 
