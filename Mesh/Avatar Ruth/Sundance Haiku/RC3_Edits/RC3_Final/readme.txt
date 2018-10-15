@@ -1,3 +1,27 @@
+﻿UPDATE October 15, 2018 . . .
+
+I have completed a version 15.  I realize that none of this might be incorporated in RC3, but, at the very least, I wanted to provide a finished product free of any obvious problems.  This fixes the problems that Shin found with weighting the buttocks area and it adds a number of improvements over version 14.
+
+Primarily my purpose last spring when I began work on this area of the Ruth project was to spend a little time on the UV maps of the feet and legs.  That little time turned into, well, a lot of time.  As the process went on, weighting problems crept in.  In this last version, and I promise, this is the last version, I believe I remedied all those problems.
+
+Here’s what was done:
+
+- The UV maps for the feet (high & flat) and the lower body have been updated.  There were a number of places where the UV’s didn’t line up between different body parts and those have been fixed.  The UV work was completed last spring and version 15 includes all of those improvements.  I posted illustrations showing where the changes were made on both Google+ and in GitHub.
+
+- After Shin discovered a weighting problem in the buttocks, I looked at the source file (version 14), and realized that the vertex groups had been mixed up.  That’s been fixed and I have successfully transferred Ada’s weighting to the lower body. 
+
+- Using Creative’s weighting work (thank you Creative!), the high feet are now weighted correctly.  At the same time, I moved weighting over to the Volume bones so that the high feet can be sized using the Appearance sliders.
+
+- The flat feet have been re-weighted and for this I was largely guided by using Ada’s weighting.  Like the high feet, they can sized using the sliders.
+ 
+- The animations which move the feet into 25mm, 50mm, 75mm, 100mm positions have been tested in-world and work with the above flat feet weighting.  The animation files are found in Ruth/Mesh/Avatar Ruth/Sundance Haiku/RC3_Edits/High_Heel_Animations.
+
+- The separately attachable high and flat toenails have been re-weighted so they automatically re-size as the feet are sized.  With the improvements in weighting, there’s also better coordination with movements of the feet.
+
+That’s it.  I promised not to complicate things with any more versions.
+
+
+
 UPDATED October 4, 2018 . . .
 
 Shin reported finding double nodes in the lower UV map.  These were fixed in version 14 (Release3_AdaEdit_SundanceEdit_14.blend).  Nothing else was changed in version 14.  The text below references  version 13, but version 14 is the latest and includes all version 13 improvements.  In other words, subsitute version 14 whenever you see version 13 in the text.
