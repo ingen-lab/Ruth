@@ -1,25 +1,26 @@
 ﻿UPDATE October 15, 2018 . . .
 
-I have completed a version 15.  I realize that none of this might be incorporated in RC3, but, at the very least, I wanted to provide a finished product free of any obvious problems.  This fixes the problems that Shin found with weighting the buttocks area and it adds a number of improvements over version 14.
+I have posted a Version 15 Blender file.  I’ve also posted associated DAE files for all of the various body parts that you can bring directly in-world.  The file is named: Release3_AdaEdit_SundanceEdit_15.blend and is found in following GitHub directory: Ruth/Mesh/Avatar Ruth/Sundance Haiku/RC3_Edits/RC3_Final/
 
-Primarily my purpose last spring when I began work on this area of the Ruth project was to spend a little time on the UV maps of the feet and legs.  That little time turned into, well, a lot of time.  As the process went on, weighting problems crept in.  In this last version, and I promise, this is the last version, I believe I remedied all those problems.
+There were a number of problems with the previous version, and I hope I can redeem myself a little with this update.  I’m sure there will be parts that need tweaking or changing, but this is much more of a finished product.  This fixes the problems that Shin found with weighting in the buttocks area and it adds a number of improvements.
 
-Here’s what was done:
+Primarily my purpose last spring when I began work on this area of the Ruth project was to spend a little time on the UV maps of the feet and legs.  That little time turned into, well, a lot of time.  As the process went on, weighting problems crept in.  In this last version - and I promise, this is the last version - I believe I been able to remedy most of those problems.
 
-- The UV maps for the feet (high & flat) and the lower body have been updated.  There were a number of places where the UV’s didn’t line up between different body parts and those have been fixed.  The UV work was completed last spring and version 15 includes all of those improvements.  I posted illustrations showing where the changes were made on both Google+ and in GitHub.
+Here’s the beta:
 
-- After Shin discovered a weighting problem in the buttocks, I looked at the source file (version 14), and realized that the vertex groups had been mixed up.  That’s been fixed and I have successfully transferred Ada’s weighting to the lower body. 
+- The UV maps for the feet (high & flat) and the lower body have been updated.  In the starting Blender file for RC3, there were a number of places where the UV’s didn’t line up between different body parts and those have been fixed.  The UV work was completed last spring and Version 15 includes all of those improvements.  I have previously posted illustrations showing where the changes were made on both Google+ and in GitHub.
 
-- Using Creative’s weighting work (thank you Creative!), the high feet are now weighted correctly.  At the same time, I moved weighting over to the Volume bones so that the high feet can be sized using the Appearance sliders.
+- After Shin’s recent discovery of a weighting problem in the buttocks, I looked at the source file (Version 14), and realized that the vertex groups had been mixed up.  That has been fixed, and I have successfully transferred Ada’s fine weighting work to the lower body. 
 
-- The flat feet have been re-weighted and for this I was largely guided by using Ada’s weighting.  Like the high feet, they can sized using the sliders.
+- Using Creative’s weighting work (thank you Creative!), the high feet are now weighted correctly.  I did add a little twist to Creative’s work.  I moved weighting from the Deform bones to the Volume bones so that the high feet can be sized using the Appearance sliders.
+
+- The flat feet have been re-weighted and for this I was largely guided by using Ada’s weighting.  Like the high feet, they can sized using the Appearance sliders.  (Last spring, Taarna had pointed out this area needed work and I greatly appreciated her gentle nudge that direction and suggestions)
  
-- The animations which move the feet into 25mm, 50mm, 75mm, 100mm positions have been tested in-world and work with the above flat feet weighting.  The animation files are found in Ruth/Mesh/Avatar Ruth/Sundance Haiku/RC3_Edits/High_Heel_Animations.
+- Ada’s animations which move the feet into 25mm, 50mm, 75mm, 100mm positions have been tested in-world and work with the above flat feet weighting.  The animation files are ready to be used in-world and are found in: Ruth/Mesh/Avatar Ruth/Sundance Haiku/RC3_Edits/High_Heel_Animations.
 
-- The separately attachable high and flat toenails have been re-weighted so they automatically re-size as the feet are sized.  With the improvements in weighting, there’s also better coordination with movements of the feet.
+- The separately attachable high and flat toenails have been re-weighted so they automatically re-size as the feet are sized.  The weighting in the toenails has been improved and there’s now better coordination with movements of the feet.
 
 That’s it.  I promised not to complicate things with any more versions.
-
 
 
 UPDATED October 4, 2018 . . .
