@@ -6,4 +6,4 @@ Google+ Community Page:
 https://plus.google.com/communities/103360253120662433219
 
 Github Repository:
-https://github.com/Outworldz/Ruth
+https://github.com/ingen-lab/Ruth
