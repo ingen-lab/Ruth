@@ -18,4 +18,4 @@ Ada flat feet(poseable) - Edit#15
 Toenails for all feet types are Sundance Haiku's toenails modified by Taarna Wells. It now uses only one UV map and will be easier to manage. They are compatible with Sundance Haiku's Nail System HUD v3.
 ====================
 
-OSRuth2_CurrentRelease_DevKit_RC3.blend - This blender file is intended for content creators. It is an exact duplicate of the source file but textured with the alpha cut faces used for the official RC#3 release. I usually joined the parts as a personal preference but I am leaving that up to each content creator's preference.
+OSRuth2_CurrentRelease_DevKit_RC3.blend - This blender file is intended for content creators. It is an exact duplicate of the source file but textured with the alpha cut faces used for the official RC#3 release. I usually join the parts as a personal preference but I am leaving that up to each content creator's preference.
