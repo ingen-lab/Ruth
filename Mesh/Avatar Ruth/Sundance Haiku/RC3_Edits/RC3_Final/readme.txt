@@ -1,6 +1,6 @@
 ﻿UPDATE October 30, 2018 . . .
 
-Based Shin's final tweaks, I have posted ru2xSundanceFEET_high_RC3.DAE.  This version of the high feet includes the improved UV Map, RC2 compatible weighting, and Shin's Alpha Cuts.
+Based Shin's final tweaks, I have posted ru2xSundanceFEET_flat_RC3.DAE.  This version of the flat feet includes the improved UV Map, RC2 compatible weighting, and Shin's Alpha Cuts.
 
 
 UPDATE October 15, 2018 . . .
