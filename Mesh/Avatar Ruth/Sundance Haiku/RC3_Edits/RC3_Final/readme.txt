@@ -1,4 +1,9 @@
-﻿UPDATE October 15, 2018 . . .
+﻿UPDATE October 30, 2018 . . .
+
+Based Shin's final tweaks, I have posted ru2xSundanceFEET_high_RC3.DAE.  This version of the high feet includes the improved UV Map, RC2 compatible weighting, and Shin's Alpha Cuts.
+
+
+UPDATE October 15, 2018 . . .
 
 I have posted a Version 15 Blender file.  I’ve also posted associated DAE files for all of the various body parts that you can bring directly in-world.  The file is named: Release3_AdaEdit_SundanceEdit_15.blend and is found in following GitHub directory: Ruth/Mesh/Avatar Ruth/Sundance Haiku/RC3_Edits/RC3_Final/
 
