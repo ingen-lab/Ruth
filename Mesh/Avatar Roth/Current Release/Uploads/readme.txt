@@ -1,0 +1,1 @@
+Anavailable as at 26-Dec-2018 see Collada (.dae) files in Ruth\Mesh\Avatar Roth\Shin Ingen\Upload

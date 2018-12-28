@@ -1,0 +1,1 @@
+Anavailable as at 26-Dec-2018 see Previous RC#2 Collada (.dae) files in Ruth\Mesh\Avatar Ruth\Previous Release
