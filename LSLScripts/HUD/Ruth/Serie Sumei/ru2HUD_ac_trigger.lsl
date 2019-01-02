@@ -16,6 +16,7 @@
 //*********************************************************************************
 
 // ss-a 29Dec2018 <seriesumei@avimail.org> - Make alpha hud link-order independent
+// ss-b 30Dec2018 <seriesumei@avimail.org> - Auto-adjust position on attach
 
 integer r2chan;
 integer appID = 20181024;
@@ -125,11 +126,57 @@ list              commandButtonList =    [
 // Keep a mapping of link number to prim name
 list prim_map = [];
 
+// HUD Positioning offsets
+float bottom_offset = 0.05;
+float left_offset = -0.02;
+float right_offset = 0.02;
+float top_offset = -0.50;
+integer last_attach = 0;
+
 integer VERBOSE = TRUE;
 
 log(string msg) {
     if (VERBOSE == 1) {
         llOwnerSay(msg);
+    }
+}
+
+vector get_size() {
+    return llList2Vector(llGetPrimitiveParams([PRIM_SIZE]), 0);
+}
+
+adjust_pos() {
+    integer current_attach = llGetAttached();
+
+    // See if attachpoint has changed
+    if ((current_attach > 0 && current_attach != last_attach) ||
+            (last_attach == 0)) {
+        vector size = get_size();
+
+        // Nasty if else block
+        if (current_attach == ATTACH_HUD_TOP_LEFT) {
+            llSetPos(<0.0, left_offset - size.y / 2, top_offset - size.z / 2>);
+        }
+        else if (current_attach == ATTACH_HUD_TOP_CENTER) {
+            llSetPos(<0.0, 0.0, top_offset - size.z / 2>);
+        }
+        else if (current_attach == ATTACH_HUD_TOP_RIGHT) {
+            llSetPos(<0.0, right_offset + size.y / 2, top_offset - size.z / 2>);
+        }
+        else if (current_attach == ATTACH_HUD_BOTTOM_LEFT) {
+            llSetPos(<0.0, left_offset - size.y / 2, bottom_offset + size.z / 2>);
+        }
+        else if (current_attach == ATTACH_HUD_BOTTOM) {
+            llSetPos(<0.0, 0.0, bottom_offset + size.z / 2>);
+        }
+        else if (current_attach == ATTACH_HUD_BOTTOM_RIGHT) {
+            llSetPos(<0.0, right_offset + size.y / 2, bottom_offset + size.z / 2>);
+        }
+        else if (current_attach == ATTACH_HUD_CENTER_1) {
+        }
+        else if (current_attach == ATTACH_HUD_CENTER_2) {
+        }
+        last_attach = current_attach;
     }
 }
 
@@ -228,11 +275,10 @@ default
             list p = llGetLinkPrimitiveParams(i, [PRIM_NAME]);
             prim_map += [llList2String(p, 0)];
         }
-    }
 
-    on_rez(integer param)
-    {
-        llResetScript();
+        // Initialize attach state
+        last_attach = llGetAttached();
+        log("state_entry() attached="+(string)last_attach);
     }
 
     touch_start(integer total_number)
@@ -336,6 +382,15 @@ default
             }
             string message = "ALPHA," + (string)primName + "," + (string)face + "," + (string)alphaVal;
             llSay(r2chan,message);
+        }
+    }
+
+    attach(key id) {
+        if (id == NULL_KEY) {
+            // Nothing to do on detach?
+        } else {
+            // Fix up our location
+            adjust_pos();
         }
     }
 }
