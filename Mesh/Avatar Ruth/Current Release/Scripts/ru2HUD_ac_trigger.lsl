@@ -334,4 +334,4 @@ default
             llSay(r2chan,message);
         }
     }
-} 
+}
