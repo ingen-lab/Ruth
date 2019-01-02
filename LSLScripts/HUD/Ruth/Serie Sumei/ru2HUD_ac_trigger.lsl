@@ -14,6 +14,9 @@
 //**   You should have received a copy of the GNU Affero General Public License
 //**   along with this program.  If not, see <https://www.gnu.org/licenses/>
 //*********************************************************************************
+
+// ss-a 29Dec2018 <seriesumei@avimail.org> - Make alpha hud link-order independent
+
 integer r2chan;
 integer appID = 20181024;
 integer keyapp2chan()
@@ -23,6 +26,13 @@ integer keyapp2chan()
 vector            alphaOnColor =     <0.000, 0.000, 0.000>;
 vector            buttonOnColor =     <0.000, 1.000, 0.000>;
 vector            offColor =         <1.000, 1.000, 1.000>;
+
+// The command button list is:
+//  <button-name> :: <prim-name> :: <link-number> :: <face-number>
+// <link-number> is no longer used, replaced with the index in
+// prim_map that is built at script startup, thus relieving us
+// of the perils of not liking the HUD in the right order
+
 list              commandButtonList =    [
 "reset",
 
@@ -112,6 +122,17 @@ list              commandButtonList =    [
 "heels::feet::29::6"
     ];
 
+// Keep a mapping of link number to prim name
+list prim_map = [];
+
+integer VERBOSE = TRUE;
+
+log(string msg) {
+    if (VERBOSE == 1) {
+        llOwnerSay(msg);
+    }
+}
+
 resetallalpha()
 {
     integer i;
@@ -134,30 +155,64 @@ colorDoll(string commandFilter, integer alphaVal)
 {
     integer i;
     integer x = llGetListLength(commandButtonList)+1;
+    integer num_links = llGetNumberOfPrims() + 1;
     for (; i < x; ++i)
     {
         string dataString = llList2String(commandButtonList,i);
         list stringList = llParseString2List(dataString, ["::"], []);
         string command = llList2String(stringList,0);
-        string primName = llList2String(stringList,1);
-        integer primLink = llList2Integer(stringList,2);
-        integer primFace = llList2Integer(stringList,3);
-        string message = "ALPHA," + (string)primName + "," + (string)primFace + "," + (string)alphaVal;
 
         if (command == commandFilter)
         {
-            if (alphaVal == 0)
-            {
-                llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, alphaOnColor, 1.0]);
-                llSay(r2chan,message);
-            }
-            else
-            {
-                llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, offColor, 1.0]);
-                llSay(r2chan,message);
+            string primName = llList2String(stringList,1);
+            integer j;
+            for (; j < num_links; ++j) {
+                // Set color for all matching link nmaes
+                if (llList2String(prim_map, j) == primName) {
+                    integer primLink = j;
+                    integer primFace = llList2Integer(stringList,3);
+                    string message = "ALPHA," + (string)primName + "," + (string)primFace + "," + (string)alphaVal;
+
+                    if (alphaVal == 0)
+                    {
+                        llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, alphaOnColor, 1.0]);
+                        llSay(r2chan,message);
+                    }
+                    else
+                    {
+                        llSetLinkPrimitiveParamsFast(primLink, [PRIM_COLOR, primFace, offColor, 1.0]);
+                        llSay(r2chan,message);
+                    }
+                }
             }
         }
     }
+}
+
+doButtonPress(list buttons, integer link, integer face) {
+    string commandButton = llList2String(buttons, face);
+    list paramList = llGetLinkPrimitiveParams(link, [PRIM_NAME, PRIM_COLOR, face]);
+    string primName = llList2String(paramList, 0);
+    vector primColor = llList2Vector(paramList, 1);
+    string name = llGetLinkName(link);
+
+    integer alphaVal;
+    integer i;
+    integer num_links = llGetNumberOfPrims() + 1;
+    log("doButtonPress(): "+primName+" "+(string)link+" "+(string)face);
+    for (; i < num_links; ++i) {
+        // Set color for all matching link nmaes
+        if (llList2String(prim_map, i) == name) {
+            if (primColor == offColor) {
+                alphaVal = 0;
+                llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, face, buttonOnColor, 1.0]);
+            } else {
+                alphaVal = 1;
+                llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, face, offColor, 1.0]);
+            }
+        }
+    }
+    colorDoll(commandButton, alphaVal);
 }
 
 default
@@ -165,6 +220,14 @@ default
     state_entry()
     {
         r2chan = keyapp2chan();
+
+        // Create map of all links to prim names
+        integer i;
+        integer num_links = llGetNumberOfPrims() + 1;
+        for (; i < num_links; ++i) {
+            list p = llGetLinkPrimitiveParams(i, [PRIM_NAME]);
+            prim_map += [llList2String(p, 0)];
+        }
     }
 
     on_rez(integer param)
@@ -176,9 +239,9 @@ default
     {
         integer link = llDetectedLinkNumber(0);
         integer face = llDetectedTouchFace(0);
+        string name = llGetLinkName(link);
 
-        if(link == 1)
-        {
+        if (name == "rotatebar" || link == 1) {
             if(face == 1||face == 3||face == 5||face == 7)
             {
                 rotation localRot = llList2Rot(llGetLinkPrimitiveParams(link,[PRIM_ROT_LOCAL]),0);
@@ -190,8 +253,7 @@ default
                 llSetLinkPrimitiveParamsFast(link,[PRIM_ROT_LOCAL,llEuler2Rot(<0.0,0.0,-PI/2>)*localRot]);
             }
         }
-        else if(link == 3 || link == 7)
-        {
+        else if (name == "buttonbar1" || name == "buttonbar5") {
             list buttonList = [
                     "reset",
                     "chest",
@@ -208,29 +270,10 @@ default
             }
             else
             {
-                string commandButton = llList2String(buttonList,face);
-                list paramList = llGetLinkPrimitiveParams(link,[PRIM_NAME,PRIM_COLOR,face]);
-                string primName = llList2String(paramList,0);
-                vector primColor = llList2Vector(paramList,1);
-                integer alphaVal;
-                if (primColor == offColor)
-                {
-                    alphaVal=0;
-                    llSetLinkPrimitiveParamsFast(3, [PRIM_COLOR, face, buttonOnColor, 1.0]);
-                    llSetLinkPrimitiveParamsFast(7, [PRIM_COLOR, face, buttonOnColor, 1.0]);
-                }
-                else
-                {
-                    alphaVal=1;
-                    llSetLinkPrimitiveParamsFast(3, [PRIM_COLOR, face, offColor, 1.0]);
-                    llSetLinkPrimitiveParamsFast(7, [PRIM_COLOR, face, offColor, 1.0]);
-                }
-                colorDoll(commandButton,alphaVal);
-                //llOwnerSay(0,"Link:" + (string)link + " Button:" + commandButton);
+                doButtonPress(buttonList, link, face);
             }
         }
-        else if(link == 4 || link == 8)
-        {
+        else if (name == "buttonbar2" || name == "buttonbar6") {
             list buttonList = [
                     "armslower",
                     "armsfull",
@@ -241,29 +284,9 @@ default
                     "knees",
                     "legslower"
                     ];
-            string commandButton = llList2String(buttonList,face);
-            list paramList = llGetLinkPrimitiveParams(link,[PRIM_NAME,PRIM_COLOR,face]);
-            string primName = llList2String(paramList,0);
-            vector primColor = llList2Vector(paramList,1);
-            integer alphaVal;
-
-            if (primColor == offColor)
-            {
-                alphaVal=0;
-                llSetLinkPrimitiveParamsFast(4, [PRIM_COLOR, face, buttonOnColor, 1.0]);
-                llSetLinkPrimitiveParamsFast(8, [PRIM_COLOR, face, buttonOnColor, 1.0]);
-            }
-            else
-            {
-                alphaVal=1;
-                llSetLinkPrimitiveParamsFast(4, [PRIM_COLOR, face, offColor, 1.0]);
-                llSetLinkPrimitiveParamsFast(8, [PRIM_COLOR, face, offColor, 1.0]);
-            }
-
-            colorDoll(commandButton,alphaVal);
+            doButtonPress(buttonList, link, face);
         }
-        else if(link == 5 || link == 9)
-        {
+        else if (name == "buttonbar3" || name == "buttonbar7") {
             list buttonList = [
                     "legsfull",
                     "feet",
@@ -274,28 +297,9 @@ default
                     "toes",
                     "soles"
                     ];
-            string commandButton = llList2String(buttonList,face);
-            list paramList = llGetLinkPrimitiveParams(link,[PRIM_NAME,PRIM_COLOR,face]);
-            string primName = llList2String(paramList,0);
-            vector primColor = llList2Vector(paramList,1);
-            integer alphaVal;
-
-            if (primColor == offColor)
-            {
-                alphaVal=0;
-                llSetLinkPrimitiveParamsFast(5, [PRIM_COLOR, face, buttonOnColor, 1.0]);
-                llSetLinkPrimitiveParamsFast(9, [PRIM_COLOR, face, buttonOnColor, 1.0]);
-            }
-            else
-            {
-                alphaVal=1;
-                llSetLinkPrimitiveParamsFast(5, [PRIM_COLOR, face, offColor, 1.0]);
-                llSetLinkPrimitiveParamsFast(9, [PRIM_COLOR, face, offColor, 1.0]);
-            }
-            colorDoll(commandButton,alphaVal);
+            doButtonPress(buttonList, link, face);
         }
-        else if(link == 6 || link == 10)
-        {
+        else if (name == "buttonbar4" || name == "buttonbar8") {
             list buttonList = [
                     "--",
                     "--",
@@ -309,7 +313,7 @@ default
             string commandButton = llList2String(buttonList,face);
             llOwnerSay("Saving and loading alpha is not yet implemented!");
         }
-        else if(link == 2)
+        else if(name == "backboard")
         {
             //ignore click on backboard
         }
