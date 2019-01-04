@@ -14,6 +14,7 @@
 //*********************************************************************************
 
 // ss-c 31Dec2018 <seriesumei@avimail.org> - Combined HUD
+// ss-d 03Jan2018 <seriesumei@avimail.org> - Add skin panel
 
 // Build a single HUD for Ruth/Roth for alpha and skin appliers:
 // * Upload or obtain via whatever means the Alpha HUD mesh and the 'doll' mesh.  This
@@ -23,6 +24,7 @@
 // * Copy the folloing objects into the new prim on the ground:
 //   * the new prim from inventory created above and name it 'Object'
 //   * the alpha HUD mesh into the root prim and name it 'alpha-hud'
+//   * the skin HUD mesh into the root prim and name it 'skin-hud'
 //   * the doll mesh into the root prim and name it 'doll' if it is not already linked
 //     to the ahpha HUD mesh
 //   * this script
@@ -44,6 +46,7 @@
 vector build_pos;
 integer link_me = FALSE;
 integer FINI = FALSE;
+integer counter = 0;
 
 key bar_texture = "332b97c3-d7c0-f2e5-732a-16ead0d8ba02";
 vector bar_size = <0.5, 0.5, 0.04>;
@@ -73,6 +76,7 @@ rez_object(string name, vector delta, vector rot) {
 
 default {
     touch_start(integer total_number) {
+        counter = 0;
         // set up root prim
         log("Configuring root");
         llSetLinkPrimitiveParamsFast(LINK_THIS, [
@@ -98,15 +102,16 @@ default {
     }
 
     object_rez(key id) {
+        counter++;
         integer i = llGetNumberOfPrims();
-        log("i="+(string)i);
+        log("counter="+(string)counter);
 
         if (link_me) {
             llCreateLink(id, TRUE);
             link_me = FALSE;
         }
 
-        if (i == 1) {
+        if (counter == 1) {
             log("Configuring south");
             llSetLinkPrimitiveParamsFast(2, [
                 PRIM_NAME, "minbar",
@@ -119,7 +124,7 @@ default {
             link_me = TRUE;
             rez_object("Object", <0.0, 0.0, 0.5>, <PI, 0.0, 0.0>);
         }
-        else if (i == 2) {
+        else if (counter == 2) {
             log("Configuring north");
             llSetLinkPrimitiveParamsFast(2, [
                 PRIM_NAME, "alphabar",
@@ -132,7 +137,7 @@ default {
             link_me = TRUE;
             rez_object("Object", <0.0, -0.5, 0.0>, <-PI_BY_TWO, 0.0, 0.0>);
         }
-        else if (i == 3) {
+        else if (counter == 3) {
             log("Configuring east");
             llSetLinkPrimitiveParamsFast(2, [
                 PRIM_NAME, "skinbar",
@@ -145,7 +150,7 @@ default {
             link_me = TRUE;
             rez_object("Object", <0.0, 0.5, 0.0>, <PI_BY_TWO, 0.0, 0.0>);
         }
-        else if (i == 4) {
+        else if (counter == 4) {
             log("Configuring west");
             llSetLinkPrimitiveParamsFast(2, [
                 PRIM_NAME, "westbar",
@@ -158,11 +163,16 @@ default {
             link_me = FALSE;
             rez_object("alpha-hud", <0.0, 0.0, 1.38>, <PI, 0.0, -PI_BY_TWO>);
         }
-        else if (i == 5 && ! FINI) {
-            FINI = TRUE;
+        else if (counter == 5) {
             log("Rezzing alpha doll");
             link_me = FALSE;
             rez_object("doll", <0.0, 0.0, 0.9>, <PI, 0.0, -PI_BY_TWO>);
+        }
+        else if (counter == 6) {
+            FINI = TRUE;
+            log("Rezzing skin HUD");
+            link_me = FALSE;
+            rez_object("skin-hud", <0.0, -0.68, 0.0>, <-PI_BY_TWO, 0.0, 0.0>);
         }
     }
 }
