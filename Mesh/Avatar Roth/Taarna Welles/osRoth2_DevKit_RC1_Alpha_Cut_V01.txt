@@ -1,4 +1,4 @@
-This file is based on the osRoth2_DevKit_RC_1+Weighting_For_Clothing.blend
+This file is based on the osRoth2_DevKit_RC1+Weighting_For_Clothing.blend
 
 osRoth2_DevKit_RC_1_Alpha_Cut_V01.blend is exactly as the clothing file
 but now with an alpha cut which you can use as an avatar.
