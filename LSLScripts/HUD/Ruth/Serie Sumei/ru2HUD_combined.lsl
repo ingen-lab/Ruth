@@ -19,6 +19,8 @@
 // ss-b 30Dec2018 <seriesumei@avimail.org> - Auto-adjust position on attach
 // ss-c 31Dec2018 <seriesumei@avimail.org> - Combined HUD
 // ss-d 03Jan2019 <seriesumei@avimail.org> - Add skin panel
+// ss-d.2 06Jan2019 <seriesumei@avimail.org> - Fix OpenSim compatibility
+
 
 integer r2chan;
 integer appID = 20181024;
@@ -143,8 +145,8 @@ integer last_attach = 0;
 vector MIN_BAR = <0.0, 0.0, 0.0>;
 vector ALPHA_HUD = <PI, 0.0, 0.0>;
 vector SKIN_HUD = <PI_BY_TWO, 0.0, 0.0>;
-vector alpha_rot = ALPHA_HUD;
-vector last_rot = MIN_BAR;
+vector alpha_rot;
+vector last_rot;
 
 integer VERBOSE = FALSE;
 
@@ -289,6 +291,9 @@ default
         // Initialize attach state
         last_attach = llGetAttached();
         log("state_entry() attached="+(string)last_attach);
+
+        alpha_rot = ALPHA_HUD;
+        last_rot = MIN_BAR;
     }
 
     on_rez(integer param)
@@ -302,6 +307,7 @@ default
         integer face = llDetectedTouchFace(0);
         vector pos = llDetectedTouchST(0);
         string name = llGetLinkName(link);
+        string message;
 
         if (name == "rotatebar") {
             if(face == 1||face == 3||face == 5||face == 7)
@@ -443,7 +449,7 @@ default
                 }
                 llSetLinkPrimitiveParamsFast(link, [PRIM_COLOR, ALL_SIDES, tglOnColor, 1.0]);
 
-                string message = "TEXTURE," + primDesc  + "," + primTexture;
+                message = "TEXTURE," + primDesc  + "," + primTexture;
                 llSay(r2chan,message);
                 log("link=" + (string)link + " face=" + (string)face + " name=" + primName + " desc=" + primDesc + " tex=" + primTexture);
             }
@@ -456,7 +462,7 @@ default
                 alphaVal=1;
                 llSetLinkPrimitiveParamsFast(link, [PRIM_COLOR, face, offColor, 1.0]);
             }
-            string message = "ALPHA," + (string)primName + "," + (string)face + "," + (string)alphaVal;
+            message = "ALPHA," + (string)primName + "," + (string)face + "," + (string)alphaVal;
             llSay(r2chan,message);
         }
     }
