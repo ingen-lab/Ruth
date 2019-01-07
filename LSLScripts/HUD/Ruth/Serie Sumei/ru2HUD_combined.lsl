@@ -18,6 +18,9 @@
 // ss-a 29Dec2018 <seriesumei@avimail.org> - Make alpha hud link-order independent
 // ss-b 30Dec2018 <seriesumei@avimail.org> - Auto-adjust position on attach
 // ss-c 31Dec2018 <seriesumei@avimail.org> - Combined HUD
+// ss-d 03Jan2019 <seriesumei@avimail.org> - Add skin panel
+// ss-d.2 06Jan2019 <seriesumei@avimail.org> - Fix OpenSim compatibility
+
 
 integer r2chan;
 integer appID = 20181024;
@@ -28,6 +31,9 @@ integer keyapp2chan()
 vector            alphaOnColor =     <0.000, 0.000, 0.000>;
 vector            buttonOnColor =     <0.000, 1.000, 0.000>;
 vector            offColor =         <1.000, 1.000, 1.000>;
+
+vector tglOnColor = <0.000, 1.000, 0.000>;
+vector tglOffColor = <1.000, 1.000, 1.000>;
 
 // The command button list is:
 //  <button-name> :: <prim-name> :: <link-number> :: <face-number>
@@ -127,6 +133,8 @@ list              commandButtonList =    [
 // Keep a mapping of link number to prim name
 list prim_map = [];
 
+integer num_links = 0;
+
 // HUD Positioning offsets
 float bottom_offset = 1.36;
 float left_offset = -0.22;
@@ -137,8 +145,8 @@ integer last_attach = 0;
 vector MIN_BAR = <0.0, 0.0, 0.0>;
 vector ALPHA_HUD = <PI, 0.0, 0.0>;
 vector SKIN_HUD = <PI_BY_TWO, 0.0, 0.0>;
-vector alpha_rot = ALPHA_HUD;
-vector last_rot = MIN_BAR;
+vector alpha_rot;
+vector last_rot;
 
 integer VERBOSE = FALSE;
 
@@ -190,9 +198,8 @@ adjust_pos() {
 resetallalpha()
 {
     integer i;
-    integer x = llGetNumberOfPrims()+1;
 
-    for (; i < x; ++i)
+    for (; i < num_links; ++i)
     {
         llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, -1, offColor, 1.0]);
         if(i>=9)
@@ -209,7 +216,6 @@ colorDoll(string commandFilter, integer alphaVal)
 {
     integer i;
     integer x = llGetListLength(commandButtonList)+1;
-    integer num_links = llGetNumberOfPrims() + 1;
     for (; i < x; ++i)
     {
         string dataString = llList2String(commandButtonList,i);
@@ -252,7 +258,6 @@ doButtonPress(list buttons, integer link, integer face) {
 
     integer alphaVal;
     integer i;
-    integer num_links = llGetNumberOfPrims() + 1;
     log("doButtonPress(): "+primName+" "+(string)link+" "+(string)face);
     for (; i < num_links; ++i) {
         // Set color for all matching link nmaes
@@ -277,7 +282,7 @@ default
 
         // Create map of all links to prim names
         integer i;
-        integer num_links = llGetNumberOfPrims() + 1;
+        num_links = llGetNumberOfPrims() + 1;
         for (; i < num_links; ++i) {
             list p = llGetLinkPrimitiveParams(i, [PRIM_NAME]);
             prim_map += [llList2String(p, 0)];
@@ -286,6 +291,9 @@ default
         // Initialize attach state
         last_attach = llGetAttached();
         log("state_entry() attached="+(string)last_attach);
+
+        alpha_rot = ALPHA_HUD;
+        last_rot = MIN_BAR;
     }
 
     on_rez(integer param)
@@ -299,6 +307,7 @@ default
         integer face = llDetectedTouchFace(0);
         vector pos = llDetectedTouchST(0);
         string name = llGetLinkName(link);
+        string message;
 
         if (name == "rotatebar") {
             if(face == 1||face == 3||face == 5||face == 7)
@@ -412,13 +421,39 @@ default
         }
         else
         {
-            list paramList = llGetLinkPrimitiveParams(link,[PRIM_NAME,PRIM_COLOR,face]);
-            string primName = llList2String(paramList,0);
-            vector primColor = llList2Vector(paramList,1);
+            list paramList = llGetLinkPrimitiveParams(
+                link, [
+                    PRIM_NAME,
+                    PRIM_DESC,
+                    PRIM_COLOR, face,
+                    PRIM_TEXTURE, face
+                ]
+            );
+            string primName = llList2String(paramList, 0);
+            string primDesc = llList2String(paramList, 1);
+            vector primColor = llList2Vector(paramList, 2);
+            string primTexture = llList2String(paramList, 4);
             integer alphaVal;
 
-            if (primColor == offColor)
-            {
+            if (primDesc == "head" || primDesc == "upper" || primDesc == "lower") {
+                integer i;
+                for (; i < num_links; ++i) {
+                    if (i != link) {
+                        list linkParamList = llGetLinkPrimitiveParams(i,[PRIM_DESC]);
+                        string desc = llList2String(linkParamList,0);
+
+                        if (desc == primDesc) {
+                            llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, ALL_SIDES, tglOffColor, 1.0]);
+                        }
+                    }
+                }
+                llSetLinkPrimitiveParamsFast(link, [PRIM_COLOR, ALL_SIDES, tglOnColor, 1.0]);
+
+                message = "TEXTURE," + primDesc  + "," + primTexture;
+                llSay(r2chan,message);
+                log("link=" + (string)link + " face=" + (string)face + " name=" + primName + " desc=" + primDesc + " tex=" + primTexture);
+            }
+            else if (primColor == offColor) {
                 alphaVal=0;
                 llSetLinkPrimitiveParamsFast(link, [PRIM_COLOR, face, alphaOnColor, 1.0]);
             }
@@ -427,7 +462,7 @@ default
                 alphaVal=1;
                 llSetLinkPrimitiveParamsFast(link, [PRIM_COLOR, face, offColor, 1.0]);
             }
-            string message = "ALPHA," + (string)primName + "," + (string)face + "," + (string)alphaVal;
+            message = "ALPHA," + (string)primName + "," + (string)face + "," + (string)alphaVal;
             llSay(r2chan,message);
         }
     }
