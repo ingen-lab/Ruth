@@ -1,0 +1,36 @@
+﻿Roth RC#3 Parts Link Order
+
+01, rootprim
+
+lower
+
+02, pelvisback
+03, pelvisfront
+
+04, legright1
+05, legright2
+06, legright3
+07, legright4
+08, legright5
+09, legright6
+10, legright7
+
+11, legleft1
+12, legleft2
+13, legleft3
+14, legleft4
+15, legleft5
+16, legleft6
+17, legleft7
+
+upper
+
+18, backupper
+19, backlower
+20, chest
+21, breasts
+22, belly
+
+23, armright
+24, armleft
+

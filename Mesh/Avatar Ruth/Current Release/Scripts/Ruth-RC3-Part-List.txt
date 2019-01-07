@@ -1,0 +1,40 @@
+﻿Ruth RC#3 Parts Link Order
+
+01, rootprim
+
+lower
+
+02, pelvisback
+03, pelvisfront
+
+04, legright1
+05, legright2
+06, legright3
+07, legright4
+08, legright5
+09, legright6
+10, legright7
+11, legright8
+
+12, legleft1
+13, legleft2
+14, legleft3
+15, legleft4
+16, legleft5
+17, legleft6
+18, legleft7
+19, legleft8
+
+upper
+
+20, backupper
+21, backlower
+
+22, armleft
+23, armright
+
+24, chest
+25, breastleft
+26, breastright
+27, belly
+
