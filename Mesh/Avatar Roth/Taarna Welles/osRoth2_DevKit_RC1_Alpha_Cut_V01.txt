@@ -1,0 +1,13 @@
+This file is based on the osRoth2_DevKit_RC1+Weighting_For_Clothing.blend
+
+osRoth2_DevKit_RC_1_Alpha_Cut_V01.blend is exactly as the clothing file
+but now with an alpha cut which you can use as an avatar.
+
+It needs to be connected to the Roth HUD (script) which you can find in the GitHub Ruth.
+
+Change the T-pose in an A-pose if you want to use this avatar for the HUD.
+
+Taarna Welles
+Netherlands
+
+5-Jan-2019
