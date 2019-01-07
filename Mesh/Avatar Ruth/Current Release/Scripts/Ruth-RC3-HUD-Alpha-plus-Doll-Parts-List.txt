@@ -1,0 +1,50 @@
+﻿Ruth Alpha Cut HUD and Ruth RC#3 Doll Parts Link Order
+Note some ordering changes on Doll from Ruth RC#3 part link order
+
+01, rootprim (base box)
+02, backboard (sides box)
+
+03, buttonbar1 (front upper) (left menu as seen from front)
+04, buttonbar2 (ront lower)  (left menu as seen from front)
+05, buttonbar3 (front upper) (right menu as seen from front)
+06, buttonbar4 (front lower) (right menu as seen from front)
+07, buttonbar1 (back upper)  (left menu as seen from front)
+08, buttonbar2 (back lower)  (left menu as seen from front)
+09, buttonbar3 (back upper)  (right menu as seen from front)
+10, buttonbar4 (back lower)  (right menu as seen from front)
+
+11, pelvisback
+12, pelvisfront
+
+13, legright1
+14, legright2
+15, legright3
+16, legright4
+17, legright5
+18, legright6
+19, legright7
+20, legright8
+
+21, legleft1
+22, legleft2
+23, legleft3
+24, legleft4
+25, legleft5
+27, legleft6
+27, legleft7
+28, legleft8
+
+29, feet
+
+30, backupper
+31, backlower
+
+32, chest
+33, breastright
+34, breastleft
+35, belly
+
+36, armright
+37, armleft
+
+38, hands

@@ -33,4 +33,3 @@ upper
 
 23, armright
 24, armleft
-
