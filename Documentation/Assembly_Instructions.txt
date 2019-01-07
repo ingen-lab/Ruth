@@ -32,7 +32,7 @@ Updated for Ruth Release Candidate 1.
 
 RUTH BODY PROCEDURE
 
-1. Upload the mesh body (the current name is r2BODY_UpperLower_ada1.9, but the name will change depending on the version). In the upload dialog box, under the “Physics” tab, choose “From File” and browse to “00_PhysicsCube.dae.” Click “Analyze” and “Simplify.” Under the “Upload Options,” check “Skin Weight.” Under “Level of Detail” (LOD), I have been setting the “Lowest” LOD at “0” but that’s up to you.  (Note that Fred Beckhusen has commented in the Ruth Google+ page that the “Analyze” button is okay for avatars but can cause problems for other types of meshes.)
+1. Upload the mesh body (the current name is r2BODY_UpperLower_ada1.9, but the name will change depending on the version). In the upload dialog box, under the “Physics” tab, choose “From File” and browse to “00_PhysicsCube.dae.” Click “Analyze” and “Simplify.” Under the “Upload Options,” check “Skin Weight.” Under “Level of Detail” (LOD), I have been setting the “Lowest” LOD at “0” but that’s up to you.  (Note that Fred Beckhusen has commented in the Ruth Google+ page that the “Analyze” button is NOT okay for avatars and can cause problems for other types of meshes.)
 
 (NOTE: from here on out, I won’t go through the upload process in detail as I did above.  I’ll just say “upload so and so.”  Nevertheless, whenever you upload a body part, you’ll want to go through the same procedure with Skin Weight, LOD and Physics.)
 
