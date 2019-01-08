@@ -15,6 +15,11 @@
 //**   along with this program.  If not, see <https://www.gnu.org/licenses/>
 //*********************************************************************************
 
+// ss-a 07Jan2019 <seriesumei@avimail.org> - Streamline prim lookups
+
+list prim_map = [];
+list prim_desc = [];
+
 integer r2chan;
 integer appID = 20181024;
 integer keyapp2chan()
@@ -26,6 +31,15 @@ default
 {
     state_entry()
     {
+        // Create map of all links to prim names
+        integer i;
+        integer num_links = llGetNumberOfPrims() + 1;
+        for (; i < num_links; ++i) {
+            list p = llGetLinkPrimitiveParams(i, [PRIM_NAME, PRIM_DESC]);
+            prim_map += [llToUpper(llList2String(p, 0))];
+            prim_desc += [llToUpper(llList2String(p, 1))];
+        }
+
         r2chan = keyapp2chan();
         llListen(r2chan,"","","");
         llRequestPermissions(llGetOwner(), PERMISSION_TRIGGER_ANIMATION);
@@ -71,13 +85,11 @@ default
                         string descflag = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
                         string textureid = llList2String(msglist, 2);
                         integer i;
-                        integer x = llGetNumberOfPrims()+1;
+                        integer x = llGetListLength(prim_desc);
 
                         for (; i < x; ++i)
                         {
-                            list paramlist = llGetObjectDetails(llGetLinkKey(i), [OBJECT_DESC,OBJECT_NAME]);
-                            string objdesc = llToUpper(llList2String(paramlist,0));
-                            string objname = llList2String(paramlist,1);
+                            string objdesc = llList2String(prim_desc, i);
 
                             if (objdesc == descflag)
                             {
@@ -92,20 +104,9 @@ default
                         string prim2change = llStringTrim(llToUpper(llList2String(msglist, 1)), STRING_TRIM);
                         integer face2change = llList2Integer(msglist, 2);
                         integer alphaval = llList2Integer(msglist, 3);
-                        integer i;
-                        integer x = llGetNumberOfPrims()+1;
-
-                        for (; i < x; ++i)
-                        {
-                            list paramlist = llGetObjectDetails(llGetLinkKey(i), [OBJECT_DESC,OBJECT_NAME]);
-                            string objdesc = llToUpper(llList2String(paramlist,0));
-                            string objname = llToUpper(llList2String(paramlist,1));
-
-                            if (objname == prim2change)
-                            {
-                                llSetLinkPrimitiveParamsFast(i, [PRIM_COLOR, face2change, <1.0,1.0,1.0>, alphaval]);
-                                //llOwnerSay("Alpha for " + objname + " changed.");
-                            }
+                        integer prim = llListFindList(prim_map, [prim2change]);
+                        if (prim > -1) {
+                            llSetLinkPrimitiveParamsFast(prim, [PRIM_COLOR, face2change, <1.0,1.0,1.0>, alphaval]);
                         }
                         //llSay(0,"I heard your ALPHA command.");
                     }
