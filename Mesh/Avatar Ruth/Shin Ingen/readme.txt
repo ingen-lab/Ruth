@@ -27,3 +27,5 @@ As part of the pre-release preparation the following steps were taken. The order
 
 10. No test DAE included pending final in-world testing.
 
+11. DevKit collada for Avastar DevKit Import now supported.
+
