@@ -63,7 +63,7 @@ default
                     string message = "TEXTURE," + "lower"  + "," + primTexture;
                     llRegionSayTo(llGetOwner(),r2chan,message);
                 }
-            //llOwnerSay("face:"+(string)f + " " + primTexture);    
+            //llOwnerSay("touched-face:"+(string)f + " " + primTexture);    
             }
 
             llOwnerSay("You should now be wearing your beautiful skin.");
