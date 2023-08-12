@@ -19,7 +19,7 @@ For Ruth 2.0, you can simply add in the current "Head Receiver" script
 Skin Applier will also set your ears to the appropriate skin texture.
 To achieve this the Description field of BOTH ear parts needs to be
 set to "head" without the quotation marks. The prepared version in
-the OpenSim Inventory ARCHIVE (.iar) supplied is already set this way
+the OpenSim Inventory ARCHIVE (iar) supplied is already set this way
 
 ru2_head_receiver using channel 20181024
 
