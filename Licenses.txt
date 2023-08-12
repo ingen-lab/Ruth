@@ -3,6 +3,7 @@ License terms for this project vary by part type. Copyrights are by the original
 **Avatar Mesh**
 
 Built with Blender 2.79 with Avastar 2 RC12.
+Compatible with Blender 3.6.1 using Avastar 3.5.0
 
 Ruth 2.0 Copyright 2018 AGPL by Shin Ingen, who can be found at https://plus.google.com/+ShinIngen. 
 
